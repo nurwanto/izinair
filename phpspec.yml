@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: IzinAir
+        psr4_prefix: IzinAir
+        src_path: app
