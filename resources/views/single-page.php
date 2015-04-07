@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Perizinan Terkait Air</title>
+<title>Creation a industrial bootstrap Website Template | Single-Page :: w3layouts</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -45,11 +45,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li class="active"><a href="index.php">home</a></li>
-		        <!--<li><a href="feature.html">features</a></li>
+		        <li class="active"><a href="index.html">home</a></li>
+		        <li><a href="feature.html">features</a></li>
 		        <li><a href="blog.html">blog</a></li>
 		        <li><a href="about.html">about</a></li>
-		        <li><a href="contact.html">contact</a></li> -->
+		        <li><a href="contact.html">contact</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -61,102 +61,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
-		<div class="row slider text-center">
-			<div class="col-md-8">
-					<div class="col-md-10 slider_text">
-						<h2>Lorem Ipsum is simply dummy text of the printing and  industry.</h2>
-						<h3>simple text place here</h3>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="slider_img">
-						<img src="images/pic1.png" alt="" class="img-responsive"/>
-					</div>
-				</div>
-			</div>
+		<ol class="breadcrumb">
+		  <li><a href="index.html">Home</a></li>
+		  <li class="active">Details</li>
+		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->
-<div class="container main">
-	<div class="row grids_of_3">
-				<div class="col-md-4 grid1_of_3">
-					  <h2>user Profiles</h2>
-					  <img src="images/icon1.png" class="img-responsive"/>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				     <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
-					</div>					
-				</div>
-				<div class="col-md-4 grid1_of_3">
-					<h2>services</h2>
-					  <img src="images/icon2.png" class="img-responsive"/>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				      <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
-					</div>					
-				</div>
-				<div class="col-md-4 grid1_of_3">
-					<h2>Get in Touch</h2>
-					  <img src="images/icon3.png" class="img-responsive"/>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				     <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
-					</div>	
-				</div>
-			    <div class="clearfix"></div>
-	</div>
-	<div class="row grids_btm top">
-		<div class="col-md-6">
-			<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>27</p>
-				</div>
-				<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>	   
-	 			</div>
-	 			 <div class="clearfix"></div>
-			</div>
-			</div>
-			<div class="col-md-6">
-				<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>0$</p>
-				</div>
-					<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>   
-	 				</div>
-				</div>
-				 <div class="clearfix"></div>
-			</div>
-	</div>
-	<div class="row grids_btm top">
-		<div class="col-md-6">
-			<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>0$</p>
-				</div>
-				<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>	   
-	 			</div>
-	 			 <div class="clearfix"></div>
-			</div>
-			</div>
-			<div class="col-md-6">
-				<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>35</p>
-				</div>
-					<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>   
-	 				</div>
-				</div>
-				 <div class="clearfix"></div>
-			</div>
-	</div>
+<div class="container">
+	<div class="row details"><!-- start details -->
+		<img src="images/det_pic.jpg" alt=""  class="img-responsive"/>
+		<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry., Lorem Ipsum  dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit esse when an,Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s, </p>
+		<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit</p>
+		<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+		<div class="read_more">
+			<a href="#"><button class="btn_style">view more</button></a>
+		</div>
+	</div><!-- end  details -->
 </div>
 </div>
 <div class="footer_bg"><!-- start footre -->

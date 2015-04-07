@@ -23,3 +23,6 @@ Route::get('/', function()
 {
     return view('index');
 });
+Route::get('form','FormIzinController@getForm');
+Route::post('form','FormIzinController@postForm');
+// Route::
