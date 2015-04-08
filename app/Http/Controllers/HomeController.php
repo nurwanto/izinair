@@ -8,8 +8,13 @@ use Illuminate\Http\Request;
 class HomeController extends Controller {
 
 	//
-	public function index(){
-		return view('index');
+	public function role(){
+		// if(admin) 
+			//return view('admin.index');
+		// else if(pegawai) 
+			//return view('pegawai.index');
+		// else if(pemohon)
+		return view('pemohon.index');
 	}
 
 }

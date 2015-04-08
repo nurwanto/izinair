@@ -7,10 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Creation a industrial bootstrap Website Template | Contact :: w3layouts</title>
+<title>Form Perpanjangan Izin | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,13 +20,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--  webfonts  -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <!-- // webfonts  -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
+
 <div class="header_bg"><!-- start header -->
 	<div class="container">
 		<div class="row header">
@@ -40,16 +41,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="images/pemkot.png" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="index.html">home</a></li>
-		        <li><a href="feature.html">features</a></li>
-		        <li><a href="blog.html">blog</a></li>
-		        <li><a href="about.html">about</a></li>
-		        <li class="active"><a href="contact.html">contact</a></li>
+		        <li><a href="{{URL::to('/')}}">home</a></li>
+		        <li><a href="{{URL::to('pemohon/persyaratan')}}">persyaratan</a></li>
+		        <li><a href="{{URL::to('pemohon/lihat')}}">daftar izin</a></li>
+		        <li><a href="{{URL::to('pemohon/tentang')}}">tentang</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -62,22 +62,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</nav>
 		</div>
 		<ol class="breadcrumb">
-		  <li><a href="index.html">Home</a></li>
-		  <li class="active">contact</li>
+		  <li><a href="{{URL::to('/')}}">Home</a></li>
+		  <li class="active">form</li>
 		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->
 <div class="container">
 			<div class="row contact"><!-- start contact -->				
-				<!-- <div class="col-md-4">
-					<div class="contact_info">
+				
+					<!-- <div class="contact_info">
 			    	 	<h2>Find Us Here</h2>
 			    	 		<div class="map">
 					   			<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
 					   		</div>
-      				</div>
-      			<div class="company_ad">
+      				</div -->>
+      			<!-- <div class="company_ad">
 				     	<h2>find Address :</h2>
       				<address>
 						 <p>500 Lorem Ipsum Dolor Sit,</p>
@@ -88,139 +88,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				 	 	<p>Email: <a href="mailto:info@mycompany.com">info(at)mycompany.com</a></p>
 				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
 				   	</address>
-				   </div>
-				</div>	 -->			
-				<div class="col-md-10">
+				   </div> -->
+								
+				<div class="col-md-8">
 				  <div class="contact-form">
-				  	<h2>Data Pemohon</h2>
-					    <form class="form-horizontal" role="form">
-					    	<div class="form-group">
-    <!--   <label class="control-label col-sm-2" for="nama" style="font-size:14px">Nama Pemohon</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="nama">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="alamat" style="font-size:14px">Alamat Pemohon</label>
-      <div class="col-sm-10">
-        <textarea class="form-control" rows="5" id="alamat"></textarea>
-      </div>
-      </div>
-      
-       <div class="form-group">
-      <label class="control-label col-sm-2" for="pos" style="font-size:14px">Kode Pos Pemohon</label>
-      <div class="col-sm-10">
-        <input type="file" class="form-control" id="pos">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="jenis_kel" style="font-size:14px">Jenis Kelamin</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="jenis_kel">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="ttl" style="font-size:14px">Tempat/Tanggal Lahir</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="ttl">
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="ktp" style="font-size:14px">Nomor KTP</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="ktp">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="telp">
-      </div>
-    </div>
-
-<div class="form-group">
-    <label class="control-label col-sm-2" for="email" style="font-size:14px">Email Pemohon</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="email">
-    </div>
-  </div> -->
-
-  <div class="form-group">
-      <label class="control-label col-sm-2" for="ktp" style="font-size:14px">Rekomendasi Teknis</label>
-      <div class="col-sm-10">
-        <input type="file" class="form-control" id="file_recommend">dari Dinas Pertambangan dan Energi Propinsi Jawa Barat
-      </div>
-    </div>
-
-  <!--<div class="form-group">
-      <label class="control-label col-sm-2" for="ktp" style="font-size:14px">Kepemilikan instalasi bor</label>
-      <div class="col-sm-10">
-        <input type="file" class="form-control" id="kt">
-      </div>
-    </div> -->
-
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="ktp" style="font-size:14px">Pernyataan tidak keberatan</label>
-      <div class="col-sm-10">
-        <input type="file" class="form-control" id="file_berat">dari masyarakat sekitar proyek
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="ktp" style="font-size:14px">Pernyataan Konservasi dan Pelestarian Alam</label>
-      <div class="col-sm-10">
-        <input type="file" class="form-control" id="ktp"> jika dikuasakan
-      </div>
-    </div>
-
-<h2>Data Izin</h2>
-<div class="form-group">
-      <label class="control-label col-sm-2" for="alamat" style="font-size:14px">Alamat Lokasi Izin</label>
-      <div class="col-sm-10">
-        <textarea class="form-control" rows="5" id="alamat"></textarea>
-      </div>
-      </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="kel" style="font-size:14px">Luas Lokasi Izin</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="kel" placeholder="meter2"> 
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="kel" style="font-size:14px">Kegiatan Usaha</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="kel"> 
-      </div>
-    </div>
-
- <!--  <div class="form-group">
-      <label class="control-label col-sm-2" for="kec" style="font-size:14px">Kecamatan</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="kec">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="kel" style="font-size:14px">Kelurahan</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="kel">
-      </div>
-    </div> -->
-
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
+				  	<h2>Perpanjangan</h2>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<span>no surat izin</span>
+						    	<span><select class="form-control" id="sel1">
+							        <option>1</option>
+							        <option>2</option>
+							        <option>3</option>
+							        <option>4</option>
+							      </select></span>
+						    </div>
+						   <!--  <div>
+						    	<span>e-mail</span>
+						    	<span><input type="email" class="form-control" id="inputEmail3"></span>
+						    </div>
+						    <div>
+						     	<span>mobile</span>
+						    	<span><input type="number" class="form-control" id="number"></span>
+						    </div>
+						    <div>
+						    	<span>subject</span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div> -->
+						   <div>
+						   		<span><input type="submit" value="ajukan perpanjangan"></span>
+						  </div>
 					    </form>
 				    </div>
   				</div>		

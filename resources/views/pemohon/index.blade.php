@@ -7,10 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Izin Air PemKot Bandung | Home</title>
+<title>Home | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,11 +20,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--  webfonts  -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <!-- // webfonts  -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
 <div class="header_bg"><!-- start header -->
@@ -40,16 +40,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li class="active"><a href="index.html">home</a></li>
-		        <li><a href="feature.html">persyaratan</a></li>
-		        <li><a href="blog.html">daftar izin</a></li>
-		        <li><a href="about.html">tentang</a></li>
-		        <li><a href="contact.html">kontak kami</a></li>
+		        <li class="active"><a href="{{ URL::to('/') }}">home</a></li>
+		        <li><a href="{{ URL::to('pemohon/persyaratan') }}">persyaratan</a></li>
+		        <li><a href="{{ URL::to('pemohon/lihat') }}">daftar izin</a></li>
+		        <li><a href="{{ URL::to('pemohon/tentang') }}">tentang</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -64,8 +63,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="row slider text-center">
 			<div class="col-md-8">
 					<div class="col-md-10 slider_text">
-						<h2>Lorem Ipsum is simply dummy text of the printing and  industry.</h2>
-						<h3>simple text place here</h3>
+						<h2>Air, sumber kehidupan</h2>
+						<h3>!----!</h3>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -84,7 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon1.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('pemohon/form')}}"><button class="btn_style">view more</button></a>
 					</div>					
 				</div>
 				<div class="col-md-4 grid1_of_3">
@@ -92,7 +91,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon2.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				      <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('pemohon/form/perpanjangan')}}"><button class="btn_style">view more</button></a>
 					</div>					
 				</div>
 				<div class="col-md-4 grid1_of_3">
@@ -100,7 +99,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon3.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('pemohon/form/permohonanbatal')}}"><button class="btn_style">view more</button></a>
 					</div>	
 				</div>
 				<div class="col-md-4 grid1_of_3">
@@ -108,62 +107,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon3.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('pemohon/form/aduanpenolakan')}}"><button class="btn_style">view more</button></a>
 					</div>	
 				</div>
 			    <div class="clearfix"></div>
-	</div>
-	<div class="row grids_btm top">
-		<div class="col-md-6">
-			<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>27</p>
-				</div>
-				<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>	   
-	 			</div>
-	 			 <div class="clearfix"></div>
-			</div>
-			</div>
-			<div class="col-md-6">
-				<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>0$</p>
-				</div>
-					<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>   
-	 				</div>
-				</div>
-				 <div class="clearfix"></div>
-			</div>
-	</div>
-	<div class="row grids_btm top">
-		<div class="col-md-6">
-			<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>0$</p>
-				</div>
-				<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>	   
-	 			</div>
-	 			 <div class="clearfix"></div>
-			</div>
-			</div>
-			<div class="col-md-6">
-				<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>35</p>
-				</div>
-					<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>   
-	 				</div>
-				</div>
-				 <div class="clearfix"></div>
-			</div>
 	</div>
 </div>
 </div>
@@ -179,35 +126,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p>USA</p>
 				<p>Phone:(00) 222 666 444</p>
 				<p>Fax: (000) 000 00 00 0</p>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<h4>latest posts</h4>
-				<span><a href="#"> Fusce scelerisque massa vitae </a></span>
-				<p>25 april 2013</p>
-				<span><a href="#">Pellentesque bibendum ante </a></span>
-				<p>15 march 2013</p>
-				<span><a href="#">Maecenas quis ipsum sed magna </a></span>
-				<p>25 april 2013</p>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<h4>latest comments</h4>
-				<span><a href="#">It is a long established fact that a reader will looking layout.</a></span>
-				<span><a href="#">There are many variations of passages of Lorem Ipsum available words.</a></span>
-				<span><a href="#">It is a long established fact that a reader will looking layout.</a></span>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<h4>photostream</h4>
-				<ul class="f_nav list-unstyled">
-					<li><a href="#"><img src="images/f_pic1.jpg" alt="" class="img-responsive"/></a></li>
-					<li><a href="#"><img src="images/f_pic3.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic4.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic5.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic7.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic1.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic6.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic8.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic2.jpg" alt="" class="img-responsive"/> </a></li>
-				</ul>
 			</div>
 			<div class="clearfix"></div>
 		</div>

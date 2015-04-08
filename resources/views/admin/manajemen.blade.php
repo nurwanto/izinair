@@ -7,10 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Perpanjangan Izin Terkait Air</title>
+<title>Manajemen | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,11 +20,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--  webfonts  -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <!-- // webfonts  -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
 <div class="header_bg"><!-- start header -->
@@ -40,16 +40,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.html"><img src="images/pemkot.png" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.jpg')}}" style="width:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="index.html">home</a></li>
-		        <li><a href="feature.html">features</a></li>
-		        <li><a href="blog.html">blog</a></li>
-		        <li><a href="about.html">about</a></li>
-		        <li class="active"><a href="contact.html">contact</a></li>
+		        <li><a href="{{ URL::to('/') }}">home</a></li>
+		        <li class="active"><a href="{{ URL::to('admin/manajemen') }}">manajemen</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -62,67 +59,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</nav>
 		</div>
 		<ol class="breadcrumb">
-		  <li><a href="index.html">Home</a></li>
-		  <li class="active">contact</li>
+		  <li><a href="{{URL::to('/')}}">Home</a></li>
+		  <li class="active">manajemen</li>
 		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->
 <div class="container">
-			<div class="row contact"><!-- start contact -->				
-				
-					<!-- <div class="contact_info">
-			    	 	<h2>Find Us Here</h2>
-			    	 		<div class="map">
-					   			<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
-					   		</div>
-      				</div -->>
-      			<!-- <div class="company_ad">
-				     	<h2>find Address :</h2>
-      				<address>
-						 <p>500 Lorem Ipsum Dolor Sit,</p>
-						 <p>22-56-2-9 Sit Amet, Lorem,</p>
-						 <p>USA</p>
-				   		<p>Phone:(00) 222 666 444</p>
-				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <a href="mailto:info@mycompany.com">info(at)mycompany.com</a></p>
-				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
-				   	</address>
-				   </div> -->
-								
-				<div class="col-md-8">
-				  <div class="contact-form">
-				  	<h2>Perpanjangan</h2>
-					    <form method="post" action="contact-post.html">
-					    	<div>
-						    	<span>no surat izin</span>
-						    	<span><select class="form-control" id="sel1">
-							        <option>1</option>
-							        <option>2</option>
-							        <option>3</option>
-							        <option>4</option>
-							      </select></span>
-						    </div>
-						   <!--  <div>
-						    	<span>e-mail</span>
-						    	<span><input type="email" class="form-control" id="inputEmail3"></span>
-						    </div>
-						    <div>
-						     	<span>mobile</span>
-						    	<span><input type="number" class="form-control" id="number"></span>
-						    </div>
-						    <div>
-						    	<span>subject</span>
-						    	<span><textarea name="userMsg"> </textarea></span>
-						    </div> -->
-						   <div>
-						   		<span><input type="submit" value="ajukan perpanjangan"></span>
-						  </div>
-					    </form>
-				    </div>
-  				</div>		
-  				<div class="clearfix"></div>		
+			<div class="row contact"><!-- start contact -->	
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">Halaman
+					<small>Daftar Pegawai</small>
+					</h1>
+
+					<p><a href="{{ URL::to('crud/create') }}" class="btn btn-primary" role="button">Tambah Pegawai Baru</a></p>
+		<div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>NIP</th>
+                                        <th>Nama</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <!--  @foreach($profiles as $value) -->
+                                    <tr>
+                                        <td><!-- {{{ $value->id }}} --></td>
+                                        <td><!-- {{{ $value->nama }}} --></td>
+                                        <td><!-- {{{ $value->jeniskelamin == 'L' ? 'Laki - laki' : 'Perempuan' }}} --></td>
+                                        <td>
+                                        	<div class="btn-group">
+												<a href="{{ URL::to('crud/edit/'.$value->id) }}" class="btn btn-primary">Ubah</a>
+												<a href="{{ URL::to('crud/destroy/'.$value->id) }}" class="btn btn-primary">Hapus</a>
+											</div>
+                                        </td>
+                                    </tr>
+                                <!-- @endforeach     -->
+                                </tbody>
+                            </table>
+
+				</div>
+			</div>	
 		  </div> <!-- end contact -->
+</div>
 </div>
 </div>
 <div class="footer_bg"><!-- start footre -->
