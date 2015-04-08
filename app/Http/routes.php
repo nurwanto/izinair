@@ -26,3 +26,11 @@ Route::get('/', function()
 Route::get('form','FormIzinController@getForm');
 Route::post('form','FormIzinController@postForm');
 // Route::
+
+Route::get('manajemen', function() {
+	return View::make('manajemen');
+});
+
+Route::get('perpanjangan', function() {
+	return View::make('perpanjangan');
+});
