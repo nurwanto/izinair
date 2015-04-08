@@ -70,7 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="main"><!-- start main -->
 <div class="container">
 			<div class="row contact"><!-- start contact -->				
-				<div class="col-md-2">
+				
 					<!-- <div class="contact_info">
 			    	 	<h2>Find Us Here</h2>
 			    	 		<div class="map">
@@ -89,7 +89,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
 				   	</address>
 				   </div> -->
-				</div>				
+								
 				<div class="col-md-8">
 				  <div class="contact-form">
 				  	<h2>Perpanjangan</h2>
