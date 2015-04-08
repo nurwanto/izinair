@@ -19,3 +19,11 @@ Route::get('form/new/{id}','FormIzinController@getFormNew');
 
 Route::post('form','FormIzinController@postForm');
 // Route::
+
+Route::get('manajemen', function() {
+	return View::make('manajemen');
+});
+
+Route::get('perpanjangan', function() {
+	return View::make('perpanjangan');
+});
