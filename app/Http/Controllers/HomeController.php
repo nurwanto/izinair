@@ -12,9 +12,9 @@ class HomeController extends Controller {
 		// if(admin) 
 			//return view('admin.index');
 		// else if(pegawai) 
-			//return view('pegawai.index');
+			return view('pegawai.index');
 		// else if(pemohon)
-		return view('pemohon.index');
+		// return view('pemohon.index');
 	}
 
 }

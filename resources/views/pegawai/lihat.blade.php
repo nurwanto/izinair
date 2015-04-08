@@ -9,8 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>Daftar Izin | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,11 +20,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--  webfonts  -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <!-- // webfonts  -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
 <div class="header_bg"><!-- start header -->
@@ -58,19 +58,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
-		<div class="row slider text-center">
-			<div class="col-md-8">
-					<div class="col-md-10 slider_text">
-						<h2>Air, sumber kehidupan</h2>
-						<h3>!----!</h3>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="slider_img">
-						<img src="images/pic1.png" alt="" class="img-responsive"/>
-					</div>
-				</div>
-			</div>
 	</div>
 </div>
 <div class="footer_bg"><!-- start footre -->
