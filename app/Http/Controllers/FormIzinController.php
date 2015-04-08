@@ -1,19 +1,22 @@
 <?php namespace IzinAir\Http\Controllers;
 
-use App\Http\Requests\FriendFormRequest;
-// use Illuminate\Routing\Controller;
-use Response;
-use View;
+use IzinAir\Http\Requests;
+use IzinAir\Http\Controllers\Controller;
 
-class FormIzinController extends Controller
-{
-    public function getForm()
-    {
-        return view('form');
-    }
+use Illuminate\Http\Request;
 
-    public function postForm(FormIzinAirRequest $request)
-    {
-        return Response::make('Response added!');
-    }
+class FormIzinController extends Controller {
+
+	//
+	public function getFormNew($id){
+		if($id==1)
+			return view('form.new.form');
+		else if($id==2)
+			return view('form.new.form');
+		else if($id==3)
+			return view('form.new.form');
+		else if($id==4)
+			return view('form.new.form');
+	}
+
 }

@@ -8,8 +8,8 @@ class FormIzinAirRequest extends FormRequest
     public function rules()
     {
         return [
-            'telp' =>  => 'required',
-            'email' => 'required',
+            'telp' => 'required',
+            'email' => 'required | email',
             'teknis' => 'required',
             'bor' => 'required',
             'keberatan' => 'required',
@@ -45,5 +45,6 @@ class FormIzinAirRequest extends FormRequest
         // override this method.
         // See what it does natively here: 
         // https://github.com/laravel/framework/blob/master/src/Illuminate/Foundation/Http/FormRequest.php
+        DB::insert('insert into users (id, name) values (?, ?)', [1, 'Dayle']);
     }
 }

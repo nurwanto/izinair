@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Izin Air PemKot Bandung</title>
+<title>Izin Air PemKot Bandung | Form Baru</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -40,16 +40,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="index.html"><img src="images/pemkot.jpg" style="width:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li class="active"><a href="index.html">home</a></li>
-		        <li><a href="feature.html">persyaratan</a></li>
-		        <li><a href="blog.html">daftar izin</a></li>
-		        <li><a href="about.html">tentang</a></li>
-		        <li><a href="contact.html">kontak kami</a></li>
+		        <li><a href="index.html">home</a></li>
+		        <li><a href="feature.html">features</a></li>
+		        <li><a href="blog.html">blog</a></li>
+		        <li><a href="about.html">about</a></li>
+		        <li class="active"><a href="contact.html">contact</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -61,102 +61,94 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
-		<div class="row slider text-center">
-			<div class="col-md-8">
-					<div class="col-md-10 slider_text">
-						<h2>Lorem Ipsum is simply dummy text of the printing and  industry.</h2>
-						<h3>simple text place here</h3>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="slider_img">
-						<img src="images/pic1.png" alt="" class="img-responsive"/>
-					</div>
-				</div>
-			</div>
+		<ol class="breadcrumb">
+		  <li><a href="index.html">Home</a></li>
+		  <li class="active">contact</li>
+		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->
-<div class="container main">
-	<div class="row grids_of_3">
-				<div class="col-md-4 grid1_of_3">
-					  <h2>user Profiles</h2>
-					  <img src="images/icon1.png" class="img-responsive"/>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				     <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
-					</div>					
-				</div>
-				<div class="col-md-4 grid1_of_3">
-					<h2>services</h2>
-					  <img src="images/icon2.png" class="img-responsive"/>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				      <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
-					</div>					
-				</div>
-				<div class="col-md-4 grid1_of_3">
-					<h2>Get in Touch</h2>
-					  <img src="images/icon3.png" class="img-responsive"/>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				     <div class="rd_more1">
-						<a href="single-page.html"><button class="btn_style">view more</button></a>
-					</div>	
-				</div>
-			    <div class="clearfix"></div>
-	</div>
-	<div class="row grids_btm top">
-		<div class="col-md-6">
-			<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>27</p>
-				</div>
-				<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>	   
-	 			</div>
-	 			 <div class="clearfix"></div>
-			</div>
-			</div>
-			<div class="col-md-6">
-				<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>0$</p>
-				</div>
-					<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>   
-	 				</div>
-				</div>
-				 <div class="clearfix"></div>
-			</div>
-	</div>
-	<div class="row grids_btm top">
-		<div class="col-md-6">
-			<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>0$</p>
-				</div>
-				<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>	   
-	 			</div>
-	 			 <div class="clearfix"></div>
-			</div>
-			</div>
-			<div class="col-md-6">
-				<div class="grid_list">
-				<div class="images_1_of_1">
-					<p>35</p>
-				</div>
-					<div class="grid_1_of_1">
-					  	<h3>Lorem Ipsum is simply text </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<span class="hide">sed do eiusmod tempor incididunt magna aliqua.</span> </p>   
-	 				</div>
-				</div>
-				 <div class="clearfix"></div>
-			</div>
-	</div>
+<div class="container">
+			<div class="row contact">		
+				<div class="col-md-10">
+				  <div class="contact-form">
+				  	<h2>Data Pemohon</h2>
+					    <!-- {{!! Form::open() !!}}
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
+				      <div class="col-sm-10">
+				        {{!! Form::text('telp')!!}}
+				      </div>
+				    </div>
+
+				<div class="form-group">
+				    <label class="control-label col-sm-2" for="email" style="font-size:14px">Email Pemohon</label>
+				    <div class="col-sm-10">
+				      {{!! Form::text('email')!!}}
+				    </div>
+				  </div>
+
+				  <div class="form-group">
+				      <label class="control-label col-sm-2" for="teknis" style="font-size:14px">Rekomendasi Teknis</label>
+				      <div class="col-sm-10">
+				        {{!! Form::text('teknis')!!}}dari Dinas Pertambangan dan Energi Propinsi Jawa Barat
+				      </div>
+				    </div>
+
+				  <div class="form-group">
+				      <label class="control-label col-sm-2" for="bor" style="font-size:14px">Kepemilikan instalasi bor</label>
+				      <div class="col-sm-10">
+				        {{!! Form::text('bor')!!}}
+				      </div>
+				    </div>
+
+
+				<div class="form-group">
+				      <label class="control-label col-sm-2" for="keberatan" style="font-size:14px">Pernyataan tidak keberatan</label>
+				      <div class="col-sm-10">
+				        {{!! Form::text('keberatan')!!}}dari masyarakat sekitar proyek
+				      </div>
+				    </div>
+
+				<div class="form-group">
+				      <label class="control-label col-sm-2" for="konservasi" style="font-size:14px">Pernyataan Konservasi dan Pelestarian Alam</label>
+				      <div class="col-sm-10">
+				        {{!! Form::text('konservasi')!!}}
+				      </div>
+				    </div>
+
+				<h2>Data Izin</h2>
+				<div class="form-group">
+				      <label class="control-label col-sm-2" for="alamat" style="font-size:14px">Alamat Lokasi Izin</label>
+				      <div class="col-sm-10">
+				        <textarea class="form-control" rows="5" id="alamat"></textarea>
+				      </div>
+				      </div>
+
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="luas" style="font-size:14px">Luas Lokasi Izin</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="luas" placeholder="meter2"> 
+				      </div>
+				    </div>
+
+				<div class="form-group">
+				      <label class="control-label col-sm-2" for="usaha" style="font-size:14px">Kegiatan Usaha</label>
+				      <div class="col-sm-10">
+				        {{!! Form::text('usaha')!!}}
+				      </div>
+				    </div>
+		    </div>
+		    <div class="form-group">        
+		      <div class="col-sm-offset-2 col-sm-10">
+        {{!! Form::close() !!}} -->
+      </div>
+    </div>
+					    </form>
+				    </div>
+  				</div>		
+  				<div class="clearfix"></div>		
+		  </div> <!-- end contact -->
 </div>
 </div>
 <div class="footer_bg"><!-- start footre -->

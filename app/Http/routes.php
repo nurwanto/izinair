@@ -11,18 +11,11 @@
 |
 */
 
-// Route::get('/', 'WelcomeController@index');
+Route::get('/', 'HomeController@index');
 
-Route::get('home', 'HomeController@index');
+// Route::get('form/','FormIzinController@getForm');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
-Route::get('/', function()
-{
-    return view('index');
-});
-Route::get('form','FormIzinController@getForm');
+Route::get('form/new/{id}','FormIzinController@getFormNew');
+
 Route::post('form','FormIzinController@postForm');
 // Route::

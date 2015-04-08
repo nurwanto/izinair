@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Perizinan Terkait Air</title>
+<title>Izin Air PemKot Bandung | Home</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -45,11 +45,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li class="active"><a href="index.php">home</a></li>
-		        <!--<li><a href="feature.html">features</a></li>
-		        <li><a href="blog.html">blog</a></li>
-		        <li><a href="about.html">about</a></li>
-		        <li><a href="contact.html">contact</a></li> -->
+		        <li class="active"><a href="index.html">home</a></li>
+		        <li><a href="feature.html">persyaratan</a></li>
+		        <li><a href="blog.html">daftar izin</a></li>
+		        <li><a href="about.html">tentang</a></li>
+		        <li><a href="contact.html">kontak kami</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -80,7 +80,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="container main">
 	<div class="row grids_of_3">
 				<div class="col-md-4 grid1_of_3">
-					  <h2>user Profiles</h2>
+					  <h2>ajukan Izin Baru</h2>
 					  <img src="images/icon1.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
@@ -88,7 +88,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>					
 				</div>
 				<div class="col-md-4 grid1_of_3">
-					<h2>services</h2>
+					<h2>perpanjangan</h2>
 					  <img src="images/icon2.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				      <div class="rd_more1">
@@ -96,7 +96,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>					
 				</div>
 				<div class="col-md-4 grid1_of_3">
-					<h2>Get in Touch</h2>
+					<h2>ajukan Permohonan Pembatalan Izin</h2>
+					  <img src="images/icon3.png" class="img-responsive"/>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				     <div class="rd_more1">
+						<a href="single-page.html"><button class="btn_style">view more</button></a>
+					</div>	
+				</div>
+				<div class="col-md-4 grid1_of_3">
+					<h2>ajukan Aduan Penolakan</h2>
 					  <img src="images/icon3.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
