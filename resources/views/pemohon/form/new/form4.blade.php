@@ -148,13 +148,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="lokasi" style="font-size:14px">Peta Lokasi</label>
-						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="lokasi">Skala 1 : 100
-						      </div>
-						    </div>
-
-						    <div class="form-group">
 						      <label class="control-label col-sm-2" for="profil" style="font-size:14px">Profil</label>
 						      <div class="col-sm-10">
 						        <input type="file" class="form-control" id="profil">Profil memanjang dan melintang dari saluran baru
