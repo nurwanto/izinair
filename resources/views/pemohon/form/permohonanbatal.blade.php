@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Form Baru | Izin Air PemKot Bandung</title>
+<title>Permohonan Pembatalan | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
 <link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
 <link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
@@ -73,12 +73,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-10">
 				  <div class="contact-form">
 				  	<h2>Data Pemohon</h2>
-					    {!! Form::open(['url' => 'pemohon/form/new/1']) !!}
+					    <form class="form-horizontal" role="form">
 
 						    <div class="form-group">
-						      {!! Form::label('telp','No Telp/No Hp', ['class' => 'control-label col-sm-2', 'for' => 'telp', 'style' => 'font-size:14px']) !!}
+						      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
 						      <div class="col-sm-10">
-						        {!! Form::text('telp', null, ['class' => 'form-control']) !!}
+						        <input type="text" class="form-control" id="telp">
 						      </div>
 						    </div>
 
@@ -143,7 +143,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			        <button type="submit" class="btn btn-default">Submit</button>
 			      </div>
 			    </div>
-			{!! Form::close()!!}
+			</form>
 		</div>
   		</div>		
   	<div class="clearfix"></div>		
@@ -155,9 +155,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="row  footer">
 			<div class="col-md-3 span1_of_4">
 				<h4>about us</h4>
-				<p>Dinas Bina Marga dan Pengairan</p>
-				<h5>-</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry .....</p>
+				<h5>Address</h5>
 				<p class="top">500 Lorem Ipsum Dolor Sit,</p>
+				<p>22-56-2-9 Sit Amet,</p>
+				<p>USA</p>
+				<p>Phone:(00) 222 666 444</p>
+				<p>Fax: (000) 000 00 00 0</p>
 			</div>
 			<div class="clearfix"></div>
 		</div>

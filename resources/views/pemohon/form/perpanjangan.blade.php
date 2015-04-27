@@ -41,7 +41,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="images/pemkot.png" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -63,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<ol class="breadcrumb">
 		  <li><a href="{{URL::to('/')}}">Home</a></li>
-		  <li class="active">form</li>
+		  <li class="active">Form</li>
 		</ol>
 	</div>
 </div>

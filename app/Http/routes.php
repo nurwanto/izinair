@@ -29,6 +29,8 @@ Route::get('pemohon/form/aduanpenolakan', function() {
 
 Route::get('pemohon/form/new/{id}','FormIzinController@getFormNew');
 
+Route::post('pemohon/form/new/{id}','FormIzinController@postFormNew');
+
 Route::get('pemohon/persyaratan', function() {
 	return View::make('pemohon.persyaratan');
 });

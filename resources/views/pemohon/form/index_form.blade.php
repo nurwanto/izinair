@@ -40,7 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="images/pemkot.png" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -71,7 +71,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="row grids_of_3">
 				<div class="col-md-4 grid1_of_3">
 					  <h2>izin pengelolaan air bawah tanah</h2>
-					  <img src="images/icon1.png" class="img-responsive"/>
+					  <img src="{{URL::asset('images/icon1.png')}}" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
 						<a href="{{URL::to('pemohon/form/new/1')}}"><button class="btn_style">view more</button></a>
@@ -79,7 +79,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-4 grid1_of_3">
 					<h2>izin pengambilan air permukaan</h2>
-					  <img src="images/icon2.png" class="img-responsive"/>
+					  <img src="{{URL::asset('images/icon2.png')}}" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				      <div class="rd_more1">
 						<a href="{{URL::to('pemohon/form/new/2')}}"><button class="btn_style">view more</button></a>
@@ -87,7 +87,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-4 grid1_of_3">
 					<h2>izin pembuangan air buangan ke sumber air</h2>
-					  <img src="images/icon3.png" class="img-responsive"/>
+					  <img src="{{URL::asset('images/icon3.png')}}" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
 						<a href="{{URL::to('pemohon/form/new/3')}}"><button class="btn_style">view more</button></a>
@@ -95,7 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-4 grid1_of_3">
 					<h2>izin perubahan alur, bentuk, dimensi, dan kemiringan dasar saluran/sungai</h2>
-					  <img src="images/icon3.png" class="img-responsive"/>
+					  <img src="{{URL::asset('images/icon1.png')}}" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
 						<a href="{{URL::to('pemohon/form/new/4')}}"><button class="btn_style">view more</button></a>

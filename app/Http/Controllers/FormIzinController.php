@@ -21,5 +21,16 @@ class FormIzinController extends Controller {
 		else if($id==4)
 			return view('pemohon.form.new.form4');
 	}
-
+	public function postFormNew($id){
+		$input = Request::all();
+		return $input;
+		// if($id==1)
+		// 	return view('pemohon.form.new.form1');
+		// else if($id==2)
+		// 	return view('pemohon.form.new.form2');
+		// else if($id==3)
+		// 	return view('pemohon.form.new.form3');
+		// else if($id==4)
+		// 	return view('pemohon.form.new.form4');
+	}
 }
