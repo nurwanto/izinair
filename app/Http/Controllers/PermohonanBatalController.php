@@ -5,7 +5,7 @@ use IzinAir\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class Form2Controller extends Controller {
+class PermohonanBatalController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -80,5 +80,10 @@ class Form2Controller extends Controller {
 	{
 		//
 	}
+	public function cancel(){
 
+	}
+	public function getform(){
+		
+	}
 }

@@ -7,11 +7,10 @@ use Illuminate\Http\Request;
 
 class DaftarIzinController extends Controller {
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
+	public function index(){
+		$form = Form1::all();
+		return view('pemohon.daftarizin.1', compact('form'));
+	}
 	public function getallizin($id){
 		if($id==1){
 			$form = Form1::all();

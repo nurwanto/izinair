@@ -5,7 +5,7 @@ use IzinAir\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class Form3Controller extends Controller {
+class AduanPenolakanController extends Controller {
 
 	/**
 	 * Display a listing of the resource.

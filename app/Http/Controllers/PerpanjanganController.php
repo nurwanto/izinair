@@ -5,7 +5,7 @@ use IzinAir\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class Form1Controller extends Controller {
+class PerpanjanganController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -24,7 +24,7 @@ class Form1Controller extends Controller {
 	 */
 	public function create()
 	{
-		return view('pemohon.form.new.form1');
+		//
 	}
 
 	/**
@@ -32,10 +32,9 @@ class Form1Controller extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(Request/CreateForm1Request $req)
+	public function store()
 	{
 		//
-		
 	}
 
 	/**
@@ -81,5 +80,7 @@ class Form1Controller extends Controller {
 	{
 		//
 	}
+	public function getform(){
 
+	}
 }

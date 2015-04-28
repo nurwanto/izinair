@@ -75,12 +75,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  	<h2>Data Pemohon</h2>
 					    <form class="form-horizontal" role="form">
 
-						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="ktp" style="font-size:14px">KTP</label>
-						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="ktp">
-						      </div>
-						    </div>
+						    
 
 						    <div class="form-group">
 						      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
@@ -105,16 +100,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="imb" style="font-size:14px">IMB</label>
+						      <label class="control-label col-sm-2" for="no_imb" style="font-size:14px">IMB</label>
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="imb">
+						        <input type="file" class="form-control" id="no_imb">
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="surat" style="font-size:14px">Surat Tanah</label>
+						      <label class="control-label col-sm-2" for="surat_tanah" style="font-size:14px">Surat Tanah</label>
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="surat">
+						        <input type="file" class="form-control" id="surat_tanah">
 						      </div>
 						    </div>
 
@@ -140,9 +135,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="pbb" style="font-size:14px">Pelunasan PBB</label>
+						      <label class="control-label col-sm-2" for="no_pbb" style="font-size:14px">Pelunasan PBB</label>
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="pbb">PBB tahun akhir
+						        <input type="file" class="form-control" id="no_pbb">PBB tahun akhir
 						      </div>
 						    </div>
 

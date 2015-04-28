@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateForm1sTable extends Migration {
+class CreatePermohonanPerpanjangan extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateForm1sTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('form1s', function(Blueprint $table)
+		Schema::create('permohonanperpanjangan', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->timestamps();
@@ -26,7 +26,7 @@ class CreateForm1sTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('form1s');
+		Schema::drop('permohonanperpanjangan');
 	}
 
 }

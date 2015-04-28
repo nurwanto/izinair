@@ -14,8 +14,24 @@ class CreateForm3sTable extends Migration {
 	{
 		Schema::create('form3s', function(Blueprint $table)
 		{
+			$table->string('id_penduduk');
 			$table->increments('id');
-			$table->timestamps();
+			$table->string('telp');
+            $table->string('email')->unique();
+            $table->string('akta');
+            $table->string('no_imb');
+            $table->string('surat_tanah');
+            $table->string('domisili');
+            $table->string('keberatan');
+            $table->string('pelestarian');
+            $table->string('no_pbb');
+            $table->string('teknis');
+            $table->string('dbmp');
+            $table->string('bplh');
+			$table->timestamps('tanggal_diajukan');
+			// $table->nullableTimestamps('tanggalterima_tolak');
+			$table->string('status')->default('diajukan');
+			$table->integer('jangka_waktu')->default(null)->nullable();
 		});
 	}
 
