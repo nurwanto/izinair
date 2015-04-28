@@ -76,6 +76,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					    <form class="form-horizontal" role="form">
 
 						    <div class="form-group">
+						      <label class="control-label col-sm-2" for="ktp" style="font-size:14px">KTP</label>
+						      <div class="col-sm-10">
+						        <input type="file" class="form-control" id="ktp">
+						      </div>
+						    </div>
+
+						    <div class="form-group">
 						      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
 						      <div class="col-sm-10">
 						        <input type="text" class="form-control" id="telp">
@@ -89,52 +96,82 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							    </div>
 							</div>
 
-						  	<div class="form-group">
-						      <label class="control-label col-sm-2" for="teknis" style="font-size:14px">Rekomendasi Teknis</label>
+							<h2>Data Izin</h2>
+
+							<div class="form-group">
+						      <label class="control-label col-sm-2" for="akta" style="font-size:14px">Akta Pendirian Perusahaan</label>
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="teknis">dari Dinas Pertambangan dan Energi Propinsi Jawa Barat
+						        <input type="file" class="form-control" id="akta">
 						      </div>
 						    </div>
 
-						  	<div class="form-group">
-						      <label class="control-label col-sm-2" for="bor" style="font-size:14px">Kepemilikan instalasi bor</label>
+						    <div class="form-group">
+						      <label class="control-label col-sm-2" for="imb" style="font-size:14px">IMB</label>
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="bor">
+						        <input type="file" class="form-control" id="imb">
 						      </div>
 						    </div>
-							<div class="form-group">
+
+						    <div class="form-group">
+						      <label class="control-label col-sm-2" for="surat" style="font-size:14px">Surat Tanah</label>
+						      <div class="col-sm-10">
+						        <input type="file" class="form-control" id="surat">
+						      </div>
+						    </div>
+
+						    <div class="form-group">
+						      <label class="control-label col-sm-2" for="domisili" style="font-size:14px">Keterangan Domisili</label>
+						      <div class="col-sm-10">
+						        <input type="file" class="form-control" id="domisili">dari lurah/camat setempat
+						      </div>
+						    </div>
+
+						    <div class="form-group">
 						      <label class="control-label col-sm-2" for="keberatan" style="font-size:14px">Pernyataan tidak keberatan</label>
 						      <div class="col-sm-10">
 						        <input type="file" class="form-control" id="keberatan">dari masyarakat sekitar proyek
 						      </div>
 						    </div>
 
-							<div class="form-group">
-						      <label class="control-label col-sm-2" for="konservasi" style="font-size:14px">Pernyataan Konservasi dan Pelestarian Alam</label>
+						    <div class="form-group">
+						      <label class="control-label col-sm-2" for="pelestarian" style="font-size:14px">Pernyataan Pelestarian Alam</label>
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="konservasi">
-						      </div>
-						    </div>
-
-						<h2>Data Izin</h2>
-							<div class="form-group">
-						      <label class="control-label col-sm-2" for="alamat" style="font-size:14px">Alamat Lokasi Izin</label>
-						      <div class="col-sm-10">
-						        <textarea class="form-control" rows="5" id="alamat"></textarea>
+						        <input type="file" class="form-control" id="pelestarian">
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="luas" style="font-size:14px">Luas Lokasi Izin</label>
+						      <label class="control-label col-sm-2" for="pbb" style="font-size:14px">Pelunasan PBB</label>
 						      <div class="col-sm-10">
-						        <input type="text" class="form-control" id="luas" placeholder="meter2"> 
+						        <input type="file" class="form-control" id="pbb">PBB tahun akhir
+						      </div>
+						    </div>
+
+						    <div class="form-group">
+						      <label class="control-label col-sm-2" for="profil" style="font-size:14px">Profil</label>
+						      <div class="col-sm-10">
+						        <input type="file" class="form-control" id="profil">Profil memanjang dan melintang dari saluran baru
+						      </div>
+						    </div>
+
+						  	<div class="form-group">
+						      <label class="control-label col-sm-2" for="berita" style="font-size:14px">Berita Acara</label>
+						      <div class="col-sm-10">
+						        <input type="file" class="form-control" id="berita">Serah terima lahan saluran lama dan baru 
+						      </div>
+						    </div>
+
+						  	<div class="form-group">
+						      <label class="control-label col-sm-2" for="dbmp" style="font-size:14px">Rekomendasi dari DBMP</label>
+						      <div class="col-sm-10">
+						        <input type="file" class="form-control" id="dbmp">
 						      </div>
 						    </div>
 
 							<div class="form-group">
-						      <label class="control-label col-sm-2" for="usaha" style="font-size:14px">Kegiatan Usaha</label>
+						      <label class="control-label col-sm-2" for="lurah" style="font-size:14px">Rekomendasi dari Lurah/Camat</label>
 						      <div class="col-sm-10">
-						        <input type="text" class="form-control" id="usaha"> 
+						        <input type="file" class="form-control" id="lurah"> 
 						      </div>
 						    </div>
     					</div>

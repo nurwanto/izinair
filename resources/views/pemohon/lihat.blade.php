@@ -25,6 +25,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+<style>
+	.table {font-size: 14px}
+</style>
 </head>
 <body>
 <div class="header_bg"><!-- start header -->
@@ -66,23 +69,57 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</ol>
 	</div>
 </div>
-<div class="footer_bg"><!-- start footre -->
+<!-- <div class="footer_bg"><!-- start footre --> -->
 	<div class="container">
 		<div class="row  footer">
-			<div class="col-md-3 span1_of_4">
-				<h4>about us</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry .....</p>
-				<h5>Address</h5>
-				<p class="top">500 Lorem Ipsum Dolor Sit,</p>
-				<p>22-56-2-9 Sit Amet,</p>
-				<p>USA</p>
-				<p>Phone:(00) 222 666 444</p>
-				<p>Fax: (000) 000 00 00 0</p>
+			<div class="contact-form">
+				<h2>Daftar Izin</h2>
 			</div>
+			<table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nomor Surat</th>
+                        <th>Jenis</th>
+                        <th>Status</th>
+                        <th>Masa Berlaku</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td> 
+                        <td>0001/01/04/DBMP/2015</td> 
+                        <td>Air Bawah Tanah</td> 
+                        <td>Disetujui</td> 
+                        <td>12 April 2015</td> 
+                    </tr>
+                    <tr>
+                        <td>2</td> 
+                        <td>0002/01/04/DBMP/2015</td> 
+                        <td>Air Bawah Tanah</td> 
+                        <td>Disetujui</td> 
+                        <td>19 April 2015</td> 
+                    </tr>
+					<tr>
+                        <td>3</td> 
+                        <td>0003/02/04/DBMP/2015</td> 
+                        <td>Air Permukaan</td> 
+                        <td>Disetujui</td> 
+                        <td>26 April 2015</td> 
+                    </tr>
+                    <tr>
+                        <td>4</td> 
+                        <td>0004/03/04/DBMP/2015</td> 
+                        <td>Ait Buangan</td> 
+                        <td>Kadaluarsa</td> 
+                        <td>26 April 2015</td> 
+                    </tr>
+                </tbody>
+           </table>
 			<div class="clearfix"></div>
 		</div>
 	</div>
-</div>
+<!-- </div> -->
 <div class="footer_btm"><!-- start footer_btm -->
 	<div class="container">
 		<div class="row  footer1">
