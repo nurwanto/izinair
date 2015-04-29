@@ -80,7 +80,25 @@ class PerpanjanganController extends Controller {
 	{
 		//
 	}
-	public function getform(){
-
+	public function index(){
+		return view('pemohon.form.perpanjangan');
+	}
+	public function getform($jenis, $id){
+		if($jenis==1){
+			$form = Form1::all();
+			return view('pemohon.form.perpanjangan', compact('form'));
+		}
+		else if($jenis==2){
+			$form = Form2::all();
+			return view('pemohon.form.perpanjangan', compact('form'));
+		}
+		else if($jenis==3){
+			$form = Form3::all();
+			return view('pemohon.form.perpanjangan', compact('form'));
+		}
+		else if($jenis==4){
+			$form = Form4::all();
+			return view('pemohon.form.perpanjangan', compact('form'));
+		}
 	}
 }

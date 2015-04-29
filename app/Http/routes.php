@@ -15,7 +15,9 @@ Route::get('/', 'HomeController@role');
 
 Route::get('pemohon/form','FormIzinController@getForm');
 
-Route::get('pemohon/form/perpanjangan', 'PerpanjanganController@getform');
+Route::get('pemohon/form/perpanjangan', 'PerpanjanganController@index');
+
+Route::get('pemohon/form/perpanjangan/{jenis}/{id}', 'PerpanjanganController@getForm');
 
 Route::get('pemohon/form/permohonanbatal', 'PermohonanBatalController@getform');
 
