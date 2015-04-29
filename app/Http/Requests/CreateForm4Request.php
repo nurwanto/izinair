@@ -35,7 +35,7 @@ class CreateForm4Request extends Request {
             'profil' => 'required',
             'berita' => 'required',
             'dbmp' => 'required',
-            'lurah' => 'required',
+            'lurah' => 'required'
 		];
 	}
 
