@@ -14,7 +14,7 @@ class CreateForm2sTable extends Migration {
 	{
 		Schema::create('form2s', function(Blueprint $table)
 		{
-			$table->string('id_penduduk');
+			$table->string('NIK');
 			$table->increments('id');
 			$table->string('telp');
             $table->string('email')->unique();
@@ -28,7 +28,7 @@ class CreateForm2sTable extends Migration {
             $table->string('teknis');
             $table->string('dbmp');
             $table->string('lurah');
-			$table->timestamps('tanggal_diajukan');
+			$table->timestamp('tanggal_diajukan');
 			// $table->nullableTimestamps('tanggalterima_tolak');
 			$table->string('status')->default('diajukan');
 			$table->integer('jangka_waktu')->default(null)->nullable();

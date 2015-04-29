@@ -14,8 +14,8 @@ class CreateForm1sTable extends Migration {
 	{
 		Schema::create('form1s', function(Blueprint $table)
 		{
-			$table->string('id_penduduk');
 			$table->increments('id');
+			$table->string('NIK');
 			$table->string('telp');
             $table->string('email')->unique();
             $table->string('teknis');
@@ -25,7 +25,7 @@ class CreateForm1sTable extends Migration {
             $table->string('alamat');
             $table->string('luas');
             $table->string('usaha');
-			$table->timestamps('tanggal_diajukan');
+			$table->timestamp('tanggal_diajukan');
 			// $table->nullableTimestamps('tanggalterima_tolak');
 			$table->string('status')->default('diajukan');
 			$table->integer('jangka_waktu')->default(null)->nullable();

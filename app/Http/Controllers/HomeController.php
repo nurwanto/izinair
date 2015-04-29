@@ -9,11 +9,20 @@ class HomeController extends Controller {
 
 	//
 	public function role(){
-		// if(admin) 
-			//return view('admin.index');
-		// else if(pegawai) 
-			return view('pemohon.index');
-		// else if(pemohon)
-		// return view('pemohon.index');
+			return view('login');
+	}
+	public function login(){
+		$user = Request::all();
+		$s = Pegawai::where('NIK', '=', $NIK)->firstOrFail();
+	}
+	public function pemohon(){
+		return view('pemohon.index');
+	}
+	public function admin(){
+		return view('admin.index');
+	}
+
+	public function pegawai(){
+		return view('pegawai.index');
 	}
 }

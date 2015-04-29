@@ -45,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{ URL::to('/') }}">home</a></li>
+		        <li><a href="{{ URL::to('admin') }}">home</a></li>
 		        <li class="active"><a href="{{ URL::to('admin/manajemen') }}">manajemen</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
@@ -74,7 +74,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<small>Daftar Pegawai</small>
 					</h1>
 
-					<p><a href="{{ URL::to('crud/create') }}" class="btn btn-primary" role="button">Tambah Pegawai Baru</a></p>
+					<p><a href="{{ URL::to('admin/manajemen/tambah') }}" class="btn btn-primary" role="button">Tambah Pegawai Baru</a></p>
 		<div class="table-responsive">
                             <table class="table table-bordered table-hover">
                                 <thead>
@@ -82,23 +82,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <th>ID</th>
                                         <th>NIP</th>
                                         <th>Nama</th>
+                                        <th>username</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <!--  @foreach($profiles as $value) -->
+                                 @foreach($profiles as $value)
                                     <tr>
-                                        <td><!-- {{{ $value->id }}} --></td>
-                                        <td><!-- {{{ $value->nama }}} --></td>
-                                        <td><!-- {{{ $value->jeniskelamin == 'L' ? 'Laki - laki' : 'Perempuan' }}} --></td>
+                                        <td>{{{ $value->id }}}</td>
+                                        <td>{{{ $value->NIP }}}</td>
+                                        <td>{{{ $value->nama }}}</td>
+                                        <td>{{{ $value->username }}}</td>
+
                                         <td>
                                         	<div class="btn-group">
-												<a href="{{ URL::to('crud/edit/'.$value->id) }}" class="btn btn-primary">Ubah</a>
-												<a href="{{ URL::to('crud/destroy/'.$value->id) }}" class="btn btn-primary">Hapus</a>
+												<a href="{{ URL::to('admin/manajemen/ubah'.$value->id) }}" class="btn btn-primary">Ubah</a>
+												<a href="{{ URL::to('admin/manajemen/hapus'.$value->id) }}" class="btn btn-primary">Hapus</a>
 											</div>
                                         </td>
                                     </tr>
-                                <!-- @endforeach     -->
+                                @endforeach    
                                 </tbody>
                             </table>
 

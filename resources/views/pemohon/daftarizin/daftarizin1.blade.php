@@ -73,7 +73,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<div class="row  footer">
 			<div class="contact-form">
-				<h2>Daftar Izin 1</h2>
+				<h2>Daftar Izin Air Bawah Tanah</h2>
 			</div>
 			<table class="table table-striped table-hover">
                 <thead>
@@ -93,9 +93,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 	<td>{{$form_->status}}</td>
                 	<td>{{$form_->masa_berlaku}}</td>
                 	<td>{{$form_->status}}</td>
-                	if($form->status = 'diajukan'){
-                	<td><a href="{{URL::to('pemohon/batal/1/{{$form_->id}}')}}">batal</a></td>>
-                @endforeach
+        			@if($form->status = 'diterima')
+                		<td><a href="{{URL::to('pemohon/pembatalan/1/.$value->id')}}">batalkan</a></td>>
+        			@endif
+        			@if($form->status = 'ditolak')
+                		<td><a href="{{URL::to('pemohon/pengaduan/1/.$value->id')}}"></a>adukan</td>>
+        			@endif
+       			@endforeach
                 </tbody>
            </table>
 			<div class="clearfix"></div>

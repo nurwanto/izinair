@@ -7,10 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Creation a industrial bootstrap Website Template | Single-Page :: w3layouts</title>
+<title>Form Pengaduan | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,13 +20,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--  webfonts  -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <!-- // webfonts  -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
+
 <div class="header_bg"><!-- start header -->
 	<div class="container">
 		<div class="row header">
@@ -40,15 +41,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{ URL::to('/') }}">home</a></li>
-		        <li><a href="{{ URL::to('persyaratan') }}">persyaratan</a></li>
-		        <li><a href="{{ URL::to('lihat') }}">daftar izin</a></li>
-		        <li><a href="{{ URL::to('tentang') }}">tentang</a></li>
+		        <li><a href="{{URL::to('/')}}">home</a></li>
+		        <li><a href="{{URL::to('pemohon/persyaratan')}}">persyaratan</a></li>
+		        <li><a href="{{URL::to('pemohon/lihat')}}">daftar izin</a></li>
+		        <li><a href="{{URL::to('pemohon/tentang')}}">tentang</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -62,21 +63,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<ol class="breadcrumb">
 		  <li><a href="{{URL::to('/')}}">Home</a></li>
-		  <li class="active">Details</li>
+		  <li class="active">Form</li>
 		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->
 <div class="container">
-	<div class="row details"><!-- start details -->
-		<img src="images/det_pic.jpg" alt=""  class="img-responsive"/>
-		<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry., Lorem Ipsum  dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit esse when an,Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s, </p>
-		<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit</p>
-		<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-		<div class="read_more">
-			<a href="#"><button class="btn_style">view more</button></a>
-		</div>
-	</div><!-- end  details -->
+			<div class="row contact">
+								
+				<div class="col-md-8">
+				  <div class="contact-form">
+				  	<h2>Pengaduan</h2>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<span>no surat izin</span>
+						    	<span><select class="form-control" id="sel1">
+						    	<option></option>
+						    	@foreach($form1 as $value)
+							        <option>{{{ $value->id }}}</option>
+							    @endforeach
+							      </select></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="ajukan pengaduan"></span>
+						  </div>
+					    </form>
+				    </div>
+  				</div>		
+  				<div class="clearfix"></div>		
+		  </div> <!-- end contact -->
 </div>
 </div>
 <div class="footer_bg"><!-- start footre -->

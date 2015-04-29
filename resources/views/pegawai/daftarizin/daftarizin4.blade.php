@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Data Teknis| Izin Air PemKot Bandung</title>
+<title>Daftar Izin | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
 <link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
 <link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
@@ -25,6 +25,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+<style>
+	.table {font-size: 14px}
+</style>
 </head>
 <body>
 <div class="header_bg"><!-- start header -->
@@ -40,13 +43,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.jpg')}}" style="width:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{ URL::to('pegawai') }}">home</a></li>
-		        <li><a href="{{ URL::to('pegawai/lihat') }}">daftar izin</a></li>
+		        <li><a href="{{URL::to('/')}}">home</a></li>
+		        <li><a href="{{URL::to('pemohon/persyaratan')}}">persyaratan</a></li>
+		        <li class="active"><a href="{{URL::to('pemohon/lihat')}}">daftar izin</a></li>
+		        <li><a href="{{URL::to('pemohon/tentang')}}">tentang</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -60,67 +65,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<ol class="breadcrumb">
 		  <li><a href="{{URL::to('/')}}">Home</a></li>
-		  <li class="active">Data Teknis</li>
+		  <li class="active">daftar izin</li>
 		</ol>
 	</div>
 </div>
-<div class="main"><!-- start main -->
-<div class="container">
-			<div class="row contact">			
-				<div class="col-md-10">
-				  <div class="contact-form">
-				  	<h2>Data Teknis Izin Air</h2>
-					    <form class="form-horizontal" role="form" method="post" action="pegawai/datateknis">
-							<div class="form-group">
-						      <label class="control-label col-sm-2" for="judul" style="font-size:14px">Judul</label>
-						      <div class="col-sm-10">
-						        <input type="text" class="form-control" id="id_izin"> 
-						      </div>
-						    </div>
-
-							<div class="form-group">
-						      <label class="control-label col-sm-2" for="no_izin" style="font-size:14px">Nomor Izin</label>
-						      <div class="col-sm-10">
-						        <input type="text" class="form-control" id="jenis_izin"> 
-						      </div>
-						    </div>
-
-							<div class="form-group">
-						      <label class="control-label col-sm-2" for="isi" style="font-size:14px">Isi</label>
-						      <div class="col-sm-10">
-						        <textarea class="form-control" rows="5" id="data"></textarea>
-						      </div>
-						    </div>
-    					</div>
-			    <div class="form-group">        
-			      <div class="col-sm-offset-2 col-sm-10">
-			        <button type="submit" class="btn btn-default">Submit</button>
-			      </div>
-			    </div>
-			</form>
-		</div>
-  		</div>		
-  	<div class="clearfix"></div>		
-</div> <!-- end contact -->
-</div>
-</div>
-<div class="footer_bg"><!-- start footre -->
+<!-- <div class="footer_bg">start footre -->
 	<div class="container">
 		<div class="row  footer">
-			<div class="col-md-3 span1_of_4">
-				<h4>about us</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry .....</p>
-				<h5>Address</h5>
-				<p class="top">500 Lorem Ipsum Dolor Sit,</p>
-				<p>22-56-2-9 Sit Amet,</p>
-				<p>USA</p>
-				<p>Phone:(00) 222 666 444</p>
-				<p>Fax: (000) 000 00 00 0</p>
+			<div class="contact-form">
+				<h2>Daftar Izin 4</h2>
 			</div>
+			<table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nomor Surat</th>
+                        <th>Status</th>
+                        <th>Masa Berlaku</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach($form as $form_)
+                	<td>{{$form_->id}}</td>
+                	<td>{{$form_->id}}</td>
+                	<td>{{$form_->status}}</td>
+                	<td>{{$form_->masa_berlaku}}</td>
+                @endforeach
+                </tbody>
+           </table>
 			<div class="clearfix"></div>
 		</div>
 	</div>
-</div>
+<!-- </div> -->
 <div class="footer_btm"><!-- start footer_btm -->
 	<div class="container">
 		<div class="row  footer1">

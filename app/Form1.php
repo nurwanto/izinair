@@ -3,9 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 
 class Form1 extends Model {
-
-	//
-	protected fillable[
+	protected $fillable = [
 		'telp',
                 'email',
                 'teknis',

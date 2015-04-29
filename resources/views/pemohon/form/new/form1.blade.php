@@ -73,12 +73,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-10">
 				  <div class="contact-form">
 				  	<h2>Data Pemohon</h2>
-					    {!! Form::open(['url' => 'pemohon/form/new/1']) !!}
+					    <form class="form-horizontal" role="form" method="post" action="pemohon/form/new/1">
 
 						    <div class="form-group">
-						      {!! Form::label('telp','No Telp/No Hp', ['class' => 'control-label col-sm-2', 'for' => 'telp', 'style' => 'font-size:14px']) !!}
+						      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
 						      <div class="col-sm-10">
-						        {!! Form::text('telp', null, ['class' => 'form-control']) !!}
+						        <input type="text" class="form-control" id="telp">
 						      </div>
 						    </div>
 
@@ -143,7 +143,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			        <button type="submit" class="btn btn-default">Submit</button>
 			      </div>
 			    </div>
-			{!! Form::close()!!}
+			</form>
 		</div>
   		</div>		
   	<div class="clearfix"></div>		

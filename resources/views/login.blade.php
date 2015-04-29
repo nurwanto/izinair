@@ -7,10 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Creation a industrial bootstrap Website Template | Blog :: w3layouts</title>
+<title>Login | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,13 +20,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--  webfonts  -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <!-- // webfonts  -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
+
 <div class="header_bg"><!-- start header -->
 	<div class="container">
 		<div class="row header">
@@ -40,86 +41,81 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="menu nav navbar-nav ">
-		        <li><a href="index.html">home</a></li>
-		        <li><a href="feature.html">features</a></li>
-		        <li class="active"><a href="blog.html">blog</a></li>
-		        <li><a href="about.html">about</a></li>
-		        <li><a href="contact.html">contact</a></li>
-		      </ul>
-		      <form class="navbar-form navbar-right" role="search">
-		        <div class="form-group my_search">
-		          <input type="text" class="form-control" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-default">Search</button>
-		      </form>
+		      
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
 		<ol class="breadcrumb">
-		  <li><a href="index.html">Home</a></li>
-		  <li class="active">Blog</li>
+		  <li><a href="{{URL::to('/')}}">Home</a></li>
+		  <li class="active">Form</li>
 		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->
 <div class="container">
-	<div class="blog"><!-- start blog -->
-		<div class="row">
-			<div class="col-md-8 blog_left">
-				<a href="single-page.html"><img src="images/blog_pic1.jpg" alt="" class="blog_img img-responsive"/></a>
-				<h4><a href="single-page.html">Lorem Ipsum is simply dummy text of the printing and typesetting industry </a></h4>
-				<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
-				<div class="read_more">
-					<a href="single-page.html"><button class="btn_style">view more</button></a>
-				</div>
-				<a href="single-page.html"><img src="images/blog_pic1.jpg" alt="" class="blog_img1 img-responsive"/></a>
-				<h4><a href="single-page.html">Lorem Ipsum is simply dummy text of the printing and typesetting industry </a></h4>
-				<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
-				<div class="read_more">
-					<a href="single-page.html"><button class="btn_style">view more</button></a>
-				</div>
-			</div>
-			<div class="col-md-4 blog_right">
-				<h4>Ads 125 x 125</h4>
-				<ul class="ads_nav list-unstyled">
-					<li><a href="#"><img src="images/ads_pic.jpg" alt=""> </a></li>
-					<li><a href="#"><img src="images/ads_pic.jpg" alt=""> </a></li>
-					<li><a href="#"><img src="images/ads_pic.jpg" alt=""> </a></li>
-					<li><a href="#"><img src="images/ads_pic.jpg" alt=""> </a></li>
-					<div class="clearfix"></div>
-				</ul>
-				<ul class="tag_nav list-unstyled">
-					<h4>tags</h4>
-						<li><a href="#">art</a></li>
-						<li><a href="#">awesome</a></li>
-						<li><a href="#">classic</a></li>
-						<li><a href="#">photo</a></li>
-						<li><a href="#">wordpress</a></li>
-						<li><a href="#">videos</a></li>
-						<li><a href="#">standard</a></li>
-						<li><a href="#">gaming</a></li>
-						<li><a href="#">photo</a></li>
-						<li><a href="#">music</a></li>
-						<li><a href="#">data</a></li>
-						<div class="clearfix"></div>
-				</ul>
-				<div class="news_letter">
-					<h4>news letter</h4>
-						<form>
-							<input type="text" placeholder="Your email address">
-							<input type="submit" value="subscribe">
-						</form>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div><!-- end blog -->
+			<div class="row contact"><!-- start contact -->				
+				
+					<!-- <div class="contact_info">
+			    	 	<h2>Find Us Here</h2>
+			    	 		<div class="map">
+					   			<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
+					   		</div>
+      				</div -->>
+      			<!-- <div class="company_ad">
+				     	<h2>find Address :</h2>
+      				<address>
+						 <p>500 Lorem Ipsum Dolor Sit,</p>
+						 <p>22-56-2-9 Sit Amet, Lorem,</p>
+						 <p>USA</p>
+				   		<p>Phone:(00) 222 666 444</p>
+				   		<p>Fax: (000) 000 00 00 0</p>
+				 	 	<p>Email: <a href="mailto:info@mycompany.com">info(at)mycompany.com</a></p>
+				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
+				   	</address>
+				   </div> -->
+								
+				<div class="col-md-8">
+				  <div class="contact-form">
+				  	<h2>Login</h2>
+					    <form method="post" action="login">
+					    	<div class="form-group">
+						      <label class="control-label col-sm-2" for="username" style="font-size:14px">Username</label>
+						      <div class="col-sm-10">
+						        <input type="text" class="form-control" id="username">
+						      </div>
+						    </div>
+
+						    <div class="form-group">
+						      <label class="control-label col-sm-2" for="password" style="font-size:14px">Password</label>
+						      <div class="col-sm-10">
+						        <input type="password" class="form-control" id="password">
+						      </div>
+						    </div>
+						   <!--  <div>
+						    	<span>e-mail</span>
+						    	<span><input type="email" class="form-control" id="inputEmail3"></span>
+						    </div>
+						    <div>
+						     	<span>mobile</span>
+						    	<span><input type="number" class="form-control" id="number"></span>
+						    </div>
+						    <div>
+						    	<span>subject</span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div> -->
+						   <div>
+						   		<span><input type="submit" value="login"></span>
+						  </div>
+					    </form>
+				    </div>
+  				</div>		
+  				<div class="clearfix"></div>		
+		  </div> <!-- end contact -->
 </div>
 </div>
 <div class="footer_bg"><!-- start footre -->

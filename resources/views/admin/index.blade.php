@@ -45,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li class="active"><a href="{{ URL::to('/') }}">home</a></li>
+		        <li class="active"><a href="{{ URL::to('admin') }}">home</a></li>
 		        <li><a href="{{ URL::to('admin/manajemen') }}">manajemen</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">

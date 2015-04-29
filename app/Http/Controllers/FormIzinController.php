@@ -1,5 +1,9 @@
 <?php namespace IzinAir\Http\Controllers;
 
+use IzinAir\Form1;
+use IzinAir\Form2;
+use IzinAir\Form3;
+use IzinAir\Form4;
 use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
 
@@ -22,19 +26,19 @@ class FormIzinController extends Controller {
 			return view('pemohon.form.new.form4');
 	}
 
-	public function postFormNew1(CreateForm1Request $req){
+	public function postFormNew1(Requests\CreateForm1Request $req){
 		Form1::create(Request::all());
 		return redirect('pemohon/daftarizin/1');
 	}
-	public function postFormNew2(CreateForm2Request $req){
+	public function postFormNew2(Requests\CreateForm2Request $req){
 		Form2::create(Request::all());
 		return redirect('pemohon/daftarizin/2');
 	}
-	public function postFormNew3(CreateForm3Request $req){
+	public function postFormNew3(Requests\CreateForm3Request $req){
 		Form3::create(Request::all());
 		return redirect('pemohon/daftarizin/3');
 	}
-	public function postFormNew4(CreateForm4Request $req){
+	public function postFormNew4(Requests\CreateForm4Request $req){
 		Form4::create(Request::all());
 		return redirect('pemohon/daftarizin/4');
 	}

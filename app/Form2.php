@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class Form2 extends Model {
 
 		//
-		protected fillable[
+		protected $fillable = [
 					'telp',
 	                'email',
 	                'akta',

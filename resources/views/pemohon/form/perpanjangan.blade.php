@@ -69,26 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <div class="main"><!-- start main -->
 <div class="container">
-			<div class="row contact"><!-- start contact -->				
-				
-					<!-- <div class="contact_info">
-			    	 	<h2>Find Us Here</h2>
-			    	 		<div class="map">
-					   			<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
-					   		</div>
-      				</div -->>
-      			<!-- <div class="company_ad">
-				     	<h2>find Address :</h2>
-      				<address>
-						 <p>500 Lorem Ipsum Dolor Sit,</p>
-						 <p>22-56-2-9 Sit Amet, Lorem,</p>
-						 <p>USA</p>
-				   		<p>Phone:(00) 222 666 444</p>
-				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <a href="mailto:info@mycompany.com">info(at)mycompany.com</a></p>
-				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
-				   	</address>
-				   </div> -->
+			<div class="row contact">
 								
 				<div class="col-md-8">
 				  <div class="contact-form">
@@ -97,24 +78,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					    	<div>
 						    	<span>no surat izin</span>
 						    	<span><select class="form-control" id="sel1">
-							        <option>1</option>
-							        <option>2</option>
-							        <option>3</option>
-							        <option>4</option>
+						    	<option></option>
+						    	@foreach($form1 as $value)
+							        <option>{{{ $value->id }}}</option>
+							    @endforeach
 							      </select></span>
 						    </div>
-						   <!--  <div>
-						    	<span>e-mail</span>
-						    	<span><input type="email" class="form-control" id="inputEmail3"></span>
-						    </div>
-						    <div>
-						     	<span>mobile</span>
-						    	<span><input type="number" class="form-control" id="number"></span>
-						    </div>
-						    <div>
-						    	<span>subject</span>
-						    	<span><textarea name="userMsg"> </textarea></span>
-						    </div> -->
 						   <div>
 						   		<span><input type="submit" value="ajukan perpanjangan"></span>
 						  </div>

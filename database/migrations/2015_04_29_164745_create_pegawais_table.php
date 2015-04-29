@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePegawaiTable extends Migration {
+class CreatePegawaisTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,15 @@ class CreatePegawaiTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('pegawai', function(Blueprint $table)
+		Schema::create('pegawais', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('NIP');
 			$table->string('nama');
 			$table->string('username');
 			$table->string('password');
-			$table->timestamps('tanggal_daftar');
+			$table->string('role')->default('pegawai');
+			$table->timestamp('tanggal_daftar');
 		});
 	}
 
@@ -29,7 +31,7 @@ class CreatePegawaiTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('pegawai');
+		Schema::drop('pegawais');
 	}
 
 }

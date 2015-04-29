@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNotifikasiTable extends Migration {
+class CreatePengaduansTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,13 @@ class CreateNotifikasiTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('notifikasi', function(Blueprint $table)
+		Schema::create('pengaduans', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('id_izin');
+			$table->integer('id_izin');
 			$table->string('jenis_izin');
 			$table->string('isi');
-			$table->timestamps('tanggal_notifikasi');
+			$table->timestamp('tanggal_pengaduan');
 		});
 	}
 
@@ -29,7 +29,7 @@ class CreateNotifikasiTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('notifikasi');
+		Schema::drop('pengaduans');
 	}
 
 }

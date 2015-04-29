@@ -15,10 +15,10 @@ class CreateDatateknisTable extends Migration {
 		Schema::create('datateknis', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('id_izin');
+			$table->integer('id_izin');
 			$table->string('jenis_izin');
 			$table->string('data');
-			$table->timestamps('tanggal_data');
+			$table->timestamp('tanggal_data');
 		});
 	}
 
