@@ -10,7 +10,7 @@ use IzinAir\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class PermohonanPembatalanController extends Controller {
+class PembatalanController extends Controller {
 
 	public function getform(){
 		$form1 = Form1::all();

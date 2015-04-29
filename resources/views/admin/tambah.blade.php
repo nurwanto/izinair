@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Manajemen | Izin Air PemKot Bandung</title>
+<title>Tambah Pegawai| Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
 <link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
 <link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
@@ -45,8 +45,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{ URL::to('admin') }}">home</a></li>
-		        <li class="active"><a href="{{ URL::to('admin/manajemen') }}">manajemen</a></li>
+		        <li><a href="{{ URL::to('pegawai') }}">home</a></li>
+		        <li><a href="{{ URL::to('pegawai/lihat') }}">daftar izin</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -60,55 +60,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<ol class="breadcrumb">
 		  <li><a href="{{URL::to('/')}}">Home</a></li>
-		  <li class="active">manajemen</li>
 		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->
 <div class="container">
-			<div class="row contact"><!-- start contact -->	
+			<div class="row contact">			
+				<div class="col-md-10">
+				  <div class="contact-form">
+				  	<h2>Tambah Pegawai</h2>
+					    <form class="form-horizontal" role="form" method="post" action="admin/manajemen/tambah">
+							<div class="form-group">
+						      <label class="control-label col-sm-2" for="NIP" style="font-size:14px">NIP</label>
+						      <div class="col-sm-10">
+						        <input type="text" class="form-control" id="NIP"> 
+						      </div>
+						    </div>
 
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="page-header">Halaman
-					<small>Daftar Pegawai</small>
-					</h1>
+							<div class="form-group">
+						      <label class="control-label col-sm-2" for="nama" style="font-size:14px">Nama Pegawai</label>
+						      <div class="col-sm-10">
+						        <input type="text" class="form-control" id="nama"> 
+						      </div>
+						    </div>
 
-					<p><a href="{{ URL::to('admin/manajemen/tambah') }}" class="btn btn-primary" role="button">Tambah Pegawai Baru</a></p>
-		<div class="table-responsive">
-                            <table class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>NIP</th>
-                                        <th>Nama</th>
-                                        <th>username</th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                 @foreach($profiles as $value)
-                                    <tr>
-                                        <td>{{{ $value->id }}}</td>
-                                        <td>{{{ $value->NIP }}}</td>
-                                        <td>{{{ $value->nama }}}</td>
-                                        <td>{{{ $value->username }}}</td>
+							<div class="form-group">
+						      <label class="control-label col-sm-2" for="username" style="font-size:14px">Username</label>
+						      <div class="col-sm-10">
+						        <input type="text" class="form-control" id="username"> 
+						      </div>
 
-                                        <td>
-                                        	<div class="btn-group">
-												<a href="{{ URL::to('admin/manajemen/ubah'.$value->id) }}">Ubah</a>
-												<a href="{{ URL::to('admin/manajemen/hapus'.$value->id) }}">Hapus</a>
-											</div>
-                                        </td>
-                                    </tr>
-                                @endforeach    
-                                </tbody>
-                            </table>
-
-				</div>
-			</div>	
-		  </div> <!-- end contact -->
-</div>
+						     <div class="form-group">
+						      <label class="control-label col-sm-2" for="password" style="font-size:14px">Password</label>
+						      <div class="col-sm-10">
+						        <input type="password" class="form-control" id="password">
+						      </div>
+						    </div>
+    					</div>
+			    <div class="form-group">        
+			      <div class="col-sm-offset-2 col-sm-10">
+			        <button type="submit" class="btn btn-default">Submit</button>
+			      </div>
+			    </div>
+			</form>
+		</div>
+  		</div>		
+  	<div class="clearfix"></div>		
+</div> <!-- end contact -->
 </div>
 </div>
 <div class="footer_bg"><!-- start footre -->
@@ -123,35 +121,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p>USA</p>
 				<p>Phone:(00) 222 666 444</p>
 				<p>Fax: (000) 000 00 00 0</p>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<h4>latest posts</h4>
-				<span><a href="#"> Fusce scelerisque massa vitae </a></span>
-				<p>25 april 2013</p>
-				<span><a href="#">Pellentesque bibendum ante </a></span>
-				<p>15 march 2013</p>
-				<span><a href="#">Maecenas quis ipsum sed magna </a></span>
-				<p>25 april 2013</p>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<h4>latest comments</h4>
-				<span><a href="#">It is a long established fact that a reader will looking layout.</a></span>
-				<span><a href="#">There are many variations of passages of Lorem Ipsum available words.</a></span>
-				<span><a href="#">It is a long established fact that a reader will looking layout.</a></span>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<h4>photostream</h4>
-				<ul class="f_nav list-unstyled">
-					<li><a href="#"><img src="images/f_pic1.jpg" alt="" class="img-responsive"/></a></li>
-					<li><a href="#"><img src="images/f_pic3.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic4.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic5.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic7.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic1.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic6.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic8.jpg" alt="" class="img-responsive"/> </a></li>
-					<li><a href="#"><img src="images/f_pic2.jpg" alt="" class="img-responsive"/> </a></li>
-				</ul>
 			</div>
 			<div class="clearfix"></div>
 		</div>

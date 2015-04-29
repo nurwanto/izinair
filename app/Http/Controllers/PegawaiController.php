@@ -23,4 +23,13 @@ class PegawaiController extends Controller {
 		// Pegawai::
 		return redirect('admin/manajemen');
 	}
+	public function gettambah(){
+		// Pegawai::
+		return view('admin.tambah');
+	}
+	public function posttambah(Requests\CreatePegawaiRequest $req){
+		// Pegawai::
+		Pegawai::create(Request::all());
+		return redirect('admin/manajemen');
+	}
 }

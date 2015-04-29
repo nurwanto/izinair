@@ -50,10 +50,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
-		<ol class="breadcrumb">
-		  <li><a href="{{URL::to('/')}}">Home</a></li>
-		  <li class="active">Form</li>
-		</ol>
 	</div>
 </div>
 <div class="main"><!-- start main -->

@@ -73,7 +73,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-10">
 				  <div class="contact-form">
 				  	<h2>Data Pemohon</h2>
-					    <form class="form-horizontal" role="form" method="post" action="pemohon/form/new/1">
+					    <form class="form-horizontal" role="form" method="post" action="1">
 
 						    <div class="form-group">
 						      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
@@ -142,6 +142,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			      <div class="col-sm-offset-2 col-sm-10">
 			        <button type="submit" class="btn btn-default">Submit</button>
 			      </div>
+			      @if($errors->any())
+			      	@foreach($errors as $e)
+			      		{{$e}}
+			      	@endforeach
+			      @endif
 			    </div>
 			</form>
 		</div>

@@ -27,7 +27,23 @@ class FormIzinController extends Controller {
 	}
 
 	public function postFormNew1(Requests\CreateForm1Request $req){
-		Form1::create(Request::all());
+		$teknis = Request::file('teknis');
+		$bor = Request::file('bor');
+		$keberatan = Request::file('keberatan');
+		$konservasi = Request::file('konservasi');
+		$extension1 = $teknis->getClientOriginalExtension();
+		$extension2 = $teknis->getClientOriginalExtension();
+		$extension3 = $teknis->getClientOriginalExtension();
+		$extension4 = $teknis->getClientOriginalExtension();
+		Storage::disk('local')->put($teknis->getFilename().'.'.$extension1,  File::get($teknis));
+		Storage::disk('local')->put($bor->getFilename().'.'.$extension2,  File::get($bor));
+		Storage::disk('local')->put($keberatan->getFilename().'.'.$extension3,  File::get($keberatan));
+		Storage::disk('local')->put($konservasi->getFilename().'.'.$extension4,  File::get($konservasi));
+		$entry = new Form1();
+		$entry->teknis = $teknis->getClientMimeType();
+		$entry->original_filename = $file->getClientOriginalName();
+		$entry->filename = $file->getFilename().'.'.$extension;
+		$entry->save();
 		return redirect('pemohon/daftarizin/1');
 	}
 	public function postFormNew2(Requests\CreateForm2Request $req){

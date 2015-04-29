@@ -73,7 +73,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-10">
 				  <div class="contact-form">
 				  	<h2>Data Pemohon</h2>
-					    <form class="form-horizontal" role="form" method="post" action="pemohon/form/new/3">
+					    <form class="form-horizontal" role="form" method="post" action="3">
 
 						    
 

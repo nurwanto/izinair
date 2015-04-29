@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@role');
 
-Route::get('login', 'HomeController@login');
+Route::post('login', 'HomeController@login');
 
 Route::get('pemohon', 'HomeController@pemohon');
 
@@ -115,6 +115,10 @@ Route::get('admin/manajemen/ubah/{id}','PegawaiController@ubah');
 Route::get('admin/manajemen/hapus/{id}','PegawaiController@hapus');
 
 Route::get('admin/manajemen/admin/{id}','PegawaiController@admin');
+
+Route::get('admin/manajemen/tambah','PegawaiController@gettambah');
+
+Route::post('admin/manajemen/tambah','PegawaiController@posttambah');
 
 
 Route::get('pegawai/lihat', 'DaftarIzinController@indexpegawai');
