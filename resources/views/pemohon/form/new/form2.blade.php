@@ -103,7 +103,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <div class="form-group">
 						      <label class="control-label col-sm-2" for="no_imb" style="font-size:14px">IMB</label>
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="no_imb">
+						        <input type="text" class="form-control" id="no_imb">
 						      </div>
 						    </div>
 
