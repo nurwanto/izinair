@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDatateknis extends Migration {
+class CreatePermohonanPembatalanTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,12 @@ class CreateDatateknis extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('datateknis', function(Blueprint $table)
+		Schema::create('permohonanpembatalan', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->string('id_izin');
+			$table->string('jenis_izin');
+			$table->timestamps('tanggal_ajuan');
 		});
 	}
 
@@ -26,7 +28,7 @@ class CreateDatateknis extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('datateknis');
+		Schema::drop('permohonanpembatalan');
 	}
 
 }

@@ -22,7 +22,20 @@ class CreateForm4Request extends Request {
 	public function rules()
 	{
 		return [
-			//
+			'id_penduduk' => 'required',
+			'telp' => 'required',
+            'email' => 'required',
+            'akta' => 'required',
+            'no_imb' => 'required',
+            'surat_tanah' => 'required',
+            'domisili' => 'required',
+            'keberatan' => 'required',
+            'pelestarian' => 'required',
+            'no_pbb' => 'required',
+            'profil' => 'required',
+            'berita' => 'required',
+            'dbmp' => 'required',
+            'lurah' => 'required',
 		];
 	}
 

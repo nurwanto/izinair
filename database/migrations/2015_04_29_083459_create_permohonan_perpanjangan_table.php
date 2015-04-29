@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePengaduan extends Migration {
+class CreatePermohonanPerpanjanganTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,12 @@ class CreatePengaduan extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('pengaduan', function(Blueprint $table)
+		Schema::create('permohonanperpanjangan', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->string('id_izin');
+			$table->string('jenis_izin');
+			$table->timestamps('tanggal_ajuan');
 		});
 	}
 
@@ -26,7 +28,7 @@ class CreatePengaduan extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('pengaduan');
+		Schema::drop('permohonanperpanjangan');
 	}
 
 }
