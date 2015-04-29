@@ -11,7 +11,7 @@ class CreateForm2Request extends Request {
 	 */
 	public function authorize()
 	{
-		return false;
+		return true;
 	}
 
 	/**
