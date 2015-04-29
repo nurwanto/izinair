@@ -27,7 +27,13 @@ Route::get('pemohon/lihat', 'DaftarIzinController@index');
 
 Route::get('pemohon/form/new/{id}','FormIzinController@getFormNew');
 
-Route::post('pemohon/form/new/{id}','FormIzinController@postFormNew');
+Route::post('pemohon/form/new/1','FormIzinController@postFormNew1');
+
+Route::post('pemohon/form/new/2','FormIzinController@postFormNew2');
+
+Route::post('pemohon/form/new/3','FormIzinController@postFormNew3');
+
+Route::post('pemohon/form/new/4','FormIzinController@postFormNew4');
 
 Route::get('pemohon/daftarizin/{id}', 'DaftarIzinController@getallizin');
 

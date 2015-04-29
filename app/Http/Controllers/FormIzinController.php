@@ -21,23 +21,21 @@ class FormIzinController extends Controller {
 		else if($id==4)
 			return view('pemohon.form.new.form4');
 	}
-	public function postFormNew($id){
-		$input = Request::all();
-		if($id==1){
-			Form1::create($input);
-			return view('pemohon.daftarizin.1');
-		}
-		else if($id==2){
-			Form2::create($input);
-			return view('pemohon.daftarizin.2');
-		}
-		else if($id==3){
-			Form3::create($input);
-			return view('pemohon.daftarizin.3');
-		}
-		else if($id==4){
-			Form4::create($input);
-			return view('pemohon.daftarizin.4');
-		}
+
+	public function postFormNew1(CreateForm1Request $req){
+		Form1::create(Request::all());
+		return redirect('pemohon/daftarizin/1');
+	}
+	public function postFormNew2(CreateForm2Request $req){
+		Form2::create(Request::all());
+		return redirect('pemohon/daftarizin/2');
+	}
+	public function postFormNew3(CreateForm3Request $req){
+		Form3::create(Request::all());
+		return redirect('pemohon/daftarizin/3');
+	}
+	public function postFormNew4(CreateForm4Request $req){
+		Form4::create(Request::all());
+		return redirect('pemohon/daftarizin/4');
 	}
 }
