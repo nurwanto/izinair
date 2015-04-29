@@ -34,7 +34,7 @@ class CreateForm2Request extends Request {
             'no_pbb' => 'required',
             'teknis' => 'required',
             'dbmp' => 'required',
-            'lurah' => 'required',
+            'lurah' => 'required'
 		];
 	}
 
