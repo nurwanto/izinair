@@ -11,17 +11,18 @@ class HomeController extends Controller {
 	public function role(){
 			return view('login');
 	}
-	public function login(Request $req){
-		// $this->validate($req, ['username'=>'required','password'=>'required']);
-		// $s = Pegawai::where('username', '=', Request::get('username'))->firstOrFail();
-		// foreach($s as $value){
-		// 	if($value->role=="admin"){
-		// 		return redirect('admin');
-		// 	}
-		// 	else if($value->role=="pegawai"){
-				return redirect('pegawai');
-		// 	}
-		// }
+	public function login(){
+		$this->validate($req, ['username'=>'required','password'=>'required']);
+		$s = Pegawai::where('username', '=', Request::get('username'))->firstOrFail();
+		foreach($s as $value){
+			if($value->role=="admin"){
+				return $value->username;//redirect('admin');
+			}
+			else if($value->role=="pegawai"){
+				return $value->username;//return redirect('pegawai');
+			}
+		}
+		return $req->username;
 	}
 	public function pemohon(){
 		return view('pemohon.index');

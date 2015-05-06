@@ -11,131 +11,131 @@
 |
 */
 
-Route::get('/', 'HomeController@role');
+Route::get('izinair', 'HomeController@role');
 
-Route::post('login', 'HomeController@login');
+Route::post('izinair/login', 'HomeController@login');
 
-Route::get('pemohon', 'HomeController@pemohon');
+Route::get('izinair/pemohon', 'HomeController@pemohon');
 
-Route::get('admin', 'HomeController@admin');
+Route::get('izinair/admin', 'HomeController@admin');
 
-Route::get('pegawai', 'HomeController@pegawai');
+Route::get('izinair/pegawai', 'HomeController@pegawai');
 
-Route::get('pemohon/form','FormIzinController@getForm');
-
-
-Route::get('pemohon/form/perpanjangan', 'PerpanjanganController@getform');
-
-Route::post('pemohon/form/perpanjangan', 'PerpanjanganController@postform');
-
-Route::get('pemohon/perpanjangan/1/{id}', 'PerpanjanganController@perpanjang1');
-
-Route::get('pemohon/perpanjangan/2/{id}', 'PerpanjanganController@perpanjang2');
-
-Route::get('pemohon/perpanjangan/3/{id}', 'PerpanjanganController@perpanjang3');
-
-Route::get('pemohon/perpanjangan/4/{id}', 'PerpanjanganController@perpanjang4');
+Route::get('izinair/pemohon/form','FormIzinController@getForm');
 
 
+Route::get('izinair/pemohon/form/perpanjangan', 'PerpanjanganController@getform');
 
-Route::get('pemohon/form/pembatalan', 'PembatalanController@getform');
+Route::post('izinair/pemohon/form/perpanjangan', 'PerpanjanganController@postform');
 
-Route::post('pemohon/form/pembatalan', 'PembatalanController@postform');
+Route::get('izinair/pemohon/perpanjangan/1/{id}', 'PerpanjanganController@perpanjang1');
 
-Route::get('pemohon/pembatalan/1/{id}', 'PembatalanController@pembatalan1');
+Route::get('izinair/pemohon/perpanjangan/2/{id}', 'PerpanjanganController@perpanjang2');
 
-Route::get('pemohon/pembatalan/2/{id}', 'PembatalanController@pembatalan2');
+Route::get('izinair/pemohon/perpanjangan/3/{id}', 'PerpanjanganController@perpanjang3');
 
-Route::get('pemohon/pembatalan/3/{id}', 'PembatalanController@pembatalan3');
-
-Route::get('pemohon/pembatalan/4/{id}', 'PembatalanController@pembatalan4');
-
-
-Route::get('pemohon/form/pengaduan', 'PengaduanController@getform');
-
-Route::post('pemohon/form/pengaduan', 'PengaduanController@postform');
-
-Route::get('pemohon/pengaduan/1/{id}', 'PengaduanController@pengaduan1');
-
-Route::get('pemohon/pengaduan/2/{id}', 'PengaduanController@pengaduan2');
-
-Route::get('pemohon/pengaduan/3/{id}', 'PengaduanController@pengaduan3');
-
-Route::get('pemohon/pengaduan/4/{id}', 'PengaduanController@pengaduan4');
+Route::get('izinair/pemohon/perpanjangan/4/{id}', 'PerpanjanganController@perpanjang4');
 
 
-Route::get('pemohon/form/new/{id}','FormIzinController@getFormNew');
 
-Route::post('pemohon/form/new/1','FormIzinController@postFormNew1');
+Route::get('izinair/pemohon/form/pembatalan', 'PembatalanController@getform');
 
-Route::post('pemohon/form/new/2','FormIzinController@postFormNew2');
+Route::post('izinair/pemohon/form/pembatalan', 'PembatalanController@postform');
 
-Route::post('pemohon/form/new/3','FormIzinController@postFormNew3');
+Route::get('izinair/pemohon/pembatalan/1/{id}', 'PembatalanController@pembatalan1');
 
-Route::post('pemohon/form/new/4','FormIzinController@postFormNew4');
+Route::get('izinair/pemohon/pembatalan/2/{id}', 'PembatalanController@pembatalan2');
 
-Route::get('pemohon/daftarizin/{id}', 'DaftarIzinController@getallizinpemohon');
+Route::get('izinair/pemohon/pembatalan/3/{id}', 'PembatalanController@pembatalan3');
 
-
-Route::get('pemohon/form/pembayaran', 'PembayaranController@getform');
-
-Route::post('pemohon/form/pembayaran', 'PembayaranController@postform');
-
-Route::get('pemohon/form/pembayaran/1/{id}', 'PembayaranController@pembayaran1');
-
-Route::get('pemohon/form/pembayaran/2/{id}', 'PembayaranController@pembayaran2');
-
-Route::get('pemohon/form/pembayaran/3/{id}', 'PembayaranController@pembayaran3');
-
-Route::get('pemohon/form/pembayaran/4/{id}', 'PembayaranController@pembayaran4');
+Route::get('izinair/pemohon/pembatalan/4/{id}', 'PembatalanController@pembatalan4');
 
 
-Route::get('pemohon/lihat', 'DaftarIzinController@indexpemohon');
+Route::get('izinair/pemohon/form/pengaduan', 'PengaduanController@getform');
 
-Route::get('pemohon/lihat/{id}', 'DaftarIzinController@getallizinpemohon');
+Route::post('izinair/pemohon/form/pengaduan', 'PengaduanController@postform');
+
+Route::get('izinair/pemohon/pengaduan/1/{id}', 'PengaduanController@pengaduan1');
+
+Route::get('izinair/pemohon/pengaduan/2/{id}', 'PengaduanController@pengaduan2');
+
+Route::get('izinair/pemohon/pengaduan/3/{id}', 'PengaduanController@pengaduan3');
+
+Route::get('izinair/pemohon/pengaduan/4/{id}', 'PengaduanController@pengaduan4');
 
 
-Route::get('pemohon/persyaratan', function() {
+Route::get('izinair/pemohon/form/new/{id}','FormIzinController@getFormNew');
+
+Route::post('izinair/pemohon/form/new/1','FormIzinController@postFormNew1');
+
+Route::post('izinair/pemohon/form/new/2','FormIzinController@postFormNew2');
+
+Route::post('izinair/pemohon/form/new/3','FormIzinController@postFormNew3');
+
+Route::post('izinair/pemohon/form/new/4','FormIzinController@postFormNew4');
+
+Route::get('izinair/pemohon/daftarizin/{id}', 'DaftarIzinController@getallizinpemohon');
+
+
+Route::get('izinair/pemohon/form/pembayaran', 'PembayaranController@getform');
+
+Route::post('izinair/pemohon/form/pembayaran', 'PembayaranController@postform');
+
+Route::get('izinair/pemohon/form/pembayaran/1/{id}', 'PembayaranController@pembayaran1');
+
+Route::get('izinair/pemohon/form/pembayaran/2/{id}', 'PembayaranController@pembayaran2');
+
+Route::get('izinair/pemohon/form/pembayaran/3/{id}', 'PembayaranController@pembayaran3');
+
+Route::get('izinair/pemohon/form/pembayaran/4/{id}', 'PembayaranController@pembayaran4');
+
+
+Route::get('izinair/pemohon/lihat', 'DaftarIzinController@indexpemohon');
+
+Route::get('izinair/pemohon/lihat/{id}', 'DaftarIzinController@getallizinpemohon');
+
+
+Route::get('izinair/pemohon/persyaratan', function() {
 	return View::make('pemohon.persyaratan');
 });
 
-Route::get('pemohon/tentang', function() {
+Route::get('izinair/pemohon/tentang', function() {
 	return View::make('pemohon.tentang');
 });
 
-Route::get('pemohon/kontak', function() {
+Route::get('izinair/pemohon/kontak', function() {
 	return View::make('pemohon.kontak');
 });
 
 
-Route::get('admin/manajemen', 'PegawaiController@index');
+Route::get('izinair/admin/manajemen', 'PegawaiController@index');
 
-Route::get('admin/manajemen/ubah/{id}','PegawaiController@ubah');
+Route::get('izinair/admin/manajemen/ubah/{id}','PegawaiController@ubah');
 
-Route::get('admin/manajemen/hapus/{id}','PegawaiController@hapus');
+Route::get('izinair/admin/manajemen/hapus/{id}','PegawaiController@hapus');
 
-Route::get('admin/manajemen/admin/{id}','PegawaiController@admin');
+Route::get('izinair/admin/manajemen/admin/{id}','PegawaiController@admin');
 
-Route::get('admin/manajemen/tambah','PegawaiController@gettambah');
+Route::get('izinair/admin/manajemen/tambah','PegawaiController@gettambah');
 
-Route::post('admin/manajemen/tambah','PegawaiController@posttambah');
-
-
-Route::get('pegawai/lihat', 'DaftarIzinController@indexpegawai');
-
-Route::get('pegawai/lihat/{id}', 'DaftarIzinController@getallizinpegawai');
+Route::post('izinair/admin/manajemen/tambah','PegawaiController@posttambah');
 
 
-Route::get('pegawai/validasi', function() {
+Route::get('izinair/pegawai/lihat', 'DaftarIzinController@indexpegawai');
+
+Route::get('izinair/pegawai/lihat/{id}', 'DaftarIzinController@getallizinpegawai');
+
+
+Route::get('izinair/pegawai/validasi', function() {
 	return View::make('pegawai.validasi');
 });
 
 
-Route::get('pegawai/datateknis', 'DataTeknisController@getForm');
+Route::get('izinair/pegawai/datateknis', 'DataTeknisController@getForm');
 
-Route::post('pegawai/datateknis', 'DataTeknisController@postForm');
+Route::post('izinair/pegawai/datateknis', 'DataTeknisController@postForm');
 
 
-Route::get('pegawai/notifikasi', 'NotifikasiController@getForm');
+Route::get('izinair/pegawai/notifikasi', 'NotifikasiController@getForm');
 
-Route::post('pegawai/notifikasi', 'NotifikasiController@postForm');
+Route::post('izinair/pegawai/notifikasi', 'NotifikasiController@postForm');
