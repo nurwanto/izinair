@@ -48,10 +48,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{URL::to('/')}}">home</a></li>
-		        <li><a href="{{URL::to('pemohon/persyaratan')}}">persyaratan</a></li>
-		        <li class="active"><a href="{{URL::to('pemohon/lihat')}}">daftar izin</a></li>
-		        <li><a href="{{URL::to('pemohon/tentang')}}">tentang</a></li>
+		        <li><a href="{{ URL::to('pegawai') }}">home</a></li>
+		        <li class="active"><a href="{{ URL::to('pegawai/lihat') }}">daftar izin</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">

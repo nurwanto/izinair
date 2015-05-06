@@ -78,8 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<table class="table table-striped table-hover">
                 <thead>
                     <tr>
-                        <th>No</th>
-                        <th>Nomor Surat</th>
+                        <th>No</th>                        
                         <th>Jenis</th>
                         <th>Status</th>
                         <th>Masa Berlaku</th>
@@ -89,15 +88,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <tbody>
                 @foreach($form as $form_)
                 	<td>{{$form_->id}}</td>
-                	<td>{{$form_->id}}</td>
+                	<td>Izin air bawah tanah</td>
                 	<td>{{$form_->status}}</td>
                 	<td>{{$form_->masa_berlaku}}</td>
-                	<td>{{$form_->status}}</td>
-        			@if($form->status = 'diterima')
-                		<td><a href="{{URL::to('pemohon/pembatalan/1/.$value->id')}}">batalkan</a></td>>
+        			@if($form_->status = 'diterima')
+                		<td><a href="{{URL::to('pemohon/pembatalan/1/.$form_->id')}}">batalkan</a></td>>
         			@endif
-        			@if($form->status = 'ditolak')
-                		<td><a href="{{URL::to('pemohon/pengaduan/1/.$value->id')}}"></a>adukan</td>>
+        			@if($form_->status = 'ditolak')
+                		<td><a href="{{URL::to('pemohon/pengaduan/1/.$form_->id')}}"></a>adukan</td>>
         			@endif
        			@endforeach
                 </tbody>

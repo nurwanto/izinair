@@ -12,7 +12,7 @@ class HomeController extends Controller {
 			return view('login');
 	}
 	public function login(Request $req){
-		$this->validate($req, ['username'=>'required','password'=>'required']);
+		// $this->validate($req, ['username'=>'required','password'=>'required']);
 		// $s = Pegawai::where('username', '=', Request::get('username'))->firstOrFail();
 		// foreach($s as $value){
 		// 	if($value->role=="admin"){

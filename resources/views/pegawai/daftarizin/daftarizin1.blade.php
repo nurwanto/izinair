@@ -48,10 +48,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{URL::to('/')}}">home</a></li>
-		        <li><a href="{{URL::to('pemohon/persyaratan')}}">persyaratan</a></li>
-		        <li class="active"><a href="{{URL::to('pemohon/lihat')}}">daftar izin</a></li>
-		        <li><a href="{{URL::to('pemohon/tentang')}}">tentang</a></li>
+		        <li><a href="{{ URL::to('pegawai') }}">home</a></li>
+		        <li class="active"><a href="{{ URL::to('pegawai/lihat') }}">daftar izin</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -93,8 +91,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 	<td>{{$form_->status}}</td>
                 	<td>{{$form_->masa_berlaku}}</td>
                 	<td>{{$form_->status}}</td>
-                	if($form->status = 'diajukan'){
-                	<td><a href="{{URL::to('pemohon/batal/1/{{$form_->id}}')}}">batal</a></td>>
+                	@if($form->status = 'diajukan'){
+                	<td><a href="{{URL::to('pemohon/batal/1/.$form_->id')}}">batal</a></td>>
+                	@endif
                 @endforeach
                 </tbody>
            </table>

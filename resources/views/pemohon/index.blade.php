@@ -64,7 +64,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="col-md-8">
 					<div class="col-md-10 slider_text">
 						<h2>Air, sumber kehidupan</h2>
-						<h3>!----!</h3>
 					</div>
 				</div>
 				<div class="col-md-4">

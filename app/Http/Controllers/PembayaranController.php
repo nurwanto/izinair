@@ -15,7 +15,7 @@ class PembayaranController extends Controller {
 		return redirect('pemohon/daftarizin/1');
 	}
 	public function pembayaran($id){ // update biar diperpanjang
-		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air bawah tanah']);
+		$form = Pembatalan::all();
 		return redirect('pemohon/daftarizin/1');
 	}
 	public function pembatalan2($id){
