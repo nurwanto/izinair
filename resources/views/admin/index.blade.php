@@ -40,13 +40,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.jpg')}}" style="width:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('izinair')}}"><img src="{{URL::asset('images/pemkot.jpg')}}" style="width:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li class="active"><a href="{{ URL::to('admin') }}">home</a></li>
-		        <li><a href="{{ URL::to('admin/manajemen') }}">manajemen</a></li>
+		        <li class="active"><a href="{{ URL::to('izinair/admin') }}">home</a></li>
+		        <li><a href="{{ URL::to('izinair/admin/manajemen') }}">manajemen</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">

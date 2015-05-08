@@ -45,8 +45,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{ URL::to('admin') }}">home</a></li>
-		        <li class="active"><a href="{{ URL::to('admin/manajemen') }}">manajemen</a></li>
+		        <li><a href="{{ URL::to('izinair/admin') }}">home</a></li>
+		        <li class="active"><a href="{{ URL::to('izinair/admin/manajemen') }}">manajemen</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -74,7 +74,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<small>Daftar Pegawai</small>
 					</h1>
 
-					<p><a href="{{ URL::to('admin/manajemen/tambah') }}" class="btn btn-primary" role="button">Tambah Pegawai Baru</a></p>
+					<p><a href="{{ URL::to('izinair/admin/manajemen/tambah') }}" class="btn btn-primary" role="button">Tambah Pegawai Baru</a></p>
 		<div class="table-responsive">
                             <table class="table table-bordered table-hover">
                                 <thead>
@@ -96,8 +96,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                                         <td>
                                         	<div class="btn-group">
-												<a href="{{ URL::to('admin/manajemen/ubah'.$value->id) }}">Ubah</a>
-												<a href="{{ URL::to('admin/manajemen/hapus'.$value->id) }}">Hapus</a>
+												<a href="{{ URL::to('izinair/admin/manajemen/ubah'.$value->id) }}">Ubah</a>
+												<a href="{{ URL::to('izinair/admin/manajemen/hapus'.$value->id) }}">Hapus</a>
 											</div>
                                         </td>
                                     </tr>

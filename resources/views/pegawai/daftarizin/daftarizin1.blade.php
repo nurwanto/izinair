@@ -43,13 +43,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('izinair')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{ URL::to('pegawai') }}">home</a></li>
-		        <li class="active"><a href="{{ URL::to('pegawai/lihat') }}">daftar izin</a></li>
+		        <li><a href="{{ URL::to('izinair/pegawai') }}">home</a></li>
+		        <li class="active"><a href="{{ URL::to('izinair/pegawai/lihat') }}">daftar izin</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -62,7 +62,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</nav>
 		</div>
 		<ol class="breadcrumb">
-		  <li><a href="{{URL::to('/')}}">Home</a></li>
+		  <li><a href="{{URL::to('izinair')}}">Home</a></li>
 		  <li class="active">daftar izin</li>
 		</ol>
 	</div>
@@ -92,7 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 	<td>{{$form_->masa_berlaku}}</td>
                 	<td>{{$form_->status}}</td>
                 	@if($form->status = 'diajukan'){
-                	<td><a href="{{URL::to('pemohon/batal/1/.$form_->id')}}">batal</a></td>>
+                	<td><a href="{{URL::to('izinair/pemohon/batal/1/.$form_->id')}}">batal</a></td>>
                 	@endif
                 @endforeach
                 </tbody>

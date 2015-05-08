@@ -40,16 +40,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.jpg')}}" style="width:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('izinair')}}"><img src="{{URL::asset('images/pemkot.jpg')}}" style="width:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{URL::to('pemohon')}}">home</a></li>
-		        <li><a href="{{URL::to('pemohon/persyaratan')}}">persyaratan</a></li>
-		        <li><a href="{{URL::to('pemohon/lihat')}}">daftar izin</a></li>
-		        <li><a href="{{URL::to('pemohon/tentang')}}">tentang</a></li>
-		        <li><a href="{{URL::to('pemohon/kontak')}}">kontak kami</a></li>
+		        <li><a href="{{URL::to('izinair/pemohon')}}">home</a></li>
+		        <li><a href="{{URL::to('izinair/pemohon/persyaratan')}}">persyaratan</a></li>
+		        <li><a href="{{URL::to('izinair/pemohon/lihat')}}">daftar izin</a></li>
+		        <li><a href="{{URL::to('izinair/pemohon/tentang')}}">tentang</a></li>
+		        <li><a href="{{URL::to('izinair/pemohon/kontak')}}">kontak kami</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -62,7 +62,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</nav>
 		</div>
 		<ol class="breadcrumb">
-		  <li><a href="{{URL::to('/')}}">Home</a></li>
+		  <li><a href="{{URL::to('izinair')}}">Home</a></li>
 		  <li class="active">Form</li>
 		</ol>
 	</div>

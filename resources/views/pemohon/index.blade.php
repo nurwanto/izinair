@@ -40,15 +40,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('izinair')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li class="active"><a href="{{ URL::to('pemohon') }}">home</a></li>
-		        <li><a href="{{ URL::to('pemohon/persyaratan') }}">persyaratan</a></li>
-		        <li><a href="{{ URL::to('pemohon/lihat') }}">daftar izin</a></li>
-		        <li><a href="{{ URL::to('pemohon/tentang') }}">tentang</a></li>
+		        <li class="active"><a href="{{ URL::to('izinair/pemohon') }}">home</a></li>
+		        <li><a href="{{ URL::to('izinair/pemohon/persyaratan') }}">persyaratan</a></li>
+		        <li><a href="{{ URL::to('izinair/pemohon/lihat') }}">daftar izin</a></li>
+		        <li><a href="{{ URL::to('izinair/pemohon/tentang') }}">tentang</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -82,7 +82,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon1.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
-						<a href="{{URL::to('pemohon/form')}}"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('izinair/pemohon/form')}}"><button class="btn_style">view more</button></a>
 					</div>					
 				</div>
 				<div class="col-md-4 grid1_of_3">
@@ -90,7 +90,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon2.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				      <div class="rd_more1">
-						<a href="{{URL::to('pemohon/form/perpanjangan')}}"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('izinair/pemohon/form/perpanjangan')}}"><button class="btn_style">view more</button></a>
 					</div>					
 				</div>
 				<div class="col-md-4 grid1_of_3">
@@ -98,7 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon3.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
-						<a href="{{URL::to('pemohon/form/pembatalan')}}"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('izinair/pemohon/form/pembatalan')}}"><button class="btn_style">view more</button></a>
 					</div>	
 				</div>
 				<div class="col-md-4 grid1_of_3">
@@ -106,7 +106,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <img src="images/icon3.png" class="img-responsive"/>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				     <div class="rd_more1">
-						<a href="{{URL::to('pemohon/form/pengaduan')}}"><button class="btn_style">view more</button></a>
+						<a href="{{URL::to('izinair/pemohon/form/pengaduan')}}"><button class="btn_style">view more</button></a>
 					</div>	
 				</div>
 			    <div class="clearfix"></div>
