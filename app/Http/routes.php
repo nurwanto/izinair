@@ -66,13 +66,13 @@ Route::get('izinair/pemohon/pengaduan/4/{id}', 'PengaduanController@pengaduan4')
 
 Route::get('izinair/pemohon/form/new/{id}','FormIzinController@getFormNew');
 
-Route::post('izinair/pemohon/form/new/1','FormIzinController@postFormNew1');
+Route::post('izinair/pemohon/daftarizin/1','DaftarIzinController@postFormNew1');
 
-Route::post('izinair/pemohon/form/new/2','FormIzinController@postFormNew2');
+Route::post('izinair/pemohon/daftarizin/2','DaftarIzinController@postFormNew2');
 
-Route::post('izinair/pemohon/form/new/3','FormIzinController@postFormNew3');
+Route::post('izinair/pemohon/daftarizin/3','DaftarIzinController@postFormNew3');
 
-Route::post('izinair/pemohon/form/new/4','FormIzinController@postFormNew4');
+Route::post('izinair/pemohon/daftarizin/4','DaftarIzinController@postFormNew4');
 
 Route::get('izinair/pemohon/daftarizin/{id}', 'DaftarIzinController@getallizinpemohon');
 

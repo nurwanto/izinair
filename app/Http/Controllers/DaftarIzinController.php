@@ -7,7 +7,7 @@ use IzinAir\Form4;
 use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
 
 class DaftarIzinController extends Controller {
 
@@ -52,5 +52,21 @@ class DaftarIzinController extends Controller {
 			$form = Form4::all();
 			return view('pegawai.daftarizin.daftarizin4', compact('form'));
 		}	
+	}
+	public function postFormNew1(Requests\CreateForm1Request $req){
+		Form1::create($req->all());
+		return redirect('izinair/pemohon/daftarizin/1');
+	}
+	public function postFormNew2(Requests\CreateForm2Request $req){
+		Form2::create($req->all());
+		return redirect('izinair/pemohon/daftarizin/2');
+	}
+	public function postFormNew3(Requests\CreateForm3Request $req){
+		Form3::create($req->all());
+		return redirect('izinair/pemohon/daftarizin/3');
+	}
+	public function postFormNew4(Requests\CreateForm4Request $req){
+		Form4::create($req->all());
+		return redirect('izinair/pemohon/daftarizin/4');
 	}
 }

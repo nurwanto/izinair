@@ -3,7 +3,7 @@
 use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
 
 class HomeController extends Controller {
 
@@ -11,7 +11,7 @@ class HomeController extends Controller {
 	public function role(){
 			return view('login');
 	}
-	public function login(){
+	public function login(Request $req){
 		$this->validate($req, ['username'=>'required','password'=>'required']);
 		$s = Pegawai::where('username', '=', Request::get('username'))->firstOrFail();
 		foreach($s as $value){

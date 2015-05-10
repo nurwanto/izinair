@@ -1,32 +1,5 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Form Baru | Izin Air PemKot Bandung</title>
-<!-- Bootstrap -->
-<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
-<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
- <!--[if lt IE 9]>
-     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-<!--  webfonts  -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-<!-- // webfonts  -->
-<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
-<!-- start plugins -->
-<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
-</head>
-<body>
+@extends('app')
+@section('content')
 <div class="header_bg"><!-- start header -->
 	<div class="container">
 		<div class="row header">
@@ -67,150 +40,109 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</ol>
 	</div>
 </div>
+
 <div class="main"><!-- start main -->
-<div class="container">
-			<div class="row contact">			
-				<div class="col-md-10">
-				  <div class="contact-form">
-				  	<h2>Data Pemohon</h2>
-					    <form class="form-horizontal" role="form" method="post" action="2">
-
-						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="telp" style="font-size:14px">No Telp/ No HP</label>
+	<div class="container">
+		<div class="row contact">			
+			<div class="col-md-10">
+				<div class="contact-form">
+					{!! Form::open(['class' => 'form-horizontal', 'url' => 'izinair/pemohon/daftarizin/2']) !!}
+					  	<h2>Data Pemohon</h2>
+					    <!-- <form class="form-horizontal" role="form" method="post" action="1"> -->
+					    	<div class="form-group">
+						    	{!! Form::label('telp','No Telp/ No Hp', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="text" class="form-control" id="telp">
-						      </div>
-						    </div>
-
-							<div class="form-group">
-							    <label class="control-label col-sm-2" for="email" style="font-size:14px">Email Pemohon</label>
-							    <div class="col-sm-10">
-							      <input type="email" class="form-control" id="email">
-							    </div>
-							</div>
-
-							<h2>Data Izin</h2>
-
-							<div class="form-group">
-						      <label class="control-label col-sm-2" for="akta" style="font-size:14px">Akta Pendirian Perusahaan</label>
-						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="akta">
+						        {!! Form::text('telp', null, ['class' => 'form-control']) !!}
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="no_imb" style="font-size:14px">IMB</label>
+						    	{!! Form::label('email','Email Pemohon', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="text" class="form-control" id="no_imb">
+						        {!! Form::text('email', null, ['class' => 'form-control']) !!}
+						      </div>
+						    </div>
+
+						<h2>Data Izin</h2>
+						    <div class="form-group">
+						    	{!! Form::label('akta','Akta Pendirian Perusahaan', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
+						      <div class="col-sm-10">
+						        {!! Form::file('akta', null, ['class' => 'form-control']) !!}
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="surat_tanah" style="font-size:14px">Surat Tanah</label>
+						    	{!! Form::label('no_imb','Nomor IMB', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="surat_tanah">
+						        {!! Form::text('no_imb', null, ['class' => 'form-control']) !!}
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="domisili" style="font-size:14px">Keterangan Domisili</label>
+						    	{!! Form::label('surat_tanah','Surat Tanah', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="domisili">dari lurah/camat setempat
+						        {!! Form::file('surat_tanah', null, ['class' => 'form-control']) !!}
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="keberatan" style="font-size:14px">Pernyataan tidak keberatan</label>
+						    	{!! Form::label('domisili','Keterangan Domisili', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="keberatan">dari masyarakat sekitar proyek
+						        {!! Form::file('domisili', null, ['class' => 'form-control']) !!}dari lurah/camat setempat
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="pelestarian" style="font-size:14px">Pernyataan Pelestarian Alam</label>
+						    	{!! Form::label('keberatan','Pernyataan tidak Keberatan', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="pelestarian">
+						        {!! Form::file('keberatan', null, ['class' => 'form-control']) !!}
 						      </div>
 						    </div>
 
 						    <div class="form-group">
-						      <label class="control-label col-sm-2" for="no_pbb" style="font-size:14px">Pelunasan PBB</label>
+						    	{!! Form::label('pelestarian','Pernyataan Pelestarian Alam', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="no_pbb">PBB tahun akhir
+						        {!! Form::file('pelestarian', null, ['class' => 'form-control']) !!}dari lurah/camat setempat
 						      </div>
 						    </div>
 
-						  	<div class="form-group">
-						      <label class="control-label col-sm-2" for="teknis" style="font-size:14px">Proposal Teknis</label>
+						    <div class="form-group">
+						    	{!! Form::label('no_pbb','No PBB', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="teknis">kebutuhan dan penggunaan air
+						        {!! Form::text('no_pbb', null, ['class' => 'form-control']) !!}PBB tahun terakhir
 						      </div>
 						    </div>
 
-						  	<div class="form-group">
-						      <label class="control-label col-sm-2" for="dbmp" style="font-size:14px">Rekomendasi dari DBMP</label>
+						    <div class="form-group">
+						    	{!! Form::label('teknis','Proposal Teknis', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="dbmp">
+						        {!! Form::file('teknis', null, ['class' => 'form-control']) !!}kebutuhan dan penggunaan air
 						      </div>
 						    </div>
 
-							<div class="form-group">
-						      <label class="control-label col-sm-2" for="lurah" style="font-size:14px">Rekomendasi dari Lurah/Camat</label>
+						    <div class="form-group">
+						    	{!! Form::label('dbmp','Rekomendasi dari DBMP', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 						      <div class="col-sm-10">
-						        <input type="file" class="form-control" id="lurah"> 
+						        {!! Form::file('dbmp', null, ['class' => 'form-control']) !!}
 						      </div>
 						    </div>
 
-    					</div>
-			    <div class="form-group">        
-			      <div class="col-sm-offset-2 col-sm-10">
-			        <button type="submit" class="btn btn-default">Submit</button>
-			      </div>
-			    </div>
-			</form>
-		</div>
+						    <div class="form-group">
+						    	{!! Form::label('lurah','Rekomendasi dari Lurah/Camat', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
+						      <div class="col-sm-10">
+						        {!! Form::file('lurah', null, ['class' => 'form-control']) !!}
+						      </div>
+						    </div>
+					{!! Form::close() !!}<!-- </form> -->
+				</div>
+			</div>
   		</div>		
+  		@if($errors->any())
+	      	@foreach($errors as $e)
+	      		{{$e}}
+	      	@endforeach
+	      @endif
   	<div class="clearfix"></div>		
 </div> <!-- end contact -->
 </div>
-</div>
-<div class="footer_bg"><!-- start footre -->
-	<div class="container">
-		<div class="row  footer">
-			<div class="col-md-3 span1_of_4">
-				<h4>about us</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry .....</p>
-				<h5>Address</h5>
-				<p class="top">500 Lorem Ipsum Dolor Sit,</p>
-				<p>22-56-2-9 Sit Amet,</p>
-				<p>USA</p>
-				<p>Phone:(00) 222 666 444</p>
-				<p>Fax: (000) 000 00 00 0</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<div class="footer_btm"><!-- start footer_btm -->
-	<div class="container">
-		<div class="row  footer1">
-			<div class="col-md-5">
-				<div class="soc_icons">
-					<ul class="list-unstyled">
-						<li><a class="icon1" href="#"></a></li>
-						<li><a class="icon2" href="#"></a></li>
-						<li><a class="icon3" href="#"></a></li>
-						<li><a class="icon4" href="#"></a></li>
-						<li><a class="icon5" href="#"></a></li>
-						<div class="clearfix"></div>
-					</ul>	
-				</div>
-			</div>
-			<div class="col-md-7 copy">
-				<p class="link text-right"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
-</html>
+@stop
