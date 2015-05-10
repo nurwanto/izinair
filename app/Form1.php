@@ -3,6 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 
 class Form1 extends Model {
+        public $timestamps = false;
 	protected $fillable = [
 		'telp',
                 'email',
@@ -12,6 +13,7 @@ class Form1 extends Model {
                 'konservasi',
                 'alamat',
                 'luas',
-                'usaha'
+                'usaha',
+                'tanggal_diajukan'
 	];
 }

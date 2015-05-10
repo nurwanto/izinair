@@ -22,7 +22,6 @@ class CreateForm3Request extends Request {
 	public function rules()
 	{
 		return [
-			'id_penduduk' => 'required',
 			'telp' => 'required',
             'email' => 'required',
             'akta' => 'required',
