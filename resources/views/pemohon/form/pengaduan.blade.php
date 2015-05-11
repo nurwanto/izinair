@@ -3,14 +3,14 @@
 	Pengaduan
 @endsection
 @section('menu')
-    <li><a href="{{URL::to('izinair')}}">home</a></li>
+    <li><a href="{{URL::to('izinair/pemohon')}}">home</a></li>
     <li><a href="{{URL::to('izinair/pemohon/persyaratan')}}">persyaratan</a></li>
-    <li><a href="{{URL::to('izinair/pemohon/lihat')}}">daftar izin</a></li>
+    <li><a href="{{URL::to('izinair/pemohon/daftarizin')}}">daftar izin</a></li>
     <li><a href="{{URL::to('izinair/pemohon/tentang')}}">tentang</a></li>
 @endsection
 @section('navigation')
 	<ol class="breadcrumb">
-	  <li><a href="{{URL::to('izinair')}}">Home</a></li>
+	  <li><a href="{{URL::to('izinair/pemohon')}}">Home</a></li>
 	  <li class="active">Form</li>
 	</ol>
 @endsection

@@ -90,9 +90,9 @@ Route::get('izinair/pemohon/form/pembayaran/3/{id}', 'PembayaranController@pemba
 Route::get('izinair/pemohon/form/pembayaran/4/{id}', 'PembayaranController@pembayaran4');
 
 
-Route::get('izinair/pemohon/lihat', 'DaftarIzinController@indexpemohon');
+Route::get('izinair/pemohon/daftarizin', 'DaftarIzinController@indexpemohon');
 
-Route::get('izinair/pemohon/lihat/{id}', 'DaftarIzinController@getallizinpemohon');
+Route::get('izinair/pemohon/daftarizin/{id}', 'DaftarIzinController@getallizinpemohon');
 
 
 Route::get('izinair/pemohon/persyaratan', function() {
@@ -112,26 +112,30 @@ Route::get('izinair/admin/manajemen', 'PegawaiController@index');
 
 Route::get('izinair/admin/manajemen/ubah/{id}','PegawaiController@ubah');
 
+Route::post('izinair/admin/manajemen/{id}','PegawaiController@postubah');
+
 Route::get('izinair/admin/manajemen/hapus/{id}','PegawaiController@hapus');
 
 Route::get('izinair/admin/manajemen/admin/{id}','PegawaiController@admin');
 
 Route::get('izinair/admin/manajemen/tambah','PegawaiController@gettambah');
 
-Route::post('izinair/admin/manajemen/tambah','PegawaiController@posttambah');
+Route::post('izinair/admin/manajemen','PegawaiController@posttambah');
 
 
-Route::get('izinair/pegawai/lihat', 'DaftarIzinController@indexpegawai');
+Route::get('izinair/pegawai/daftarizin', 'DaftarIzinController@indexpegawai');
 
-Route::get('izinair/pegawai/lihat/{id}', 'DaftarIzinController@getallizinpegawai');
-
-
-Route::get('izinair/pegawai/validasi', function() {
-	return View::make('pegawai.validasi');
-});
+Route::get('izinair/pegawai/daftarizin/{id}', 'DaftarIzinController@getallizinpegawai');
 
 
-Route::get('izinair/pegawai/datateknis', 'DataTeknisController@getForm');
+Route::get('izinair/pegawai/validasi/{jenis}/{id}', 'DaftarIzinController@show');
+
+Route::get('izinair/pegawai/validasi/{value}/{jenis}/{id}', 'DaftarIzinController@validasi');
+
+Route::get('izinair/pegawai/validasi/{value}/{jenis}/{id}/{datateknis}', 'DaftarIzinController@validasiDataTeknis');
+
+
+Route::get('izinair/pegawai/datateknis/{jenis}/{id}', 'DataTeknisController@getForm');
 
 Route::post('izinair/pegawai/datateknis', 'DataTeknisController@postForm');
 

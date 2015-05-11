@@ -25,7 +25,8 @@ class CreateDataTeknisRequest extends Request {
 			//
 			'id_izin' => 'required',
 			'jenis_izin' => 'required',
-			'data' => 'required'
+			'data' => 'required',
+			'status' => 'required'
 		];
 	}
 

@@ -25,6 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+@yield('script')
 </head>
 <body>
 <div class="header_bg"><!-- start header -->

@@ -11,6 +11,7 @@ class Pegawai extends Model {
 		'nama',
         'username',
         'password',
+        'role',
         'tanggal_daftar'
 	];
 

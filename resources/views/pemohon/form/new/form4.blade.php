@@ -10,7 +10,7 @@
 @endsection
 @section('navigation')
 	<ol class="breadcrumb">
-	  <li><a href="{{URL::to('izinair')}}">Home</a></li>
+	  <li><a href="{{URL::to('izinair/pemohon')}}">Home</a></li>
 	  <li class="active">Form</li>
 	</ol>
 @endsection

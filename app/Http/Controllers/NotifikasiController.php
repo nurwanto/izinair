@@ -7,5 +7,4 @@ use Illuminate\Support\Facades\Request;
 
 class NotifikasiController extends Controller {
 	
-
 }

@@ -10,6 +10,7 @@ class Notifikasi extends Model {
 		'id_izin',
         'jenis_izin',
         'isi',
+        'status',
         'tanggal_notifikasi'
 	];
 

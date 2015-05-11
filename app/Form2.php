@@ -7,7 +7,7 @@ class Form2 extends Model {
 		//
 	public $timestamps = false;
 	protected $fillable = [
-				'telp',
+		'telp',
                 'email',
                 'akta',
                 'no_imb',
