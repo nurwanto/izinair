@@ -66,13 +66,13 @@ Route::get('izinair/pemohon/pengaduan/4/{id}', 'PengaduanController@pengaduan4')
 
 Route::get('izinair/pemohon/form/new/{id}','FormIzinController@getFormNew');
 
-Route::post('izinair/pemohon/form/new/1','FormIzinController@postFormNew1');
+Route::post('izinair/pemohon/daftarizin/1','DaftarIzinController@postFormNew1');
 
-Route::post('izinair/pemohon/form/new/2','FormIzinController@postFormNew2');
+Route::post('izinair/pemohon/daftarizin/2','DaftarIzinController@postFormNew2');
 
-Route::post('izinair/pemohon/form/new/3','FormIzinController@postFormNew3');
+Route::post('izinair/pemohon/daftarizin/3','DaftarIzinController@postFormNew3');
 
-Route::post('izinair/pemohon/form/new/4','FormIzinController@postFormNew4');
+Route::post('izinair/pemohon/daftarizin/4','DaftarIzinController@postFormNew4');
 
 Route::get('izinair/pemohon/daftarizin/{id}', 'DaftarIzinController@getallizinpemohon');
 
@@ -90,9 +90,9 @@ Route::get('izinair/pemohon/form/pembayaran/3/{id}', 'PembayaranController@pemba
 Route::get('izinair/pemohon/form/pembayaran/4/{id}', 'PembayaranController@pembayaran4');
 
 
-Route::get('izinair/pemohon/lihat', 'DaftarIzinController@indexpemohon');
+Route::get('izinair/pemohon/daftarizin', 'DaftarIzinController@indexpemohon');
 
-Route::get('izinair/pemohon/lihat/{id}', 'DaftarIzinController@getallizinpemohon');
+Route::get('izinair/pemohon/daftarizin/{id}', 'DaftarIzinController@getallizinpemohon');
 
 
 Route::get('izinair/pemohon/persyaratan', function() {
@@ -112,26 +112,30 @@ Route::get('izinair/admin/manajemen', 'PegawaiController@index');
 
 Route::get('izinair/admin/manajemen/ubah/{id}','PegawaiController@ubah');
 
+Route::post('izinair/admin/manajemen/{id}','PegawaiController@postubah');
+
 Route::get('izinair/admin/manajemen/hapus/{id}','PegawaiController@hapus');
 
 Route::get('izinair/admin/manajemen/admin/{id}','PegawaiController@admin');
 
 Route::get('izinair/admin/manajemen/tambah','PegawaiController@gettambah');
 
-Route::post('izinair/admin/manajemen/tambah','PegawaiController@posttambah');
+Route::post('izinair/admin/manajemen','PegawaiController@posttambah');
 
 
-Route::get('izinair/pegawai/lihat', 'DaftarIzinController@indexpegawai');
+Route::get('izinair/pegawai/daftarizin', 'DaftarIzinController@indexpegawai');
 
-Route::get('izinair/pegawai/lihat/{id}', 'DaftarIzinController@getallizinpegawai');
-
-
-Route::get('izinair/pegawai/validasi', function() {
-	return View::make('pegawai.validasi');
-});
+Route::get('izinair/pegawai/daftarizin/{id}', 'DaftarIzinController@getallizinpegawai');
 
 
-Route::get('izinair/pegawai/datateknis', 'DataTeknisController@getForm');
+Route::get('izinair/pegawai/validasi/{jenis}/{id}', 'DaftarIzinController@show');
+
+Route::get('izinair/pegawai/validasi/{value}/{jenis}/{id}', 'DaftarIzinController@validasi');
+
+Route::get('izinair/pegawai/validasi/{value}/{jenis}/{id}/{datateknis}', 'DaftarIzinController@validasiDataTeknis');
+
+
+Route::get('izinair/pegawai/datateknis/{jenis}/{id}', 'DataTeknisController@getForm');
 
 Route::post('izinair/pegawai/datateknis', 'DataTeknisController@postForm');
 

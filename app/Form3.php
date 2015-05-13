@@ -5,8 +5,9 @@ use Illuminate\Database\Eloquent\Model;
 class Form3 extends Model {
 
 		//
-		protected $fillable = [
-			'telp',
+      public $timestamps = false;
+	protected $fillable = [
+		'telp',
             'email',
             'akta',
             'no_imb',
@@ -17,6 +18,7 @@ class Form3 extends Model {
             'no_pbb',
             'teknis',
             'dbmp',
-            'lurah'
-		];
+            'bplh',
+            'tanggal_diajukan'
+	];
 }

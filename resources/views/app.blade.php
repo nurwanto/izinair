@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Daftar Izin | Izin Air PemKot Bandung</title>
+<title>@yield('title') | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
 <link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
 <link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
@@ -25,6 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+@yield('script')
 </head>
 <body>
 <div class="header_bg"><!-- start header -->
@@ -45,27 +46,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="{{ URL::to('izinair/pegawai') }}">home</a></li>
-		        <li class="active"><a href="{{ URL::to('izinair/pegawai/lihat') }}">daftar izin</a></li>
+		        @yield('menu')
 		      </ul>
-		      <form class="navbar-form navbar-right" role="search">
+		     <!--  <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
 		          <input type="text" class="form-control" placeholder="Search">
 		        </div>
 		        <button type="submit" class="btn btn-default">Search</button>
-		      </form>
+		      </form> -->
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
+	  @yield('navigation')
 	</div>
 </div>
+@yield('content')
 <div class="footer_bg"><!-- start footre -->
 	<div class="container">
 		<div class="row  footer">
 			<div class="col-md-3 span1_of_4">
 				<h4>about us</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry .....</p>
+				<p>Dinas Bina Marga dan Pengairan</p>
 				<h5>Address</h5>
 				<p class="top">500 Lorem Ipsum Dolor Sit,</p>
 				<p>22-56-2-9 Sit Amet,</p>
@@ -74,27 +76,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p>Fax: (000) 000 00 00 0</p>
 			</div>
 			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<div class="footer_btm"><!-- start footer_btm -->
-	<div class="container">
-		<div class="row  footer1">
-			<div class="col-md-5">
-				<div class="soc_icons">
-					<ul class="list-unstyled">
-						<li><a class="icon1" href="#"></a></li>
-						<li><a class="icon2" href="#"></a></li>
-						<li><a class="icon3" href="#"></a></li>
-						<li><a class="icon4" href="#"></a></li>
-						<li><a class="icon5" href="#"></a></li>
-						<div class="clearfix"></div>
-					</ul>	
-				</div>
-			</div>
-			<div class="col-md-7 copy">
-				<p class="link text-right"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
-			</div>
 		</div>
 	</div>
 </div>

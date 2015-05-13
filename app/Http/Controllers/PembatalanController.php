@@ -8,7 +8,8 @@ use IzinAir\Pembatalan;
 use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
+use Carbon\Carbon;
 
 class PembatalanController extends Controller {
 
@@ -24,23 +25,19 @@ class PembatalanController extends Controller {
 		return redirect('pemohon/daftarizin/1');
 	}
 	public function pembatalan1($id){ // update biar diperpanjang
-		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air bawah tanah']);
-		$form = PermohonanPembatalan::all();
+		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air bawah tanah', 'tanggal_ajuan' => Carbon::now()]);
 		return redirect('pemohon/daftarizin/1');
 	}
 	public function pembatalan2($id){
-		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air permukaan']);
-		$form = PermohonanPembatalan::all();
+		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air permukaan'], 'tanggal_ajuan' => Carbon::now());
 		return redirect('pemohon/daftarizin/2');
 	}
 	public function pembatalan3($id){
-		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air alur']);
-		$form = PermohonanPembatalan::all();
+		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air alur'], 'tanggal_ajuan' => Carbon::now());
 		return redirect('pemohon/daftarizin/3');
 	}
 	public function pembatalan4($id){
-		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air bawah tanah']);
-		$form = PermohonanPembatalan::all();
+		PermohonanPembatalan::create(['id_izin' => $id,'jenis_izin' => 'air bawah tanah'], 'tanggal_ajuan' => Carbon::now());
 		return redirect('pemohon/daftarizin/4');
 	}
 

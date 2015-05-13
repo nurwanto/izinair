@@ -3,9 +3,8 @@
 use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request;
 
 class NotifikasiController extends Controller {
 	
-
 }
