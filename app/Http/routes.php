@@ -143,3 +143,7 @@ Route::post('izinair/pegawai/datateknis', 'DataTeknisController@postForm');
 Route::get('izinair/pegawai/notifikasi', 'NotifikasiController@getForm');
 
 Route::post('izinair/pegawai/notifikasi', 'NotifikasiController@postForm');
+
+
+Route::get('izinair/get/{filename}', [
+		'as' => 'getfile', 'uses' => 'DaftarIzinController@get']);

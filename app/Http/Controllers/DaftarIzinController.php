@@ -14,24 +14,29 @@ use Carbon\Carbon;
 
 class DaftarIzinController extends Controller {
 	public function show($jenis, $id){
-		$path = app_path();
 		// $path = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
 		if($jenis == 1){
 			$izin = Form1::find($id);
-			return view('pegawai.detail.1', compact('izin','path'));
+			return view('pegawai.detail.1', compact('izin'));
 		}
 		else if($jenis == 2){
 			$izin = Form2::find($id);
-			return view('pemohon.detail.2', compact('izin','path'));
+			return view('pemohon.detail.2', compact('izin'));
 		}
 		else if($jenis == 3){
 			$izin = Form3::find($id);
-			return view('pemohon.detail.3', compact('izin','path'));
+			return view('pemohon.detail.3', compact('izin'));
 		}
 		else if($jenis == 4){
 			$izin = Form4::find($id);
-			return view('pemohon.detail.4', compact('izin','path'));
+			return view('pemohon.detail.4', compact('izin'));
 		}
+	}
+
+	public function get($jenis, $filename){
+		$file = Storage::disk('local')->get($filename);
+		return (new Response($file, 200))
+		              ->header('Content-Type', 'jpg');
 	}
 	public function validasi($value, $jenis, $id){
 		if($value == 0){
