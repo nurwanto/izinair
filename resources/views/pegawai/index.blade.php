@@ -16,7 +16,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="slider_img">
-					<img src="images/pic1.png" alt="" class="img-responsive"/>
+					<img src="{{URL::asset('images/pic1.png')}}" alt="" class="img-responsive"/>
 				</div>
 			</div>
 	</div>

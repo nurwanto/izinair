@@ -29,7 +29,7 @@
 			<div class="contact-form">
 				<h2>Izin Air Bawah Tanah</h2>
 			</div>
-				<div>{{Storage::get($izin->teknis)}}</div>
+				<div><img src="{{route('getfile', $izin->teknis)}}"  alt=""/>{{Storage::get($izin->teknis)}}</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
