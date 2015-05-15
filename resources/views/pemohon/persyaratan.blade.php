@@ -15,40 +15,8 @@
 	</ol>
 @endsection
 @section('content')
-	<div class="main"><!-- start main -->
-		<!--<div class="row grids_of_3">
-			<div class="row grids_of_3">
-			<a>CRUD Data Alokasi1</a>
-				<div class="col-md-1 grid1_of_3">
-					  <a>CRUD Data Alokasi</a>
-				</div>	
-			</div>
-		</div>
-		<div class="container main">
-		<div class="row grids_of_3">
-					<div class="col-md-4 grid1_of_3">
-					     <div class="rd_more1">
-							<a href="{{URL::to('izinair/pemohon/persyaratan')}}"><button class="btn_style">Izin Bawah Tanah</button></a>
-						</div>					
-					</div>
-					<div class="col-md-4 grid1_of_3">
-					      <div class="rd_more1">
-							<a href="{{URL::to('izinair/pemohon/persyaratan')}}"><button class="btn_style">Izin Permukaan</button></a>
-						</div>					
-					</div>
-					<div class="col-md-4 grid1_of_3">
-					     <div class="rd_more1">
-							<a href="{{URL::to('izinair/pemohon/persyaratan')}}"><button class="btn_style">Izin Air Buangan</button></a>
-						</div>	
-					</div>
-					<div class="col-md-4 grid1_of_3">
-					     <div class="rd_more1">
-							<a href="{{URL::to('izinair/pemohon/persyaratan')}}"><button class="btn_style">Izin Aliran Air</button></a>
-						</div>	
-					</div>
-				    <div class="clearfix"></div>
-		</div>
-	</div>-->
+	<div class="main">
+	<h5>
 	<div class="container">
 	<ol class="breadcrum">
 	<input id="tab1" type="radio" name="tabs" checked>
@@ -232,7 +200,39 @@
 			<tr align="justify">
 			    <td><div align="center"></div></td>
 			    <br>
-			    <td>E. Jangka Waktu Proses Izin </td>
+			    <td>E. Mekanisme Permohonan Izin Baru</td>
+			</tr>
+			<tr align="justify">
+			    <td>&nbsp;</td>
+			    <td><table border="0" cellpadding="0" cellspacing="0">
+			    <tbody>
+			    	<tr align="justify">
+			        	<td width="30" align="justify" valign="top">1.</td>
+			        	<td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">2.</td>
+			        	<td>Menunggu konfirmasi penolakan/penerimaan permohonan izin melalui website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">3.</td>
+			        	<td>Melakukan pembayaran dan melampirkan bukti pembayaran;</td>
+			      	</tr>
+			      	<tr align="justify">
+			        	<td width="30" align="justify" valign="top">4.</td>
+			        	<td>Melampirkan dokumen-dokumen asli ke loket Unit Pelayanan Satu Atap;</td>
+			      	</tr>
+			      	<tr align="justify">
+			        	<td valign="top">5.</td>
+			        	<td>Pemohon dapat memperoleh surat izin asli melalui loket Unit Yantap.</td>
+			      	</tr>
+			      	<tr align="justify">
+			        	<td valign="top">&nbsp;</td>
+			      </tr>
+			    </tbody></table></td>
+			</tr>
+			<tr align="justify">
+			    <td><div align="center"></div></td>
+			    <br>
+			    <td>F. Jangka Waktu Proses Izin </td>
 			</tr>
 			<tr align="justify">
 			    <td>&nbsp;</td>
@@ -242,7 +242,7 @@
 			<tr align="justify">
 			    <td><div align="center"></div></td>
 			    <br>
-			    <td>F. Biaya</td>
+			    <td>G. Biaya</td>
 			</tr>
 			<tr align="justify">
 			    <td>&nbsp;</td>
@@ -302,7 +302,7 @@
 				        <td><table border="0" cellspacing="0" cellpadding="0">
 					        <tbody><tr align="justify">
 					            <td width="30" align="justify" valign="top">a.</td>
-					            <td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung </td>
+					            <td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung; </td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">b.</td>
@@ -400,7 +400,39 @@
 			<tr align="justify">
 			    <td><div align="center"></div></td>
 			    <br>
-			    <td>D. Jangka Waktu Proses Izin</td>
+			    <td>D. Mekanisme Permohonan Izin Baru</td>
+			</tr>
+			<tr align="justify">
+			    <td>&nbsp;</td>
+			    <td><table border="0" cellpadding="0" cellspacing="0">
+			    <tbody>
+			    	<tr align="justify">
+			        	<td width="30" align="justify" valign="top">1.</td>
+			        	<td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">2.</td>
+			        	<td>Menunggu konfirmasi penolakan/penerimaan permohonan izin melalui website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">3.</td>
+			        	<td>Melakukan pembayaran dan melampirkan bukti pembayaran;</td>
+			      	</tr>
+			      	<tr align="justify">
+			        	<td width="30" align="justify" valign="top">4.</td>
+			        	<td>Melampirkan dokumen-dokumen asli ke loket Unit Pelayanan Satu Atap;</td>
+			      	</tr>
+			      	<tr align="justify">
+			        	<td valign="top">5.</td>
+			        	<td>Pemohon dapat memperoleh surat izin asli melalui loket Unit Yantap.</td>
+			      	</tr>
+			      	<tr align="justify">
+			        	<td valign="top">&nbsp;</td>
+			      </tr>
+			    </tbody></table></td>
+			</tr>
+			<tr align="justify">
+			    <td><div align="center"></div></td>
+			    <br>
+			    <td>E. Jangka Waktu Proses Izin</td>
 			</tr>
 			<tr align="justify">
 			    <td>&nbsp;</td>
@@ -421,7 +453,7 @@
 			<tr align="justify">
 			    <td><div align="center"></div></td>
 			    <br>
-			    <td>E. Biaya </td>
+			    <td>F. Biaya </td>
 			</tr>
 				<tr align="justify">
 			    <td>&nbsp;</td>
@@ -509,67 +541,71 @@
 					        <tbody>
 					        <tr align="justify">
 					            <td valign="top">a.</td>
-					            <td>Photo Copy KTP Pemohon;</td>
+					            <td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung ;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">b.</td>
-					            <td>Photo Copy Akta Pendirian Perusahaan dan/atau Perubahannya;</td>
+					            <td>Photo Copy KTP Pemohon;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">c.</td>
-					            <td>Photo Copy IMB, Site Plan berikut lampiran Gambar Denah atau Situasi;</td>
+					            <td>Photo Copy Akta Pendirian Perusahaan dan/atau Perubahannya;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">d.</td>
-					            <td>Photo Copy Surat Kepemilikan Tanah/keterangan kepemilikan / pemakaian tanah;</td>
+					            <td>Photo Copy IMB, Site Plan berikut lampiran Gambar Denah atau Situasi;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">e.</td>
-					            <td>Keterangan Domisili Perusahaan Dari Lurah/Camat setempat;</td>
+					            <td>Photo Copy Surat Kepemilikan Tanah/keterangan kepemilikan / pemakaian tanah;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">f.</td>
-					            <td>Pernyataan tidak keberatan dari tetangga yang bersebelahan dengan lokasi Penyelenggaraan Pengairan tanah;</td>
+					            <td>Keterangan Domisili Perusahaan Dari Lurah/Camat setempat;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">g.</td>
-					            <td>Pernyataan pemohon tentang kesanggupan memenuhi/mentaati ketentuan pelestarian lingkungan;</td>
+					            <td>Pernyataan tidak keberatan dari tetangga yang bersebelahan dengan lokasi Penyelenggaraan Pengairan tanah;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">h.</td>
-					            <td>Photo Copy Bukti Pelunasan PBB tahun akhir;</td>
+					            <td>Pernyataan pemohon tentang kesanggupan memenuhi/mentaati ketentuan pelestarian lingkungan;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">i.</td>
-					            <td>Peta Lokasi pengambilan air permukaan skala 1 : 100 dan Peta Situasi Skala 1: 1000/1 : 10.000;</td>
+					            <td>Photo Copy Bukti Pelunasan PBB tahun akhir;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">j.</td>
-					            <td>Photo Copy lokasi dan Izin Usaha;</td>
+					            <td>Peta Lokasi pengambilan air permukaan skala 1 : 100 dan Peta Situasi Skala 1: 1000/1 : 10.000;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">k.</td>
-					            <td>Proposal teknis rencana kebutuhan dan penggunaan air yang telah mendapatkan persetujuan dari instansi terkait dan masyarakat setempat dengan Input Study Water Balance;</td>
+					            <td>Photo Copy lokasi dan Izin Usaha;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">l.</td>
-					            <td>Gambar Konstruksi Bangunan yang telah mendapat persetujuan dari instansi terkait lengkap dengan bangunan ukur (water meter) serta memperhatikan garis sempadan sungai/Saluran;</td>
+					            <td>Proposal teknis rencana kebutuhan dan penggunaan air yang telah mendapatkan persetujuan dari instansi terkait dan masyarakat setempat dengan Input Study Water Balance;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">m.</td>
-					            <td>Rekomendasi dari Cabang Dinas Pengairan;</td>
+					            <td>Gambar Konstruksi Bangunan yang telah mendapat persetujuan dari instansi terkait lengkap dengan bangunan ukur (water meter) serta memperhatikan garis sempadan sungai/Saluran;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">n.</td>
-					            <td>Rekomendasi dari Badan Pengelola Lingkungan Hidup Kota Bandung;</td>
+					            <td>Rekomendasi dari Cabang Dinas Pengairan;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">o.</td>
+					            <td>Rekomendasi dari Badan Pengelola Lingkungan Hidup Kota Bandung;</td>
+					        </tr>
+					        <tr align="justify">
+					            <td valign="top">p.</td>
 					            <td>Rekomendasi dari Badan Pengendali Lingkungan Hidup Daerah
 								Propinsi Jawa Barat (bila pembuangan ke Sungai Lintas Kota/Kabupaten); </td>
 					        </tr>
 					        <tr align="justify">
-					            <td valign="top">p.</td>
+					            <td valign="top">q.</td>
 					            <td>Rekomendasi/Serbaguna dari Lurah dan Camat setempat.</td>
 					        </tr>
 				        </tbody></table></td>
@@ -584,22 +620,26 @@
 					        <tbody>
 					        <tr align="justify">
 					            <td valign="top">a.</td>
-					            <td>Kartu Daftar Ulang Asli;</td>
+					            <td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung ;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">b.</td>
-					            <td>Photo Copy Surat Izin Penyelenggaraan Pengairan;</td>
+					            <td>Kartu Daftar Ulang Asli;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">c.</td>
-					            <td>Photo Copy KTP Pemegang Izin;</td>
+					            <td>Photo Copy Surat Izin Penyelenggaraan Pengairan;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">d.</td>
-					            <td>Photo Copy bukti pelunasan Retribusi Pengairan;</td>
+					            <td>Photo Copy KTP Pemegang Izin;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">e.</td>
+					            <td>Photo Copy bukti pelunasan Retribusi Pengairan;</td>
+					        </tr>
+					        <tr align="justify">
+					            <td valign="top">f.</td>
 					            <td>Photo Copy bukti pelunasan PBB tahun terakhir.</td>
 					        </tr>
 				        </tbody></table></td>
@@ -609,50 +649,29 @@
 			<tr align="justify">
 			    <td><div align="center"></div></td>
 			    <br>
-			    <td>C. Mekanisme</td>
+			    <td>C. Mekanisme Permohonan Izin Baru</td>
 			</tr>
 			<tr align="justify">
 			    <td>&nbsp;</td>
 			    <td><table border="0" cellpadding="0" cellspacing="0">
-			    <tbody><tr align="justify">
+			    <tbody>
+			    	<tr align="justify">
 			        	<td width="30" align="justify" valign="top">1.</td>
-			        	<td>Mengisi formuliar permohonan izin pada website disertai kelengkapan persyaratannya disampaikan ke loket Unit Pelayanan Satu Atap; </td>
+			        	<td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">2.</td>
+			        	<td>Menunggu konfirmasi penolakan/penerimaan permohonan izin melalui website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">3.</td>
+			        	<td>Melakukan pembayaran dan melampirkan bukti pembayaran;</td>
 			      	</tr>
 			      	<tr align="justify">
-			        	<td valign="top">2.</td>
-			        	<td>Petugas loket meneliti kelengkapan persyaratan;</td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">3.</td>
-			        	<td>Pencatatan dalam buku registrasi (apabila persyaratannya lengkap); </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">4.</td>
-			        	<td>Ekspose rencana pembuatan bangunan pengambilan yang akan dibangun oleh pemohon; </td>
+			        	<td width="30" align="justify" valign="top">4.</td>
+			        	<td>Melampirkan dokumen-dokumen asli ke loket Unit Pelayanan Satu Atap;</td>
 			      	</tr>
 			      	<tr align="justify">
 			        	<td valign="top">5.</td>
-			        	<td>Peninjauan dan pengukuran ke lapangan; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">6.</td>
-			        	<td>Rapat Tim Peneliti Izin Penyelenggara Pengairan; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">7.</td>
-			        	<td>Penerbitan/Penolakan permohonan Izin Pembuangan Air Buangan ke Sumber Air; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">8.</td>
-			        	<td> Penetapan Retribusi; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">9.</td>
-			        	<td>Pemohon membayar retribusi ke loket Bank Jabar; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">10.</td>
-			        	<td>Menyerahkan Izin kepada Pemohon melalui loket Unit Yantap.</td>
+			        	<td>Pemohon dapat memperoleh surat izin asli melalui loket Unit Yantap.</td>
 			      	</tr>
 			      	<tr align="justify">
 			        	<td valign="top">&nbsp;</td>
@@ -691,16 +710,14 @@
 			    <td><table border="0" cellspacing="0" cellpadding="0">
 			        <tbody><tr align="justify">
 			            	<td width="30" align="justify" valign="top">1.</td>
-			            	<td>Sebesar Rp. 25,-/M3 air buangan dibayar sesuai volume yang dibuang ke
-							sumber air dengan dibayar tiap bulan ke Kas Daerah.</td>
+			            	<td>Sebesar Rp. 25,-/M3 air buangan dibayar sesuai volume yang dibuang ke sumber air dengan dibayar tiap bulan ke Kas Daerah.</td>
 				        </tr>
 				        <tr align="justify">
 				           	<td valign="top">2.</td>
-				           	<td> Retribusi pemanfaatan lahan sempadan Sungai/Saluran dengan ketentuan
-							besarnya adalah = F x Tarif Dasar </td>
-							<td>Dimana F = Luas lahan yang dimanfaatkan oleh Bangunan pembuangan (M2) </td>
-				        	<td>Tarif Dasar = 1 % x NJOP terakhir </td>
-				        	<td> Retribusi dikenakan selama pemohon membuang air buangan ke Sumber Air. </td>
+				           	<td> Retribusi pemanfaatan lahan sempadan Sungai/Saluran dengan ketentuan besarnya adalah = F x Tarif Dasar.
+							Dimana F = Luas lahan yang dimanfaatkan oleh Bangunan pembuangan (M2).
+				        	Tarif Dasar = 1 % x NJOP terakhir.
+				        	Retribusi dikenakan selama pemohon membuang air buangan ke Sumber Air. </td>
 				        </tr>
 			    	</tbody>
 			    </table></td>
@@ -761,56 +778,60 @@
 					        <tbody>
 					        <tr align="justify">
 					            <td valign="top">a.</td>
-					            <td>Photo Copy KTP Pemohon;</td>
+					            <td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung ;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">b.</td>
-					            <td>Photo Copy Akta Pendirian Perusahaan dan/atau Perubahannya;</td>
+					            <td>Photo Copy KTP Pemohon;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">c.</td>
-					            <td>Photo Copy IMB, Site Plan berikut lampiran Gambar Denah atau Situasi;</td>
+					            <td>Photo Copy Akta Pendirian Perusahaan dan/atau Perubahannya;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">d.</td>
-					            <td>Photo Copy Surat Kepemilikan Tanah/keterangan kepemilikan / pemakaian tanah;</td>
+					            <td>Photo Copy IMB, Site Plan berikut lampiran Gambar Denah atau Situasi;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">e.</td>
-					            <td>Keterangan Domisili Perusahaan Dari Lurah/Camat setempat;</td>
+					            <td>Photo Copy Surat Kepemilikan Tanah/keterangan kepemilikan / pemakaian tanah;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">f.</td>
-					            <td>Pernyataan tidak keberatan dari tetangga yang bersebelahan dengan lokasi Penyelenggaraan Pengairan tanah;</td>
+					            <td>Keterangan Domisili Perusahaan Dari Lurah/Camat setempat;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">g.</td>
-					            <td>Pernyataan pemohon tentang kesanggupan memenuhi/mentaati ketentuan pelestarian lingkungan;</td>
+					            <td>Pernyataan tidak keberatan dari tetangga yang bersebelahan dengan lokasi Penyelenggaraan Pengairan tanah;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">h.</td>
-					            <td>Photo Copy Bukti Pelunasan PBB tahun akhir;</td>
+					            <td>Pernyataan pemohon tentang kesanggupan memenuhi/mentaati ketentuan pelestarian lingkungan;</td>
 					        </tr>
 					        <tr align="justify">
 					            <td valign="top">i.</td>
+					            <td>Photo Copy Bukti Pelunasan PBB tahun akhir;</td>
+					        </tr>
+					        <tr align="justify">
+					            <td valign="top">j.</td>
 					            <td> Peta Lokasi Saluran yang ada pada lokasi yang dimohon dengan
 								skala 1 : 500 atau Skala 1 : 1000 dan perencanaan propil
 								memanjang dan melintang dari Saluran Baru; </td>
 					        </tr>
 					        <tr align="justify">
-					            <td valign="top">j.</td>
+					            <td valign="top">k.</td>
 					            <td> Photo Copy Izin lokasi;</td>
 					        </tr>
 					        <tr align="justify">
-					            <td valign="top">k.</td>
+					            <td valign="top">l.</td>
 					            <td>Berita Acara Serah Terima lahan Saluran Lama dan Baru; </td>
 					        </tr>
 					        <tr align="justify">
-					            <td valign="top">l.</td>
+					            <td valign="top">m.</td>
 					            <td>Rekomendasi/Serbaguna dari Lurah dan Camat setempat; </td>
 					        </tr>
 					        <tr align="justify">
-					            <td valign="top">m.</td>
+					            <td valign="top">n.</td>
 					            <td>Rekomendasi dari Cabang Dinas Pengairan. </td>
 					        </tr>
 				        </tbody></table></td>
@@ -818,50 +839,29 @@
 			<tr align="justify">
 			    <td><div align="center"></div></td>
 			    <br>
-			    <td>C. Mekanisme</td>
+			    <td>C. Mekanisme Permohonan Izin Baru</td>
 			</tr>
 			<tr align="justify">
 			    <td>&nbsp;</td>
 			    <td><table border="0" cellpadding="0" cellspacing="0">
-			    <tbody><tr align="justify">
+			    <tbody>
+			    	<tr align="justify">
 			        	<td width="30" align="justify" valign="top">1.</td>
-			        	<td>Mengisi formulir pada website disertai kelengkapan persyaratannya disampaikan ke loket Unit Pelayanan Satu Atap; </td>
+			        	<td>Mengisi formulir permohonan izin pada website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">2.</td>
+			        	<td>Menunggu konfirmasi penolakan/penerimaan permohonan izin melalui website perizinan air Kota Bandung;</td>
+			      	</tr><tr align="justify">
+			        	<td width="30" align="justify" valign="top">3.</td>
+			        	<td>Melakukan pembayaran dan melampirkan bukti pembayaran;</td>
 			      	</tr>
 			      	<tr align="justify">
-			        	<td valign="top">2.</td>
-			        	<td>Petugas loket meneliti kelengkapan persyaratan;</td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">3.</td>
-			        	<td>Pencatatan dalam buku registrasi (apabila persyaratannya lengkap); </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">4.</td>
-			        	<td>Ekspose rencana pembuatan bangunan pengambilan yang akan dibangun oleh pemohon; </td>
+			        	<td width="30" align="justify" valign="top">4.</td>
+			        	<td>Melampirkan dokumen-dokumen asli ke loket Unit Pelayanan Satu Atap;</td>
 			      	</tr>
 			      	<tr align="justify">
 			        	<td valign="top">5.</td>
-			        	<td>Peninjauan dan pengukuran ke lapangan; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">6.</td>
-			        	<td>Rapat Tim Peneliti Izin Penyelenggara Pengairan; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">7.</td>
-			        	<td>Penerbitan/Penolakan permohonan Izin Pembuangan Air Buangan ke Sumber Air; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">8.</td>
-			        	<td> Penetapan Retribusi; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">9.</td>
-			        	<td>Pemohon membayar retribusi ke loket Bank Jabar; </td>
-			      	</tr>
-			      	<tr align="justify">
-			        	<td valign="top">10.</td>
-			        	<td>Menyerahkan Izin kepada Pemohon melalui loket Unit Yantap.</td>
+			        	<td>Pemohon dapat memperoleh surat izin asli melalui loket Unit Yantap.</td>
 			      	</tr>
 			      	<tr align="justify">
 			        	<td valign="top">&nbsp;</td>
@@ -901,9 +901,9 @@
 				        <tr align="justify">
 				           	<td valign="top">2.</td>
 				           	<td> Retribusi Izin Perubahan Alur Bentuk, Dimensi dan Kemiringan
-							Dasar Saluran/Sungai ditetapkan berdasarkan = F x Tarip Dasar. </td>
-							<td>Dimana F = Luas Perubahan Saluran </td>
-				        	<td>Tarif Dasar = 1 % x NJOP terakhir </td>
+							Dasar Saluran/Sungai ditetapkan berdasarkan = F x Tarip Dasar.
+							Dimana F = Luas Perubahan Saluran.
+				        	Tarif Dasar = 1 % x NJOP terakhir </td>
 				        </tr>
 			    	</tbody>
 			    </table></td>
@@ -912,11 +912,11 @@
 			    <td colspan="2">&nbsp;</td>
 			</tr>
 			</tbody>
-
     	</p>
   	</section>
   	</ol>
   	</div>
+  	</h5>
 	</div>
 
 @stop
