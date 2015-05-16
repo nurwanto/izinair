@@ -16,7 +16,7 @@
 @endsection
 @section('content')
 	<div class="main">
-	<h5>
+	<h6>
 	<div class="container">
 	<ol class="breadcrum">
 	<input id="tab1" type="radio" name="tabs" checked>
@@ -916,7 +916,7 @@
   	</section>
   	</ol>
   	</div>
-  	</h5>
+  	</h6>
 	</div>
 
 @stop
