@@ -10,6 +10,7 @@ use IzinAir\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Http\Response;
 use Carbon\Carbon;
 
 class DaftarIzinController extends Controller {
@@ -33,10 +34,10 @@ class DaftarIzinController extends Controller {
 		}
 	}
 
-	public function get($jenis, $filename){
+	public function get($filename){
 		$file = Storage::disk('local')->get($filename);
 		return (new Response($file, 200))
-		              ->header('Content-Type', 'jpg');
+		              ->header('Content-Type', 'png');
 	}
 	public function validasi($value, $jenis, $id){
 		if($value == 0){
@@ -47,19 +48,27 @@ class DaftarIzinController extends Controller {
 		}
 		switch ($jenis) {
 			case 1:{
-				Form1::find($id)->update(['status' => $value]);
+				$izin = Form1::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			case 2:{
-				Form2::find($id)->update(['status' => $value]);
+				$izin = Form2::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			case 3:{
-				Form3::find($id)->update(['status' => $value]);
+				$izin = Form3::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			case 4:{
-				Form4::find($id)->update(['status' => $value]);
+				$izin = Form4::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			default:
@@ -76,19 +85,27 @@ class DaftarIzinController extends Controller {
 		}
 		switch ($jenis) {
 			case 1:{
-				Form1::find($id)->update(['status' => $value]);
+				$izin = Form1::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			case 2:{
-				Form2::find($id)->update(['status' => $value]);
+				$izin = Form2::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			case 3:{
-				Form3::find($id)->update(['status' => $value]);
+				$izin = Form3::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			case 4:{
-				Form4::find($id)->update(['status' => $value]);
+				$izin = Form4::find($id);
+				$izin->status = $value;
+				$izin->save();
 				break;
 			}
 			default:

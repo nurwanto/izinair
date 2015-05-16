@@ -7,27 +7,14 @@ use IzinAir\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Request;
 
 class PembayaranController extends Controller {
-	public function getform(){
-		return view('pemohon.form.pembatalan');
+	public function getform($jenis, $izin){
+		return view('pemohon.form.pembayaran', compact('jenis', 'izin'));
 	}
-	public function postform(Requests\CreatePembayaranRequest $req){
-		Pembayaran::create(Request::all());
-		return redirect('pemohon/daftarizin/1');
-	}
-	public function pembayaran($id){ // update biar diperpanjang
-		$form = Pembatalan::all();
-		return redirect('pemohon/daftarizin/1');
-	}
-	public function pembatalan2($id){
-		$form = Pembatalan::all();
-		return redirect('pemohon/daftarizin/2');
-	}
-	public function pembatalan3($id){
-		$form = Pembatalan::all();
-		return redirect('pemohon/daftarizin/3');
-	}
-	public function pembatalan4($id){
-		$form = Pembatalan::all();
-		return redirect('pemohon/daftarizin/4');
-	}
+	public function view($jenis, $id){
+		$pembayaran = Pembayaran::where('id_izin', '=', $id)->where('jenis_izin', '=', $jenis);
+		foreach ($pembayaran as $p) {
+			# code..
+		}
+		return view('pegawai.pembayaran', compact('pembayaran'));
+	}	
 }

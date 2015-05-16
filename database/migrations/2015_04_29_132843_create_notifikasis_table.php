@@ -12,7 +12,7 @@ class CreateNotifikasisTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('notifikasis', function(Blueprint $table)
+		Schema::create('ppl_izinair_notifikasis', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('id_izin');

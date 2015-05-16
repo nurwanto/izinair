@@ -36,10 +36,10 @@
 		                	<td>{{$form_->masa_berlaku}}</td>
 		                	@if($form_->status == 'diajukan')
 		                		<td><a href="/izinair/pegawai/validasi/1/{{$form_->id}}">validasi</a></td>
-		                	@elseif($form_->status == 'divalidasi')
+		                	@elseif(($form_->status == 'valid') || ($form_->status == 'tidak valid'))
 		                		<td><a href="/izinair/pegawai/datateknis/1/{{$form_->id}}">data teknis</a></td>
-		                	@elseif($form_->status == 'diterima')
-		                		<td><a href="/izinair/pegawai/notifikasi/1/{{$form_->id}}">notifikasi</a></td>
+		                	@elseif(($form_->status == 'diterima'))
+		                		<td><a href="/izinair/pegawai/pembayaran/1/{{$form_->id}}">lihat pembayaran</a></td>
 		                	@endif
                 		</tr>
                 	@endif

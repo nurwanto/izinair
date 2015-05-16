@@ -125,6 +125,8 @@ Route::post('izinair/admin/manajemen','PegawaiController@posttambah');
 
 Route::get('izinair/pegawai/daftarizin', 'DaftarIzinController@indexpegawai');
 
+Route::post('izinair/pegawai/daftarizin', 'DataTeknisController@postForm');
+
 Route::get('izinair/pegawai/daftarizin/{id}', 'DaftarIzinController@getallizinpegawai');
 
 
@@ -137,12 +139,7 @@ Route::get('izinair/pegawai/validasi/{value}/{jenis}/{id}/{datateknis}', 'Daftar
 
 Route::get('izinair/pegawai/datateknis/{jenis}/{id}', 'DataTeknisController@getForm');
 
-Route::post('izinair/pegawai/datateknis', 'DataTeknisController@postForm');
-
-
-Route::get('izinair/pegawai/notifikasi', 'NotifikasiController@getForm');
-
-Route::post('izinair/pegawai/notifikasi', 'NotifikasiController@postForm');
+Route::get('izinair/pegawai/pembayaran/{jenis}/{id}', 'PembayaranController@view');
 
 
 Route::get('izinair/get/{filename}', [

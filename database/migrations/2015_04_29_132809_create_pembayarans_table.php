@@ -12,7 +12,7 @@ class CreatePembayaransTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('pembayarans', function(Blueprint $table)
+		Schema::create('ppl_izinair_pembayarans', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('id_izin');

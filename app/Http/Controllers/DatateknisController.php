@@ -2,6 +2,10 @@
 
 use IzinAir\Datateknis;
 use IzinAir\Notifikasi;
+use IzinAir\Form1;
+use IzinAir\Form2;
+use IzinAir\Form3;
+use IzinAir\Form4;
 use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
 
@@ -19,8 +23,41 @@ class DatateknisController extends Controller {
 		$input->jenis_izin = $req->jenis_izin;
 		$input->data = $req->data;
 		$input->save();
-		if($req->status == "diterima"){
-			$status = "diterima";
+		$id = $req->id_izin;
+		$value = $req->status;
+		switch ($req->jenis_izin) {
+			case 1:{
+				$izin = Form1::find($id);
+				$izin->status = $value;
+				$izin->jangka_waktu = 30;
+				$izin->save();
+				break;
+			}
+			case 2:{
+				$izin = Form2::find($id);
+				$izin->status = $value;
+				$izin->jangka_waktu = 30;
+				$izin->save();
+				break;
+			}
+			case 3:{
+				$izin = Form3::find($id);
+				$izin->status = $value;
+				$izin->jangka_waktu = 30;
+				$izin->save();
+				break;
+			}
+			case 4:{
+				$izin = Form4::find($id);
+				$izin->status = $value;
+				$izin->jangka_waktu = 30;
+				$izin->save();
+				break;
+			}
+			default:
+				break;
+		}
+		if($value == "diterima"){
 			$input = null;
 			$input = new Notifikasi();
 			$input->tanggal_notifikasi = Carbon::now();
@@ -28,27 +65,6 @@ class DatateknisController extends Controller {
 			$input->jenis_izin = $req->jenis_izin;
 			$input->isi = "sudah diterima. Tolong bayarkan biaya sebesar XXX.";
 			$input->save();
-		}
-		switch ($req->jenis_izin) {
-			case 1:{
-				$izin = Form1::find($req->id_izin)->update(['status' => $req->status]);
-				break;
-			}
-			case 2:{
-				$izin = Form2::find($req->id_izin)->update(['status' => $req->status]);
-				break;
-			}
-			case 3:{
-				$izin = Form3::find($req->id_izin)->update(['status' => $req->status]);
-				break;
-			}
-			case 4:{
-				$izin = Form4::find($req->id_izin)->update(['status' => $req->status]);
-				break;
-			}
-			default:{
-				break;
-			}
 		}
 		return redirect('izinair/pegawai/daftarizin');
 	}

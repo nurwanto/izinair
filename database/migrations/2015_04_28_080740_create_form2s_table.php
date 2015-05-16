@@ -12,7 +12,7 @@ class CreateForm2sTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('form2s', function(Blueprint $table)
+		Schema::create('ppl_izinair_form2s', function(Blueprint $table)
 		{
 			$table->string('NIK');
 			$table->increments('id');
