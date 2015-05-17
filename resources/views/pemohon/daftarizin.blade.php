@@ -6,8 +6,8 @@
     <li><a href="{{URL::to('izinair/pemohon')}}">home</a></li>
     <li><a href="{{URL::to('izinair/pemohon/persyaratan')}}">persyaratan</a></li>
     <li class="active"><a href="{{URL::to('izinair/pemohon/daftarizin')}}">daftar izin</a></li>
-    <li><a href="{{URL::to('izinair/pemohon/tentang')}}">tentang</a></li>
-    <div>12435678907654321 | <a href="/izinair/logout/12435678907654321">logout</a></div>
+    <li><a href="{{URL::to('izinair/pemohon/notifikasi')}}">notifikasi</a></li>
+    <div>{{session('NIK')}} | <a href="/izinair/logout/12435678907654321">logout</a></div>
 @endsection
 @section('navigation')
     <ol class="breadcrumb">
@@ -43,6 +43,7 @@
 @section('content')
     <div class="main">
         <h6>
+            <div class= "tabular">
             <div class="container">
                 <ol class="breadcrum">
                     <input id="tab1" type="radio" name="tabs" checked>
@@ -125,9 +126,11 @@
                                                 <td>{{$form_->status}}</td>
                                                 <td>{{$form_->masa_berlaku}}</td>
                                                 @if($form_->status == 'selesai')
-                                                    <td><a href="/izinair/pemohon/pembatalan/2/{{$form_->id}}">batalkan</a></td>
+                                                    <td><a href="javascript:confirmBatal(2,{{$form_->id}})">batalkan</a></td>
                                                 @elseif($form_->status == 'ditolak')
-                                                    <td><a href="/izinair/pemohon/pengaduan/2/{{$form_->id}}">adukan</a></td>
+                                                    <td><a href="javascript:confirmAdu(2,{{$form_->id}})">adukan</a></td>
+                                                @elseif($form_->status == 'diterima')
+                                                    <td><a href="javascript:confirmPerpanjang(2,{{$form_->id}})">perpanjang</a></td>
                                                 @else
                                                     <td></td>
                                                 @endif
@@ -165,9 +168,11 @@
                                                 <td>{{$form_->status}}</td>
                                                 <td>{{$form_->masa_berlaku}}</td>
                                                 @if($form_->status == 'selesai')
-                                                    <td><a href="/izinair/pemohon/pembatalan/3/{{$form_->id}}">batalkan</a></td>
+                                                    <td><a href="javascript:confirmBatal(3,{{$form_->id}})">batalkan</a></td>
                                                 @elseif($form_->status == 'ditolak')
-                                                    <td><a href="/izinair/pemohon/pengaduan/3/{{$form_->id}}">adukan</a></td>
+                                                    <td><a href="javascript:confirmAdu(3,{{$form_->id}})">adukan</a></td>
+                                                @elseif($form_->status == 'diterima')
+                                                    <td><a href="javascript:confirmPerpanjang(3,{{$form_->id}})">perpanjang</a></td>
                                                 @else
                                                     <td></td>
                                                 @endif
@@ -205,9 +210,11 @@
                                                 <td>{{$form_->status}}</td>
                                                 <td>{{$form_->masa_berlaku}}</td>
                                                 @if($form_->status == 'selesai')
-                                                    <td><a href="/izinair/pemohon/pembatalan/4/{{$form_->id}}">batalkan</a></td>
+                                                    <td><a href="javascript:confirmBatal(4,{{$form_->id}})">batalkan</a></td>
                                                 @elseif($form_->status == 'ditolak')
-                                                    <td><a href="/izinair/pemohon/pengaduan/4/{{$form_->id}}">adukan</a></td>
+                                                    <td><a href="javascript:confirmAdu(4,{{$form_->id}})">adukan</a></td>
+                                                @elseif($form_->status == 'diterima')
+                                                    <td><a href="javascript:confirmPerpanjang(4,{{$form_->id}})">perpanjang</a></td>
                                                 @else
                                                     <td></td>
                                                 @endif

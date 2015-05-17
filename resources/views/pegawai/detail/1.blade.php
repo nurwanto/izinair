@@ -29,10 +29,14 @@
 			<div class="contact-form">
 				<h2>Izin Air Bawah Tanah</h2>
 			</div>
-				<div><a href="{{route('getfile', $izin->teknis)}}"><img src="{{route('getfile', $izin->teknis)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
-				<div><a href="{{route('getfile', $izin->bor)}}"><img src="{{route('getfile', $izin->bor)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
-				<div><a href="{{route('getfile', $izin->keberatan)}}"><img src="{{route('getfile', $izin->keberatan)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
-				<div><a href="{{route('getfile', $izin->konservasi)}}"><img src="{{route('getfile', $izin->konservasi)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
+            Data Teknis
+			<div><a href="{{route('getfile', $izin->teknis)}}"><img src="{{route('getfile', $izin->teknis)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
+			Izin Kepemilikan Bor
+            <div><a href="{{route('getfile', $izin->bor)}}"><img src="{{route('getfile', $izin->bor)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
+			Pernyataan Tidak Berkeberatan
+            <div><a href="{{route('getfile', $izin->keberatan)}}"><img src="{{route('getfile', $izin->keberatan)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
+			Pernyataan Konservasi Alam dan Lingkungan
+            <div><a href="{{route('getfile', $izin->konservasi)}}"><img src="{{route('getfile', $izin->konservasi)}}"  style="witdh:100px; height:100px" alt=""/></a></div>
 				<div class="col-md-4 grid1_of_3">
 				     <div class="rd_more1">
 						<a href="javascript:confirmDataTeknis(1, {{$izin->id}})"><button class="btn_style">Valid</button></a>

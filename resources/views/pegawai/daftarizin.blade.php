@@ -16,6 +16,7 @@
 @section('content')
     <div class="main">
         <h6>
+            <div class="tabular">
             <div class="container">
                 <ol class="breadcrum">
                     <input id="tab1" type="radio" name="tabs" checked>
@@ -55,12 +56,12 @@
                                                     <td>{{$form_->status}}</td>
                                                     <td>{{$form_->masa_berlaku}}</td>
                                                 @endif
-                                                @if($form_->status == 'selesai')
-                                                    <td><a href="javascript:confirmBatal(1,{{$form_->id}})">batalkan</a></td>
-                                                @elseif($form_->status == 'ditolak')
-                                                    <td><a href="javascript:confirmAdu(1,{{$form_->id}})">adukan</a></td>
-                                                @elseif($form_->status == 'diterima')
-                                                    <td><a href="javascript:confirmPerpanjang(1,{{$form_->id}})">perpanjang</a></td>
+                                                @if($form_->status == 'diajukan')
+                                                    <td><a href="/izinair/pegawai/validasi/1/{{$form_->id}}">validasi</a></td>
+                                                @elseif(($form_->status == 'valid') || ($form_->status == 'tidak valid'))
+                                                    <td><a href="/izinair/pegawai/datateknis/1/{{$form_->id}}">data teknis</a></td>
+                                                @elseif(($form_->status == 'diterima'))
+                                                    <td><a href="/izinair/pegawai/pembayaran/1/{{$form_->id}}">lihat pembayaran</a></td>
                                                 @else
                                                     <td></td>
                                                 @endif
@@ -97,10 +98,12 @@
                                                 <td>Izin air bawah tanah</td>
                                                 <td>{{$form_->status}}</td>
                                                 <td>{{$form_->masa_berlaku}}</td>
-                                                @if($form_->status == 'selesai')
-                                                    <td><a href="/izinair/pemohon/pembatalan/2/{{$form_->id}}">batalkan</a></td>
-                                                @elseif($form_->status == 'ditolak')
-                                                    <td><a href="/izinair/pemohon/pengaduan/2/{{$form_->id}}">adukan</a></td>
+                                                @if($form_->status == 'diajukan')
+                                                    <td><a href="/izinair/pegawai/validasi/2/{{$form_->id}}">validasi</a></td>
+                                                @elseif(($form_->status == 'valid') || ($form_->status == 'tidak valid'))
+                                                    <td><a href="/izinair/pegawai/datateknis/2/{{$form_->id}}">data teknis</a></td>
+                                                @elseif(($form_->status == 'diterima'))
+                                                    <td><a href="/izinair/pegawai/pembayaran/2/{{$form_->id}}">lihat pembayaran</a></td>
                                                 @else
                                                     <td></td>
                                                 @endif
@@ -137,10 +140,12 @@
                                                 <td>Izin air bawah tanah</td>
                                                 <td>{{$form_->status}}</td>
                                                 <td>{{$form_->masa_berlaku}}</td>
-                                                @if($form_->status == 'selesai')
-                                                    <td><a href="/izinair/pemohon/pembatalan/3/{{$form_->id}}">batalkan</a></td>
-                                                @elseif($form_->status == 'ditolak')
-                                                    <td><a href="/izinair/pemohon/pengaduan/3/{{$form_->id}}">adukan</a></td>
+                                                @if($form_->status == 'diajukan')
+                                                    <td><a href="/izinair/pegawai/validasi/3/{{$form_->id}}">validasi</a></td>
+                                                @elseif(($form_->status == 'valid') || ($form_->status == 'tidak valid'))
+                                                    <td><a href="/izinair/pegawai/datateknis/3/{{$form_->id}}">data teknis</a></td>
+                                                @elseif(($form_->status == 'diterima'))
+                                                    <td><a href="/izinair/pegawai/pembayaran/3/{{$form_->id}}">lihat pembayaran</a></td>
                                                 @else
                                                     <td></td>
                                                 @endif
@@ -177,10 +182,12 @@
                                                 <td>Izin air bawah tanah</td>
                                                 <td>{{$form_->status}}</td>
                                                 <td>{{$form_->masa_berlaku}}</td>
-                                                @if($form_->status == 'selesai')
-                                                    <td><a href="/izinair/pemohon/pembatalan/4/{{$form_->id}}">batalkan</a></td>
-                                                @elseif($form_->status == 'ditolak')
-                                                    <td><a href="/izinair/pemohon/pengaduan/4/{{$form_->id}}">adukan</a></td>
+                                               @if($form_->status == 'diajukan')
+                                                    <td><a href="/izinair/pegawai/validasi/4/{{$form_->id}}">validasi</a></td>
+                                                @elseif(($form_->status == 'valid') || ($form_->status == 'tidak valid'))
+                                                    <td><a href="/izinair/pegawai/datateknis/4/{{$form_->id}}">data teknis</a></td>
+                                                @elseif(($form_->status == 'diterima'))
+                                                    <td><a href="/izinair/pegawai/pembayaran/4/{{$form_->id}}">lihat pembayaran</a></td>
                                                 @else
                                                     <td></td>
                                                 @endif
@@ -195,6 +202,7 @@
 
                     </section>
                 </ol>
+            </div>
             </div>
         </h6>
     </div>

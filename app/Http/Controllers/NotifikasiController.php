@@ -8,8 +8,8 @@ use IzinAir\Notifikasi;
 
 class NotifikasiController extends Controller {
 	public function get(){
-        $notif = Notifikasi::all();
-		return view('pemohon.notifikasi', compact('notif'));
+        $notifikasi = Notifikasi::all();
+		return view('pemohon.notifikasi', compact('notifikasi'));
 	}
     public function update($jenis, $id){
         $notif = Notifikasi::where('jenis_izin', '=', $jenis);

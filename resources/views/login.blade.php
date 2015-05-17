@@ -14,7 +14,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">NIK</label>
                         <div class="col-md-6">
-                            <input type="username" class="form-control" name="username" value="{{ old('username') }}">
+                            <input type="NIK" class="form-control" name="NIK" value="{{ old('username') }}">
                         </div>
                     </div>
 

@@ -3,8 +3,8 @@
 	Data Teknis
 @endsection
 @section('menu')
-    <li class="active"><a href="{{ URL::to('izinair/pegawai') }}">home</a></li>
-    <li><a href="{{ URL::to('izinair/pegawai/daftarizin/1') }}">daftar izin</a></li>
+    <li><a href="{{ URL::to('izinair/pegawai') }}">home</a></li>
+    <li class="active"><a href="{{ URL::to('izinair/pegawai/daftarizin') }}">daftar izin</a></li>
 @endsection
 @section('navigation')
 	<ol class="breadcrumb">

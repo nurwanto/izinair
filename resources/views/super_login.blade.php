@@ -9,17 +9,17 @@
 			<div class="col-md-8">
 			  	<div class="contact-form">
 				  	<h2>Login</h2>
-					{!! Form::open(['class' => 'form-horizontal', 'url' => 'izinair/login']) !!}
+					{!! Form::open(['class' => 'form-horizontal', 'url' => 'izinair/index']) !!}
 				    	<div class="form-group">
 					    	{!! Form::label('username','Username', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 					      <div class="col-sm-10">
-					        {!! Form::text('username') !!}
+					        {!! Form::text('username', null, ['class' => 'form-control']) !!}
 					      </div>
 					    </div>
 						<div class="form-group">
 					    	{!! Form::label('password','Password', ['class' => 'control-label col-sm-2', 'style' => 'font-size:14px']) !!}
 					      <div class="col-sm-10">
-					        {!! Form::password('password', null, ['class' => 'form-control', 'type' => 'password']) !!}
+					        {!! Form::text('password', null, ['class' => 'form-control']) !!}
 					      </div>
 					    </div>
 					    <div class="form-group">        

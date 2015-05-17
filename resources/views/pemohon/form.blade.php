@@ -5,8 +5,8 @@
 @section('menu')
     <li class="active"><a href="{{URL::to('izinair/pemohon')}}">home</a></li>
     <li><a href="{{URL::to('izinair/pemohon/persyaratan')}}">persyaratan</a></li>
-    <li><a href="{{URL::to('izinair/pemohon/daftarizin/1')}}">daftar izin</a></li>
-    <li><a href="{{URL::to('izinair/pemohon/tentang')}}">tentang</a></li>
+    <li><a href="{{URL::to('izinair/pemohon/daftarizin')}}">daftar izin</a></li>
+    <li><a href="{{URL::to('izinair/pemohon/notifikasi')}}">notifikasi</a></li>
     <li>12435678907654321 | <a href="/izinair/logout/12435678907654321">logout</a></li>
 @endsection
 @section('navigation')
@@ -18,7 +18,8 @@
 @section('content')
     <div class="main">
         <h6>
-            <div class="container">
+            <div class="tabular">
+                <div class="container">
                 <ol class="breadcrum">
                     <input id="tab1" type="radio" name="tabs" checked>
                     <label for="tab1">Air Bawah Tanah</label>
@@ -456,6 +457,7 @@
                     </section>
                 </ol>
             </div>
+                </div>
         </h6>
     </div>
 @stop

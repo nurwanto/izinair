@@ -4,12 +4,12 @@
 @endsection
 @section('menu')
     <li><a href="{{ URL::to('izinair/pegawai') }}">home</a></li>
-    <li><a href="{{ URL::to('izinair/pegawai/lihat') }}">daftar izin</a></li>
+    <li class="active"><a href="{{ URL::to('izinair/pegawai/daftarizin') }}">daftar izin</a></li>
 @endsection
 @section('navigator')
 	<ol class="breadcrumb">
 	  <li><a href="{{URL::to('izinair/pegawai')}}">Home</a></li>
-	  <li class="active">Data Teknis</li>
+	  <li class="active">Notifikasi</li>
 	</ol>
 @endsection
 @section('content')

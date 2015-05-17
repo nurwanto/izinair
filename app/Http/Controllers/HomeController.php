@@ -15,6 +15,9 @@ class HomeController extends Controller {
 
     public function login(){
         //loginke punya willy
+        $req = Request::all();
+        session(['NIK' => $req['NIK'], 'role' => 'pemohon']);
+        return view('pemohon.index');
     }
 
     public function getformsuper_login(){
@@ -23,13 +26,18 @@ class HomeController extends Controller {
 
     public function super_login(){
         $req = Request::all();
-        $this->validate($req, ['username'=>'required','password'=>'required']);
-        $value = Pegawai::find($req->get('username'));
-        if($value->password == $req->get('password')){
-            if($value->role == "admin")
-                return view('admin.index', compact('value'));
-            else
-                return view('pegawai.index', compact('value'));
+        $v = Pegawai::where('username','=', $req['username']);
+        $value = array_first($v, function($key, $value){
+            return $value->username == $req['username'];
+        });
+        if($value->password == $req['password']){
+            session(['username' => $req->get['username'], 'role' => $b->role]);
+            if($value->role == "admin") {
+               return view('admin.index');
+            }
+            else{
+                return view('pegawai.index');
+            }
         }
         else{
             return redirect('izinair/super_login');
@@ -42,6 +50,8 @@ class HomeController extends Controller {
     }
 
     public function super_logout(){
+        Session::put('username', '');
+        Session::put('role','');
         return redirect('izinair/super_login');
     }
     public function pemohon(){

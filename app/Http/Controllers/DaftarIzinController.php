@@ -122,11 +122,11 @@ class DaftarIzinController extends Controller {
 		return redirect('izinair/pegawai/daftarizin');
 	}
 	public function getallizinpemohon(){
-        $NIK = 1234567890;
-        $form1 = Form1::where("NIK", "=", $NIK);
-        $form2 = Form2::where("NIK", "=", $NIK);
-        $form3 = Form3::where("NIK", "=", $NIK);
-        $form4 = Form4::where("NIK", "=", $NIK);
+        $NIK = session('NIK');
+        $form1 = Form1::where('NIK', '==', $NIK);
+        $form2 = Form2::where('NIK', '==', $NIK);
+        $form3 = Form3::where('NIK', '==', $NIK);
+        $form4 = Form4::where('NIK', '==', $NIK);
         return view('pemohon.daftarizin', compact('form1','form2','form3','form4'));
 	}
 	public function getallizinpegawai(){
@@ -138,7 +138,7 @@ class DaftarIzinController extends Controller {
 	}
 	public function postFormNew1(Requests\CreateForm1Request $req){
 		$input = new Form1();
-		$input->NIK = '1234567890';
+		$input->NIK = Session::get('NIK');
 		$input->telp = $req['telp'];
 		$input->email = $req['email'];
 		$input->alamat = $req['alamat'];
@@ -167,7 +167,7 @@ class DaftarIzinController extends Controller {
 	}
 	public function postFormNew2(Requests\CreateForm2Request $req){
 		$input = new Form2();
-		$input->NIK = '1234567890';
+		$input->NIK = Session::get('NIK');
 		$input->telp = $req['telp'];
 		$input->email = $req['email'];
 		$input->no_imb = $req['no_imb'];
@@ -211,7 +211,7 @@ class DaftarIzinController extends Controller {
 	}
 	public function postFormNew3(Requests\CreateForm3Request $req){
 		$input = new Form3();
-		$input->NIK = '1234567890';
+		$input->NIK = Session::get('NIK');
 		$input->telp = $req['telp'];
 		$input->email = $req['email'];
 		$input->no_imb = $req['no_imb'];
@@ -255,7 +255,7 @@ class DaftarIzinController extends Controller {
 	}
 	public function postFormNew4(Requests\CreateForm4Request $req){
 		$input = new Form4();
-		$input->NIK = '1234567890';
+		$input->NIK = Session::get('NIK');
 		$input->telp = $req['telp'];
 		$input->email = $req['email'];
 		$input->no_imb = $req['no_imb'];

@@ -17,6 +17,7 @@
 @section('content')
 	<div class="main">
 	<h6>
+        <div class= "tabular">
 	<div class="container">
 	<ol class="breadcrum">
 	<input id="tab1" type="radio" name="tabs" checked>

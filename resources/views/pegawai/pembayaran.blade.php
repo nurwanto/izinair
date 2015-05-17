@@ -1,17 +1,6 @@
 @extends('app')
 @section('title')
-	Izin Air Bawah Tanah
-@endsection
-@section('script')
-	<script>
-		function confirmDataTeknis(jenis, id) {
-		    if (confirm("Apakah Anda ingin mengisi data teknis?") == true) {
-		        location.href = "/izinair/pegawai/validasi/1/"+jenis+"/"+id+"/"+"1";
-		    } else {
-		        location.href = "/izinair/pegawai/validasi/1/"+jenis+"/"+id+"/"+"0";
-		    }
-		}
-	</script>
+	Pembayaran
 @endsection
 @section('menu')
     <li><a href="{{ URL::to('izinair/pegawai') }}">home</a></li>
@@ -20,7 +9,7 @@
 @section('navigation')
 	<ol class="breadcrumb">
 	  <li><a href="{{URL::to('izinair/pegawai')}}">Home</a></li>
-	  <li class="active"><a href="{{URL::to('izinair/pegawai/daftarizin')}}">daftar izin</a></li>
+	  <li class="active">validasi</a></li>
 	</ol>
 @endsection
 @section('content')
