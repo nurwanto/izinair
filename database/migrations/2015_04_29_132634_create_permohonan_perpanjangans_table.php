@@ -12,7 +12,7 @@ class CreatePermohonanPerpanjangansTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('ppl_izinair_permohonan_perpanjangans', function(Blueprint $table)
+		Schema::create('ppl_iair_permohonan_perpanjangans', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('id_izin');
@@ -28,7 +28,7 @@ class CreatePermohonanPerpanjangansTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('permohonan_perpanjangans');
+		Schema::drop('ppl_iair_permohonan_perpanjangans');
 	}
 
 }

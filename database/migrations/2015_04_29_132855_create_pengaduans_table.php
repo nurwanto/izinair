@@ -12,7 +12,7 @@ class CreatePengaduansTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('ppl_izinair_pengaduans', function(Blueprint $table)
+		Schema::create('ppl_iair_pengaduans', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('id_izin');
@@ -29,7 +29,7 @@ class CreatePengaduansTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('pengaduans');
+		Schema::drop('ppl_iair_pengaduans');
 	}
 
 }

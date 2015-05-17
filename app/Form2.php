@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class Form2 extends Model {
 
 		//
+    protected $table = 'ppl_iair_form2s';
 	public $timestamps = false;
 	protected $fillable = [
 		'telp',

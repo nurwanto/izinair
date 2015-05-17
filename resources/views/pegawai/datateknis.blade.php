@@ -19,7 +19,7 @@
 			<div class="col-md-10">
 				<div class="contact-form">
 					<h2>Data Teknis Izin Air</h2>
-					{!! Form::open(['class' => 'form-horizontal', 'url' => 'izinair/pegawai/daftarizin']) !!}
+					{!! Form::open(['class' => 'form-horizontal', 'url' => 'izinair/pegawai/daftarizin/datateknis']) !!}
 					        {!! Form::hidden('id_izin', $id, ['class' => 'form-control']) !!}
 					        {!! Form::hidden('jenis_izin', $jenis, ['class' => 'form-control']) !!}
 					    <div class="form-group">

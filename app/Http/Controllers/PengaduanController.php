@@ -11,31 +11,8 @@ use IzinAir\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Request;
 
 class PengaduanController extends Controller {
-	public function getform(){
-		$form1 = Form1::all();
-		$form2 = Form2::all();
-		$form3 = Form3::all();
-		$form4 = Form4::all();
-		return view('pemohon.form.pengaduan', compact('form1','form2','form3','form4'));
-	}
-	public function postform(Requests\CreatePengaduanRequest $req){
-		Pengaduan::create(Request::all());
-		return redirect('pemohon/daftarizin/1');
-	}
-	public function pengaduan1($id){ // update biar diperpanjang
-		$form = Pengaduan::where();
-		return redirect('pemohon/daftarizin/1');
-	}
-	public function pengaduan2($id){
-		$form = Pengaduan::all();
-		return redirect('pemohon/daftarizin/2');
-	}
-	public function pengaduan3($id){
-		$form = Pengaduan::all();
-		return redirect('pemohon/daftarizin/3');
-	}
-	public function pengaduan4($id){
-		$form = Pengaduan::all();
-		return redirect('pemohon/daftarizin/4');
+	public function pengaduan($jenis,$id){ // update biar diperpanjang
+        Pengaduan::create(['id_izin' => $id, 'jenis_izin' => $jenis, 'tanggal_ajuan' => Carbon::now()]);
+        return redirect('pemohon/daftarizin/1');
 	}
 }

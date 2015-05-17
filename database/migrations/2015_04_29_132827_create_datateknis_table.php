@@ -12,7 +12,7 @@ class CreateDatateknisTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('ppl_izinair_datateknis', function(Blueprint $table)
+		Schema::create('ppl_iair_datateknis', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('id_izin');
@@ -29,7 +29,7 @@ class CreateDatateknisTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('datateknis');
+		Schema::drop('ppl_iair_datateknis');
 	}
 
 }

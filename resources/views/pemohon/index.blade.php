@@ -6,7 +6,7 @@
     <li class="active"><a href="{{ URL::to('izinair/pemohon') }}">home</a></li>
     <li><a href="{{ URL::to('izinair/pemohon/persyaratan') }}">persyaratan</a></li>
     <li><a href="{{ URL::to('izinair/pemohon/daftarizin') }}">daftar izin</a></li>
-    <li><a href="{{ URL::to('izinair/pemohon/tentang') }}">tentang</a></li>
+    <li><a href="{{ URL::to('izinair/pemohon/notifikasi') }}">notifikasi</a></li>
 @endsection
 @section('navigation')
 	<div class="row slider text-center">

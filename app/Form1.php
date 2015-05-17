@@ -3,7 +3,8 @@
 use Illuminate\Database\Eloquent\Model;
 
 class Form1 extends Model {
-        public $timestamps = false;
+    protected $table = 'ppl_iair_form1s';
+    public $timestamps = false;
 	protected $fillable = [
 		'telp',
                 'email',

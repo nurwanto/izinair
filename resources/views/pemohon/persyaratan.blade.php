@@ -20,13 +20,13 @@
 	<div class="container">
 	<ol class="breadcrum">
 	<input id="tab1" type="radio" name="tabs" checked>
-    	<label for="tab1">Air Bawah Tanah</label>
+    	<label for="tab1" class="tabular">Air Bawah Tanah</label>
     <input id="tab2" type="radio" name="tabs">
-    	<label for="tab2">Air Permukaan</label>
+    	<label for="tab2" class="tabular">Air Permukaan</label>
     <input id="tab3" type="radio" name="tabs">
-    	<label for="tab3">Air Buangan</label>
+    	<label for="tab3" class="tabular">Air Buangan</label>
     <input id="tab4" type="radio" name="tabs">
-    	<label for="tab4">Alur,Bentuk,Dimensi...</label>
+    	<label for="tab4" class="tabular">Alur,Bentuk,Dimensi...</label>
 
   	<section id="content1">
     	<h3>Persyaratan Izin Pengelolaan Air Bawah Tanah</h3>

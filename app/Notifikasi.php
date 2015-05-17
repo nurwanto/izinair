@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class Notifikasi extends Model {
 
 	//
+    protected $table = 'ppl_iair_notifikasis';
 	public $timestamps = false;
 	protected $fillable = [
 		'id_izin',

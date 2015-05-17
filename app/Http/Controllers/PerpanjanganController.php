@@ -4,6 +4,7 @@ use IzinAir\Form1;
 use IzinAir\Form2;
 use IzinAir\Form3;
 use IzinAir\Form4;
+use IzinAir\PermohonanPerpanjangan;
 use IzinAir\Perpanjangan;
 use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
@@ -11,33 +12,9 @@ use IzinAir\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Request;
 
 class PerpanjanganController extends Controller {
-
-	public function getform(){
-		$form1 = Form1::all();
-		$form2 = Form2::all();
-		$form3 = Form3::all();
-		$form4 = Form4::all();
-		return view('pemohon.form.perpanjangan',compact('form1'));
-	}
-	public function postform(){
-		PermohonanPerpanjangan::create(Request::all());
-		return redirect('pemohon/lihat/1');
-	}
-	public function perpanjang1($id){ // update biar diperpanjang
-		PermohonanPerpanjangan::create(['id_izin' => $id, 'jenis_izin' => 'air bawah tanah']);
-		return redirect('pemohon/lihat/1');
-	}
-	public function perpanjang2($id){
-		PermohonanPerpanjangan::create(['id_izin' => $id, 'jenis_izin' => 'air bawah tanah']);
-		return redirect('pemohon/lihat/2');
-	}
-	public function perpanjang3($id){
-		PermohonanPerpanjangan::create(['id_izin' => $id, 'jenis_izin' => 'air bawah tanah']);
-		return redirect('pemohon/lihat/3');
-	}
-	public function perpanjang4($id){
-		PermohonanPerpanjangan::create(['id_izin' => $id, 'jenis_izin' => 'air bawah tanah']);
-		return redirect('pemohon/lihat/4');
+	public function perpanjang($jenis,$id){
+        PermohonanPerpanjangan::create(['id_izin' => $id, 'jenis_izin' => $jenis, 'tanggal_ajuan' => Carbon::now()]);
+        return redirect('pemohon/daftarizin/1');
 	}
 }
 

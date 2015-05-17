@@ -12,12 +12,12 @@ class CreatePegawaisTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('ppl_izinair_pegawais', function(Blueprint $table)
+		Schema::create('ppl_iair_pegawais', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('NIP');
 			$table->string('nama');
-			$table->string('username');
+			$table->string('username')->unique();
 			$table->string('password');
 			$table->string('role')->default('pegawai');
 			$table->timestamp('tanggal_daftar');
@@ -31,7 +31,7 @@ class CreatePegawaisTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('pegawais');
+		Schema::drop('ppl_iair_pegawais');
 	}
 
 }

@@ -846,7 +846,7 @@ label:hover {
 #tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 {
   display: block;
 }
-input:checked + label {
+.tabular input:checked + label {
   border-top-color: #B7977B;
   border-right-color: #DDD;
   border-left-color: #DDD;

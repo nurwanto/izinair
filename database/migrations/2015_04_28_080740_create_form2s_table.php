@@ -12,12 +12,12 @@ class CreateForm2sTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('ppl_izinair_form2s', function(Blueprint $table)
+		Schema::create('ppl_iair_form2s', function(Blueprint $table)
 		{
 			$table->string('NIK');
 			$table->increments('id');
 			$table->string('telp');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('akta');
             $table->string('no_imb');
             $table->string('surat_tanah');
@@ -42,7 +42,7 @@ class CreateForm2sTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('form2s');
+		Schema::drop('ppl_iair_form2s');
 	}
 
 }
