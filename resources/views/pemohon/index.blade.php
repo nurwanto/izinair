@@ -2,12 +2,27 @@
 @section('title')
 	Home
 @endsection
+@section('script')
+	<script type="text/javascript">
+		$('#logoutLink').click(function(e) {
+			$.ajax({
+				type: 'get',
+				url: 'http://e-gov-bandung.tk/dukcapil/api/public/auth/logout',
+				success: function(data) {
+				},
+				error: function(data) {
+					// alert(data);
+				}
+			});
+		})
+	</script>
+@endsection
 @section('menu')
     <li class="active"><a href="{{ URL::to('izinair/pemohon') }}">home</a></li>
     <li><a href="{{ URL::to('izinair/pemohon/persyaratan') }}">persyaratan</a></li>
     <li><a href="{{ URL::to('izinair/pemohon/daftarizin') }}">daftar izin</a></li>
     <li><a href="{{ URL::to('izinair/pemohon/notifikasi') }}">notifikasi</a></li>
-    <li>{{Session::get('NIK')}} | <a href="#">Logout</a></li>
+    <li>{{Session::get('NIK')}} | <a href="{{url('logout')}}")>Logout</a></li>
 @endsection
 @section('navigation')
 	<div class="row slider text-center">

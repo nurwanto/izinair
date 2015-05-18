@@ -5,6 +5,7 @@ use IzinAir\Http\Controllers\Controller;
 
 use Illuminate\Support\Facades\Request;
 use IzinAir\Pegawai;
+use Auth;
 
 class HomeController extends Controller {
 
@@ -14,19 +15,26 @@ class HomeController extends Controller {
 	}
 
     public function login(){
-        //loginke punya willy
         $req = Request::all();
-        session(['NIK' => $req['NIK'], 'role' => 'pemohon']);
-        return view('pemohon.index');
+        if($req!=null){
+            session(['nik' => $req['nik'], 'role' => 'pemohon']);
+            return view('pemohon.index');
+        }
+        else
+            return view('login');
     }
 
     public function getformsuper_login(){
         return view('super_login');
     }
 
+    public function check() {
+       return view('check');
+    }
+
     public function super_login(){
         $req = Request::all();
-        $v = Pegawai::where('username','=', $req['username']);
+        $v = Pegawai::where('username','=', $req['username'])->get()->toArray();
         $value = array_first($v, function($key, $value){
             return $value->username == $req['username'];
         });
