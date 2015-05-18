@@ -9,8 +9,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>@yield('title') | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
-<link href="{{URL::asset('css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
-<link href="{{URL::asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,11 +18,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--  webfonts  -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <!-- // webfonts  -->
-<link href="{{URL::asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/bootstrap.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 @yield('script')
 </head>
 <body>
@@ -41,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{URL::to('izinair')}}"><img src="{{URL::asset('images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
+		      <a class="navbar-brand" href="{{URL::to('izinair')}}"><img src="{{asset('/images/pemkot.png')}}" style="witdh:75px; height:75px" alt="" class="img-responsive"/> </a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
