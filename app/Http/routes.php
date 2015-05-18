@@ -12,7 +12,7 @@
 */
 
 
-Route::get('izinair', 'HomeController@check');
+Route::get('/', 'HomeController@check');
 
 Route::get('izinair/home','HomeController@login');
 
