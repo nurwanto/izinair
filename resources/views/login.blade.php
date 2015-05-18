@@ -4,7 +4,7 @@
         var d=document.getElementById("loginLink");
         d.className = d.className + " active";
     </script>
-@ensection
+@endsection
 @section('content')
     <div class="container">
         <div class="login-form">
