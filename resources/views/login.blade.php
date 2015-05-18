@@ -4,7 +4,7 @@
         var d=document.getElementById("loginLink");
         d.className = d.className + " active";
     </script>
-@stop
+@ensection
 @section('content')
     <div class="container">
         <div class="login-form">
@@ -23,6 +23,18 @@
             </form>
         </div>
     </div>
+
+    <!--<script>
+        function validateForm() {
+            var usr = document.getElementById("username.value");
+            var pwd = document.getElementById("password.value");
+            if (usr==="" || pwd=="") {
+                alert('username and password must be filled!');
+                return false;
+            }
+            return true;
+        }
+    </script>-->
 
 
 <script type="text/javascript">
