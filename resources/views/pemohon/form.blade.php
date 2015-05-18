@@ -3,11 +3,11 @@
     Form
 @endsection
 @section('menu')
-    <li class="active"><a href="{{URL::to('izinair/pemohon')}}">home</a></li>
-    <li><a href="{{URL::to('izinair/pemohon/persyaratan')}}">persyaratan</a></li>
-    <li><a href="{{URL::to('izinair/pemohon/daftarizin')}}">daftar izin</a></li>
-    <li><a href="{{URL::to('izinair/pemohon/notifikasi')}}">notifikasi</a></li>
-    <li>12435678907654321 | <a href="/izinair/logout/12435678907654321">logout</a></li>
+    <li class="active"><a href="{{ URL::to('izinair/pemohon') }}">home</a></li>
+    <li><a href="{{ URL::to('izinair/pemohon/persyaratan') }}">persyaratan</a></li>
+    <li><a href="{{ URL::to('izinair/pemohon/daftarizin') }}">daftar izin</a></li>
+    <li><a href="{{ URL::to('izinair/pemohon/notifikasi') }}">notifikasi</a></li>
+    <li>{{session('nik')}} | <a href="{{url('logout')}}")>Logout</a></li>
 @endsection
 @section('navigation')
     <ol class="breadcrumb">

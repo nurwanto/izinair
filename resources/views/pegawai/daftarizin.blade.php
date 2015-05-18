@@ -5,7 +5,7 @@
 @section('menu')
     <li><a href="{{ URL::to('izinair/pegawai') }}">home</a></li>
     <li class="active"><a href="{{ URL::to('izinair/pegawai/daftarizin') }}">daftar izin</a></li>
-    <div>1234567890 | <a href="/izinair/logout/12435678907654321">logout</a></div>
+    <li>{{session('username')}} | <a href="#">Logout</a></li>
 @endsection
 @section('navigation')
     <ol class="breadcrumb">
