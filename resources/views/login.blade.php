@@ -11,7 +11,7 @@
             <form id="loginForm" action="{{url('izinair/login')}}" method="POST">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <li>
-                    <input id = "nik" class="formlogin" name="nik" type="text" class="text" placeholder="NIK" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'nik';}"> </input>
+                    <input id = "nik" name="nik" type="text" class="text" placeholder="NIK" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'nik';}"> </input>
                 </li>
                 <li>
                     <input id="password" name="password" type="password" placeholder="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> </input>

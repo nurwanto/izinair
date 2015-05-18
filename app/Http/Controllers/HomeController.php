@@ -17,20 +17,14 @@ class HomeController extends Controller {
     public function login(){
         if(Request::has('nik')){
             session(['nik' => Request::input('nik'), 'role' => 'pemohon']);
-            return view('pemohon.index');
+            return redirect('/izinair/login');
         }
         else
             return view('login');
     }
 
     public function home(){
-        $req = Request::all();
-        if($req!=null){
-            session(['nik' => $req['nik'], 'role' => 'pemohon']);
-            return view('pemohon.index');
-        }
-        else
-            return view('login');
+        return view('pemohon.index');
     }
 
     public function getformsuper_login(){
