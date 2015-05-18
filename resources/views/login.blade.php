@@ -4,11 +4,11 @@
         var d=document.getElementById("loginLink");
         d.className = d.className + " active";
     </script>
-@endsection
+@ensection
 @section('content')
     <div class="container">
         <div class="login-form">
-            <form id="loginForm" action="{{url('izinair/login')}}" method="POST">
+            <form class="form-horizontal" role="form" action="{{url('izinair/login')}}" method="POST">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <li>
                     <input id = "nik" name="nik" type="text" class="text" placeholder="NIK" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'nik';}"> </input>
