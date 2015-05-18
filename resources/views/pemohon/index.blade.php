@@ -22,7 +22,7 @@
     <li><a href="{{ URL::to('izinair/pemohon/persyaratan') }}">persyaratan</a></li>
     <li><a href="{{ URL::to('izinair/pemohon/daftarizin') }}">daftar izin</a></li>
     <li><a href="{{ URL::to('izinair/pemohon/notifikasi') }}">notifikasi</a></li>
-    <li>{{session('nik')}} | <a href="{{url('logout')}}")>Logout</a></li>
+    <li>{{session('nik')}} | <a href="{{ URL::to('/izinair/logout')}}")>Logout</a></li>
 @endsection
 @section('navigation')
 	<div class="row slider text-center">

@@ -16,7 +16,7 @@ class HomeController extends Controller {
 
     public function login(){
         if(Request::has('nik')){
-            session(['nik' => Request::input('nik'), 'role' => 'pemohon']);
+            // session(['nik' => Request::input('nik'), 'role' => 'pemohon']);
             return redirect('/izinair/login');
         }
         else
@@ -61,22 +61,25 @@ class HomeController extends Controller {
     }
 
     public function logout(){
-        //logout ke willy
+        //logout ke willy'
+        session(['nik'=>'', 'role'=>"guest"]);
         return redirect('izinair');
     }
 
     public function super_logout(){
-        Session::put('username', '');
-        Session::put('role','');
+        session(['username'=>'', 'role'=>""]);
         return redirect('izinair/super_login');
     }
     public function pemohon(){
+        session(['nik' => "1234567890", 'role' => 'pemohon']);
         return view('pemohon.index');
     }
     public function pegawai(){
+        session(['username' => "junita", 'role' => 'pegawai']);
         return view('pegawai.index');
     }
     public function admin(){
+        session(['username' => "junita", 'role' => 'admin']);
         return view('admin.index');
     }
 }

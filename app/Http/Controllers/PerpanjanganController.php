@@ -10,11 +10,12 @@ use IzinAir\Http\Requests;
 use IzinAir\Http\Controllers\Controller;
 
 use Illuminate\Support\Facades\Request;
+use Carbon\Carbon;
 
 class PerpanjanganController extends Controller {
 	public function perpanjang($jenis,$id){
         PermohonanPerpanjangan::create(['id_izin' => $id, 'jenis_izin' => $jenis, 'tanggal_ajuan' => Carbon::now()]);
-        return redirect('pemohon/daftarizin/1');
+        return redirect('izinair/pemohon/daftarizin');
 	}
 }
 

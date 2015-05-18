@@ -9,6 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>@yield('title') | Izin Air PemKot Bandung</title>
 <!-- Bootstrap -->
+<link href="{{asset('/css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{asset('/css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -20,9 +22,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- // webfonts  -->
 <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- start plugins -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{asset('/js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('/js/bootstrap.js')}}"></script>
+<script type="text/javascript" src="{{asset('/js/bootstrap.min.js')}}"></script>
 @yield('script')
 </head>
 <body>

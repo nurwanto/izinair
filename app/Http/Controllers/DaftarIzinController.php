@@ -122,7 +122,8 @@ class DaftarIzinController extends Controller {
 		return redirect('izinair/pegawai/daftarizin');
 	}
 	public function getallizinpemohon(){
-        $NIK = session('nik');
+        // $NIK = session('nik');
+        $NIK = "1234567890";
         $form1 = Form1::where('NIK', '=', $NIK)->get();
         $form2 = Form2::where('NIK', '=', $NIK)->get();
         $form3 = Form3::where('NIK', '=', $NIK)->get();
