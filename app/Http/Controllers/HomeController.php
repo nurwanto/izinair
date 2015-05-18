@@ -24,7 +24,12 @@ class HomeController extends Controller {
     }
 
     public function home(){
-        return view('pemohon.index');
+        if(Request::has('nik')){
+            session(['nik' => Request::input('nik'), 'role' => 'pemohon']);
+            return redirect('pemohon.index');
+        }
+        else
+            return view('login');
     }
 
     public function getformsuper_login(){
