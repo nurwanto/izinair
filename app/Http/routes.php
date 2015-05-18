@@ -16,7 +16,7 @@ Route::get('/', 'HomeController@check');
 
 Route::post('izinair/login','HomeController@login');
 
-Route::post('izinair/home','HomeController@login');
+Route::get('izinair/home','HomeController@home');
 
 Route::get('izinair/super_login', 'HomeController@getformsuper_login');
 
