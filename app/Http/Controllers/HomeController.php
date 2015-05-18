@@ -17,7 +17,7 @@ class HomeController extends Controller {
     public function login(){
         $req = Request::all();
         if($req!=null){
-            session(['nik' => $req['nik'], 'role' => 'pemohon']);
+            session(['nik' => $req->input('nik'), 'role' => 'pemohon']);
             return view('pemohon.index');
         }
         else
